@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:48 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- Command Line Output</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_24.html"><img alt="The .verde Preferences File" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_17.html"><img alt="Program Output" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_22.html"><img alt="Quadrilaterals Sharing 3 Nodes" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Command Line Output</b></td></tr></table>
+<h2>Command Line Output</h2>
+
+<p>Command line output is divided into seven sections:
+<ol><li>
+Banner:  This prints the version of Verde being run, the revision date 
+of Verde, and the execution date of the run.
+
+<li>
+Element Metrics: In this section, metric information is output for each 
+element type in the input file. If the -individual option is used, 
+metric information is output for each individual element block.
+
+<li>
+Metric Summary:  This section lists information about the number of 
+elements of each type that fail the various metric tests.  If the 
+-verbose option flag is specified, each element is listed, along with 
+the failed metric value for the element.
+
+<li>
+Mesh Topology Information:  This section lists any possible topology 
+problems found in the mesh, and states whether the mesh appears to be 
+conformal or not.  The probable topology of the mesh model is also 
+listed based on the Euler number calculated for this body.
+
+<li>
+Mesh Interface Information:  This section gives summary information 
+about the exterior skin of the model and the inferred model edges 
+found.  If any potential problems with the exterior are discovered 
+(such as incomplete or incorrect mesh joining, non-conformal 
+interfaces, etc) these are listed as warnings.
+
+<li>
+Output Information:  Verde can generate an Exodus II file during an 
+analysis of all failed elements.  This file is organized into blocks.
+Block 1 contains the model skin. Block 2 contains the edges of the 
+model.  Blocks 3 to n contain failed elements for each of the 
+metrics that have failed elements. The file is written only if 
+the -output option is used when invoking verde.
+
+<li>
+Execution Summary:  This section lists summary information about the 
+size and execution speed of the run, and gives a summary of each 
+verification procedure, listing the result as PASS, FAIL, or WARN, as 
+well as an overall PASS/FAIL for the Verde run.  If any FAIL or WARN 
+occurs in any verification procedure, the overall Verde run is flagged 
+as FAIL.  NOTE: A failure condition in Verde does not always mean the 
+mesh is incorrect.  For example, a mesh with contact surfaces would 
+generate a WARN in the Mesh Interface Information section, but would be 
+a valid mesh for the problem.
+
+</ol>
+<p>Listed below is the output for a sample run of Verde:
+<pre>
+<font size="-1">
+
+&#37; verde -batch -output output_file.gen antenna_support.gen
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 05-16-02 03:30:57 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 05/17/02 at 12:48:14 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: /home/kgmerk/verde/verde_exe -batch -output output_file.gen antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 9, 21 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+Summary Hex Metrics, total = 3708 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9238993   0.10812   0.5168335 (391)  0.9997690 (3113)
+             Shape  0.7674397   0.18242   0.2528860 (299)  0.9794520 (2935)
+     Relative Size  0.6983444   0.17324   0.1998347 (4)  0.9737509 (3059)
+    Shape and Size  0.5507035   0.19747   0.0749352 (333)  0.8845074 (3059)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0027304   0.00168   0.0004244 (3654)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.0273290   0.87532   1.0112389 (2979)  5.3614430 (398)
+              Skew  0.1713917   0.18155   0.0000930 (3106)  0.7829728 (421)
+             Taper  0.0090899   0.00953   0.0000000 (1)  0.0346601 (2857)
+           Stretch  0.6235547   0.16580   0.1858189 (300)  0.8732918 (3665)
+    Diagonal Ratio  0.9264883   0.07396   0.6338562 (601)  0.9999243 (3106)
+         Dimension  0.0707981   0.01839   0.0325387 (327)  0.1062584 (57)
+              Oddy  4.4684236   9.23531   0.1271596 (2978)  52.721605 (401)
+     Condition No.  1.4180944   0.51873   1.0209791 (2935)  3.9543516 (299)
+          Jacobian  0.0022765   0.00157   0.0003001 (3654)  0.0086663 (57)
+   Scaled Jacobian  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 1050 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+             Shape  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+     Relative Size  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+    Shape and Size  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.5180575   0.17941   1.3196892 (4004)  2.1541519 (738)
+              Skew  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+             Taper  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+           Warpage  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+           Stretch  0.7817586   0.05724   0.5954718 (738)  0.8541115 (4004)
+     Maximum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+     Minimum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+              Oddy  0.3926366   0.26880   0.1578855 (4004)  1.4279352 (738)
+     Condition No.  1.0922582   0.05739   1.0387217 (4004)  1.3091859 (738)
+          Jacobian  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 1755
+      Failed Shape: 28  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 545  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 286  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 168  	(valid range:      1.000 to      4.000)
+      Failed Skew: 280  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 112  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 56  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 196  	(valid range:      0.000 to     20.000)
+      Failed Scaled Jacobian: 84  	(valid range:      0.500 to      1.010)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  598
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4448
+   Number Surface Tris:      0
+   Number Coincident Nodes:  32
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       1150
+
+
+
+------------------
+Output Information
+------------------
+   Writing Output to exodus file output_file.gen:
+   Writing 4830 exterior nodes...
+   Writing 4448 exterior quads to block 1...
+   Writing 1150 model edges to block 2...
+   Writing 28 failed hexes (Shape) to block 3...
+   Writing 545 failed hexes (Relative Size) to block 4...
+   Writing 286 failed hexes (Shape and Size) to block 5...
+   Writing 168 failed hexes (Aspect Ratio) to block 6...
+   Writing 280 failed hexes (Skew) to block 7...
+   Writing 112 failed hexes (Stretch) to block 8...
+   Writing 56 failed hexes (Diagonal Ratio) to block 9...
+   Writing 196 failed hexes (Oddy) to block 10...
+   Writing 84 failed hexes (Scaled Jacobian) to block 11...
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 2.25
+   Elements Processed    = 4758
+   Elements Per Second   = 2114
+   Total Volume          = 10.12
+   Total Area            = 31.45
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+</pre></font>
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_24.html"><img alt="The .verde Preferences File" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_17.html"><img alt="Program Output" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_22.html"><img alt="Quadrilaterals Sharing 3 Nodes" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Command Line Output</b></td></tr></table></body></html>

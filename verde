@@ -1,0 +1,37 @@
+#!/usr/bin/ksh -f
+
+# First get the directory that this script is in
+THIS_SCRIPT=`whence $0`
+
+
+# Symbolic links have to be special-cased or we may not
+# get the correct path.
+if [ -L $THIS_SCRIPT ]; then
+  # Save the directory name
+  VERDE_DIR=${THIS_SCRIPT%/*}
+  # Get the file this one is linked to
+  THIS_SCRIPT=`ls -l $THIS_SCRIPT | awk '{print $11}'`
+  # If it is a relative path, append it to VERDE_DIR.
+  if [ ! -n "`echo $THIS_SCRIPT | grep '^/'`" ]; then
+    THIS_SCRIPT=${VERDE_DIR}/${THIS_SCRIPT}
+  fi
+  
+  # Call $THIS_SCRIPT.  That way, if it is also a link, we call
+  # this recursively any number of times.
+  $THIS_SCRIPT "$@"
+  exit $?
+fi
+
+VERDE_DIR=${THIS_SCRIPT%/*}
+VERDE_EXE="${VERDE_DIR}/verde_exe"
+
+set -a
+export VERDE_DIR
+LD_LIBRARY_PATH=${VERDE_DIR}:${LD_LIBRARY_PATH}
+SHLIB_PATH=${VERDE_DIR}:${SHLIB_PATH}
+
+# Execute VERDE, including all of the command line
+# parameters, *_quoted_* so that the command line looks
+# the same to verde_exe as it does to this script
+${VERDE_EXE} "$@"
+exit $?

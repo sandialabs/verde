@@ -1,0 +1,2689 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:29 AM
+
+		This version of Verde is only for use inside Sandia
+usage: verde_exe [options] [input_file.gen | input_journalfile.jou]
+	-help (Print this summary)
+	-batch (Runs verde in batch mode)
+	-blocks <$val> (Specifies block(s) to be processed (e.g. 1,5-7,9))
+	-individual (prints metrics for each block individually)
+	-defaults <$val> (Specifies path and file of defaults file (e.g ../defaults1))
+	-nodefaults (do not process .verde default file)
+	-nointerface (Suppresses mesh interface verification calculations)
+	-nometrics (Suppresses element metric calculations)
+	-output <$val> (Generates an Exodus II output file specified by $val)
+	-notopology (Suppresses mesh topology verification calculations)
+	-print_failed_elements (Prints individual failed elements and values)
+	-version (Prints verde version number)
+	-quads_share_3_nodes <$val> (Check entire mesh, exterior quads, or nothing for quads sharing 3 nodes (all, exterior, none))
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:29 AM
+
+		This version of Verde is only for use inside Sandia
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:29 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -blocks 1 antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 4, 5,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+
+Summary Hex Metrics, total = 2081 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8709148   0.15291   0.4421353 (391)  0.9995819 (14)
+             Shape  0.7357341   0.19838   0.2802642 (309)  0.9690287 (422)
+     Relative Size  0.4703718   0.24381   0.0378336 (4)  0.9588472 (418)
+    Shape and Size  0.3711747   0.21744   0.0144656 (328)  0.8618883 (71)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0031539   0.00181   0.0006167 (328)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.2505892   1.05823   1.1708546 (85)  5.3614430 (398)
+              Skew  0.2100870   0.21398   0.0004586 (1182)  0.7829728 (421)
+             Taper  0.0106135   0.00865   0.0000000 (1)  0.0296838 (1204)
+           Stretch  0.5844944   0.18698   0.1858189 (300)  0.8451612 (1202)
+    Diagonal Ratio  0.9194411   0.08602   0.6338562 (601)  0.9995238 (428)
+         Dimension  0.0733244   0.02114   0.0325387 (327)  0.1062584 (57)
+              Oddy  6.4928091   11.8293   0.1850611 (1203)  52.721605 (401)
+     Condition No.  1.5527339   0.63222   1.0328983 (422)  3.9543516 (299)
+          Jacobian  0.0026259   0.00175   0.0003569 (323)  0.0086663 (57)
+   Scaled Jacobian  0.8709148   0.15291   0.4421353 (391)  0.9995819 (14)
+
+Summary Quad Metrics, total = 56 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (738)  1.0000000 (738)
+             Shape  0.7638335   0.00000   0.7638335 (738)  0.7638335 (738)
+     Relative Size  1.0000000   0.00000   1.0000000 (738)  1.0000000 (738)
+    Shape and Size  0.7638335   0.00000   0.7638335 (738)  0.7638335 (738)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0222158   0.00000   0.0222158 (738)  0.0222158 (738)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.1541519   0.00000   2.1541519 (738)  2.1541519 (738)
+              Skew  0.0000000   0.00000   0.0000000 (738)  0.0000000 (738)
+             Taper  0.0000000   0.00000   0.0000000 (738)  0.0000000 (738)
+           Warpage  1.0000000   0.00000   1.0000000 (738)  1.0000000 (738)
+           Stretch  0.5954718   0.00000   0.5954718 (738)  0.5954718 (738)
+     Maximum Angle  90.000000   0.00000   90.000000 (738)  90.000000 (738)
+     Minimum Angle  90.000000   0.00000   90.000000 (738)  90.000000 (738)
+              Oddy  1.4279352   0.00000   1.4279352 (738)  1.4279352 (738)
+     Condition No.  1.3091859   0.00000   1.3091859 (738)  1.3091859 (738)
+          Jacobian  0.0222158   0.00000   0.0222158 (738)  0.0222158 (738)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (738)  1.0000000 (738)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 2577
+      Failed Shape: 84  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 1095  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 502  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 168  	(valid range:      1.000 to      4.000)
+      Failed Skew: 280  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 112  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 56  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 196  	(valid range:      0.000 to     20.000)
+      Failed Scaled Jacobian: 84  	(valid range:      0.500 to      1.010)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  142
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     1976
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       618
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.40
+   Elements Processed    = 4758
+   Elements Per Second   = 11894
+   Total Volume          = 6.56
+   Total Area            = 1.24
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:30 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -notopology -blocks 1-10 antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 9, 21 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+Summary Hex Metrics, total = 3708 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+             Shape  0.7760974   0.17354   0.2802642 (309)  0.9790331 (2978)
+     Relative Size  0.5258098   0.24173   0.0378336 (4)  0.9947024 (2983)
+    Shape and Size  0.4237669   0.21453   0.0144656 (328)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0027304   0.00168   0.0004245 (3654)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.0273290   0.87532   1.0112389 (2979)  5.3614430 (398)
+              Skew  0.1713917   0.18155   0.0000930 (3106)  0.7829728 (421)
+             Taper  0.0090899   0.00953   0.0000000 (1)  0.0346601 (2857)
+           Stretch  0.6235547   0.16580   0.1858189 (300)  0.8732918 (3665)
+    Diagonal Ratio  0.9264883   0.07396   0.6338562 (601)  0.9999243 (3106)
+         Dimension  0.0707981   0.01839   0.0325387 (327)  0.1062584 (57)
+              Oddy  4.4684236   9.23531   0.1271596 (2978)  52.721605 (401)
+     Condition No.  1.4180944   0.51873   1.0209791 (2935)  3.9543516 (299)
+          Jacobian  0.0022765   0.00157   0.0003001 (3654)  0.0086663 (57)
+   Scaled Jacobian  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 1050 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+             Shape  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+     Relative Size  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+    Shape and Size  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.5180575   0.17941   1.3196892 (4004)  2.1541519 (738)
+              Skew  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+             Taper  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+           Warpage  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+           Stretch  0.7817586   0.05724   0.5954718 (738)  0.8541115 (4004)
+     Maximum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+     Minimum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+              Oddy  0.3926366   0.26880   0.1578855 (4004)  1.4279352 (738)
+     Condition No.  1.0922582   0.05739   1.0387217 (4004)  1.3091859 (738)
+          Jacobian  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 3274
+      Failed Shape: 84  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 1672  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 622  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 168  	(valid range:      1.000 to      4.000)
+      Failed Skew: 280  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 112  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 56  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 196  	(valid range:      0.000 to     20.000)
+      Failed Scaled Jacobian: 84  	(valid range:      0.500 to      1.010)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4448
+   Number Surface Tris:      0
+   Number Coincident Nodes:  32
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       1150
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 1.76
+   Elements Processed    = 4758
+   Elements Per Second   = 2703
+   Total Volume          = 10.12
+   Total Area            = 31.45
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:32 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -notopology antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 9, 21 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+Summary Hex Metrics, total = 3708 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+             Shape  0.7760974   0.17354   0.2802642 (309)  0.9790331 (2978)
+     Relative Size  0.5258098   0.24173   0.0378336 (4)  0.9947024 (2983)
+    Shape and Size  0.4237669   0.21453   0.0144656 (328)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0027304   0.00168   0.0004245 (3654)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.0273290   0.87532   1.0112389 (2979)  5.3614430 (398)
+              Skew  0.1713917   0.18155   0.0000930 (3106)  0.7829728 (421)
+             Taper  0.0090899   0.00953   0.0000000 (1)  0.0346601 (2857)
+           Stretch  0.6235547   0.16580   0.1858189 (300)  0.8732918 (3665)
+    Diagonal Ratio  0.9264883   0.07396   0.6338562 (601)  0.9999243 (3106)
+         Dimension  0.0707981   0.01839   0.0325387 (327)  0.1062584 (57)
+              Oddy  4.4684236   9.23531   0.1271596 (2978)  52.721605 (401)
+     Condition No.  1.4180944   0.51873   1.0209791 (2935)  3.9543516 (299)
+          Jacobian  0.0022765   0.00157   0.0003001 (3654)  0.0086663 (57)
+   Scaled Jacobian  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 1050 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+             Shape  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+     Relative Size  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+    Shape and Size  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.5180575   0.17941   1.3196892 (4004)  2.1541519 (738)
+              Skew  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+             Taper  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+           Warpage  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+           Stretch  0.7817586   0.05724   0.5954718 (738)  0.8541115 (4004)
+     Maximum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+     Minimum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+              Oddy  0.3926366   0.26880   0.1578855 (4004)  1.4279352 (738)
+     Condition No.  1.0922582   0.05739   1.0387217 (4004)  1.3091859 (738)
+          Jacobian  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 3274
+      Failed Shape: 84  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 1672  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 622  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 168  	(valid range:      1.000 to      4.000)
+      Failed Skew: 280  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 112  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 56  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 196  	(valid range:      0.000 to     20.000)
+      Failed Scaled Jacobian: 84  	(valid range:      0.500 to      1.010)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4448
+   Number Surface Tris:      0
+   Number Coincident Nodes:  32
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       1150
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 1.74
+   Elements Processed    = 4758
+   Elements Per Second   = 2734
+   Total Volume          = 10.12
+   Total Area            = 31.45
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:34 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Processing Skin...
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 9, 21 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  598
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.47
+   Elements Processed    = 4758
+   Elements Per Second   = 10123
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:35 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nodefaults -nointerface -nometrics -notopology -blocks 1 antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8,
+Processing Skin...
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.38
+   Elements Processed    = 4758
+   Elements Per Second   = 12521
+
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:35 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -defaults defaults_file -blocks 1 antenna_support.gen 
+Journaled Command: set hex aspect minimum 2 
+
+Journaled Command: set hex aspect maximum 0 
+
+Journaled Command: set hex skew minimum 2 
+
+Journaled Command: set hex skew maximum 0 
+
+Journaled Command: set hex taper minimum 2 
+
+Journaled Command: set hex taper maximum 0 
+
+Journaled Command: set hex volume minimum 2 
+
+Journaled Command: set hex volume maximum 0 
+
+Journaled Command: set hex stretch minimum 2 
+
+Journaled Command: set hex stretch maximum 0 
+
+Journaled Command: set hex diagonal minimum 2 
+
+Journaled Command: set hex diagonal maximum 0 
+
+Journaled Command: set hex dimension minimum 2 
+
+Journaled Command: set hex dimension maximum 0 
+
+Journaled Command: set hex oddy minimum 2 
+
+Journaled Command: set hex oddy maximum 0 
+
+Journaled Command: set hex condition minimum 2 
+
+Journaled Command: set hex condition maximum 0 
+
+Journaled Command: set hex jacobian minimum 2 
+
+Journaled Command: set hex jacobian maximum 0 
+
+Journaled Command: set hex scaled jacobian minimum 2 
+
+Journaled Command: set hex scaled jacobian maximum 0 
+
+Journaled Command: set hex shear minimum 2 
+
+Journaled Command: set hex shear maximum 0 
+
+Journaled Command: set hex shape minimum 2 
+
+Journaled Command: set hex shape maximum 0 
+
+Journaled Command: set hex relative size minimum 2 
+
+Journaled Command: set hex relative size maximum 0 
+
+Journaled Command: set hex shape and size minimum 2 
+
+Journaled Command: set hex shape and size maximum 0 
+
+Journaled Command: set tet aspect minimum 2 
+
+Journaled Command: set tet aspect maximum 0 
+
+Journaled Command: set tet aspect gamma minimum 2 
+
+Journaled Command: set tet aspect gamma maximum 0 
+
+Journaled Command: set tet volume minimum 2 
+
+Journaled Command: set tet volume maximum 0 
+
+Journaled Command: set tet condition minimum 2 
+
+Journaled Command: set tet condition maximum 0 
+
+Journaled Command: set tet jacobian minimum 2 
+
+Journaled Command: set tet jacobian maximum 0 
+
+Journaled Command: set tet scaled jacobian minimum 2 
+
+Journaled Command: set tet scaled jacobian maximum 0 
+
+Journaled Command: set tet shear minimum 2 
+
+Journaled Command: set tet shear maximum 0 
+
+Journaled Command: set tet shape minimum 2 
+
+Journaled Command: set tet shape maximum 0 
+
+Journaled Command: set tet relative size minimum 2 
+
+Journaled Command: set tet relative size maximum 0 
+
+Journaled Command: set tet shape and size minimum 2 
+
+Journaled Command: set tet shape and size maximum 0 
+
+Journaled Command: set pyramid volume minimum 2 
+
+Journaled Command: set pyramid volume maximum 0 
+
+Journaled Command: set wedge volume minimum 2 
+
+Journaled Command: set wedge volume maximum 0 
+
+Journaled Command: set knife volume minimum 2 
+
+Journaled Command: set knife volume maximum 0 
+
+Journaled Command: set quad aspect minimum 2 
+
+Journaled Command: set quad aspect maximum 0 
+
+Journaled Command: set quad skew minimum 2 
+
+Journaled Command: set quad skew maximum 0 
+
+Journaled Command: set quad taper minimum 2 
+
+Journaled Command: set quad taper maximum 0 
+
+Journaled Command: set quad warpage minimum 2 
+
+Journaled Command: set quad warpage maximum 0 
+
+Journaled Command: set quad area minimum 2 
+
+Journaled Command: set quad area maximum 0 
+
+Journaled Command: set quad stretch minimum 2 
+
+Journaled Command: set quad stretch maximum 0 
+
+Journaled Command: set quad largest angle minimum 2 
+
+Journaled Command: set quad largest angle maximum 0 
+
+Journaled Command: set quad smallest angle minimum 2 
+
+Journaled Command: set quad smallest angle maximum 0 
+
+Journaled Command: set quad oddy minimum 2 
+
+Journaled Command: set quad oddy maximum 0 
+
+Journaled Command: set quad condition minimum 2 
+
+Journaled Command: set quad condition maximum 0 
+
+Journaled Command: set quad jacobian minimum 2 
+
+Journaled Command: set quad jacobian maximum 0 
+
+Journaled Command: set quad scaled jacobian minimum 2 
+
+Journaled Command: set quad scaled jacobian maximum 0 
+
+Journaled Command: set quad shear minimum 2 
+
+Journaled Command: set quad shear maximum 0 
+
+Journaled Command: set quad shape minimum 2 
+
+Journaled Command: set quad shape maximum 0 
+
+Journaled Command: set quad relative size minimum 2 
+
+Journaled Command: set quad relative size maximum 0 
+
+Journaled Command: set quad shape and size minimum 2 
+
+Journaled Command: set quad shape and size maximum 0 
+
+Journaled Command: set tri aspect minimum 2 
+
+Journaled Command: set tri aspect maximum 0 
+
+Journaled Command: set tri area minimum 2 
+
+Journaled Command: set tri area maximum 0 
+
+Journaled Command: set tri largest angle minimum 2 
+
+Journaled Command: set tri largest angle maximum 0 
+
+Journaled Command: set tri smallest angle minimum 2 
+
+Journaled Command: set tri smallest angle maximum 0 
+
+Journaled Command: set tri condition minimum 2 
+
+Journaled Command: set tri condition maximum 0 
+
+Journaled Command: set tri scaled jacobian minimum 2 
+
+Journaled Command: set tri scaled jacobian maximum 0 
+
+Journaled Command: set tri shear minimum 2 
+
+Journaled Command: set tri shear maximum 0 
+
+Journaled Command: set tri shape minimum 2 
+
+Journaled Command: set tri shape maximum 0 
+
+Journaled Command: set tri relative size minimum 2 
+
+Journaled Command: set tri relative size maximum 0 
+
+Journaled Command: set tri shape and size minimum 2 
+
+Journaled Command: set tri shape and size maximum 0 
+
+Journaled Command: set edge length minimum 2 
+
+Journaled Command: set edge length maximum 0 
+
+
+Processing File: antenna_support.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+
+Summary Hex Metrics, total = 261 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9365728   0.06763   0.7280812 (83)  0.9995819 (14)
+             Shape  0.8436976   0.08131   0.5719705 (83)  0.9323170 (7)
+     Relative Size  0.6347661   0.23405   0.0378336 (4)  0.9451913 (71)
+    Shape and Size  0.5448156   0.22754   0.0309850 (4)  0.8618883 (71)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0057980   0.00194   0.0011278 (4)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.7362097   0.32215   1.1708546 (85)  2.5065930 (51)
+              Skew  0.1775799   0.11213   0.0076833 (14)  0.4113108 (67)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.6493944   0.07783   0.4619636 (51)  0.8104993 (19)
+    Diagonal Ratio  0.8686778   0.08181   0.7132422 (48)  0.9937155 (14)
+         Dimension  0.0956184   0.01005   0.0580768 (4)  0.1062584 (57)
+              Oddy  1.6274593   1.56094   0.3913877 (7)  8.8820686 (83)
+     Condition No.  1.1913434   0.11939   1.0788959 (7)  1.6601227 (83)
+          Jacobian  0.0051162   0.00197   0.0007351 (84)  0.0086663 (57)
+   Scaled Jacobian  0.9365728   0.06763   0.7280812 (83)  0.9995819 (14)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 3915
+      Failed Shear: 261  	(valid range:      2.000 to      0.000)
+      Failed Shape: 261  	(valid range:      2.000 to      0.000)
+      Failed Relative Size: 261  	(valid range:      2.000 to      0.000)
+      Failed Shape and Size: 261  	(valid range:      2.000 to      0.000)
+      Failed Element Volume: 261  	(valid range:      2.000 to      0.000)
+      Failed Aspect Ratio: 261  	(valid range:      2.000 to      0.000)
+      Failed Skew: 261  	(valid range:      2.000 to      0.000)
+      Failed Taper: 261  	(valid range:      2.000 to      0.000)
+      Failed Stretch: 261  	(valid range:      2.000 to      0.000)
+      Failed Diagonal Ratio: 261  	(valid range:      2.000 to      0.000)
+      Failed Dimension: 261  	(valid range:      2.000 to      0.000)
+      Failed Oddy: 261  	(valid range:      2.000 to      0.000)
+      Failed Condition No.: 261  	(valid range:      2.000 to      0.000)
+      Failed Jacobian: 261  	(valid range:      2.000 to      0.000)
+      Failed Scaled Jacobian: 261  	(valid range:      2.000 to      0.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     390
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       156
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.08
+   Elements Processed    = 4758
+   Elements Per Second   = 59475
+   Total Volume          = 1.51
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:36 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -notopology -nointerface -output output_file.gen antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 2, 84 elements of type SHELL:
+
+Processing block 3, 616 elements of type SHELL:
+
+Processing block 4, 56 elements of type SHELL:
+
+Processing block 5, 1820 elements of type HEX:
+
+Processing block 6, 588 elements of type HEX:
+
+Processing block 7, 84 elements of type SHELL:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 9, 21 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+Summary Hex Metrics, total = 3708 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+             Shape  0.7760974   0.17354   0.2802642 (309)  0.9790331 (2978)
+     Relative Size  0.5258098   0.24173   0.0378336 (4)  0.9947024 (2983)
+    Shape and Size  0.4237669   0.21453   0.0144656 (328)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0027304   0.00168   0.0004245 (3654)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  2.0273290   0.87532   1.0112389 (2979)  5.3614430 (398)
+              Skew  0.1713917   0.18155   0.0000930 (3106)  0.7829728 (421)
+             Taper  0.0090899   0.00953   0.0000000 (1)  0.0346601 (2857)
+           Stretch  0.6235547   0.16580   0.1858189 (300)  0.8732918 (3665)
+    Diagonal Ratio  0.9264883   0.07396   0.6338562 (601)  0.9999243 (3106)
+         Dimension  0.0707981   0.01839   0.0325387 (327)  0.1062584 (57)
+              Oddy  4.4684236   9.23531   0.1271596 (2978)  52.721605 (401)
+     Condition No.  1.4180944   0.51873   1.0209791 (2935)  3.9543516 (299)
+          Jacobian  0.0022765   0.00157   0.0003001 (3654)  0.0086663 (57)
+   Scaled Jacobian  0.9003169   0.13206   0.4421353 (391)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 1050 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+             Shape  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+     Relative Size  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+    Shape and Size  0.9177645   0.04264   0.7638335 (738)  0.9627218 (4004)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.5180575   0.17941   1.3196892 (4004)  2.1541519 (738)
+              Skew  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+             Taper  0.0000000   0.00000   0.0000000 (88)  0.0000000 (88)
+           Warpage  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+           Stretch  0.7817586   0.05724   0.5954718 (738)  0.8541115 (4004)
+     Maximum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+     Minimum Angle  90.000000   0.00001   90.000000 (88)  90.000000 (88)
+              Oddy  0.3926366   0.26880   0.1578855 (4004)  1.4279352 (738)
+     Condition No.  1.0922582   0.05739   1.0387217 (4004)  1.3091859 (738)
+          Jacobian  0.0299522   0.00229   0.0222158 (738)  0.0313723 (6820)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (88)  1.0000000 (88)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 3274
+      Failed Shape: 84  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 1672  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 622  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 168  	(valid range:      1.000 to      4.000)
+      Failed Skew: 280  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 112  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 56  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 196  	(valid range:      0.000 to     20.000)
+      Failed Scaled Jacobian: 84  	(valid range:      0.500 to      1.010)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+------------------
+Output Information
+------------------
+   Writing Output to exodus file output_file.gen:
+   Writing 5807 exterior nodes...
+   Writing 4448 exterior quads to block 1...
+   Writing 1150 model edges to block 2...
+   Writing 84 failed hexes (Shape) to block 3...
+   Writing 1672 failed hexes (Relative Size) to block 4...
+   Writing 622 failed hexes (Shape and Size) to block 5...
+   Writing 168 failed hexes (Aspect Ratio) to block 6...
+   Writing 280 failed hexes (Skew) to block 7...
+   Writing 112 failed hexes (Stretch) to block 8...
+   Writing 56 failed hexes (Diagonal Ratio) to block 9...
+   Writing 196 failed hexes (Oddy) to block 10...
+   Writing 84 failed hexes (Scaled Jacobian) to block 11...
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.84
+   Elements Processed    = 4758
+   Elements Per Second   = 5664
+   Total Volume          = 10.12
+   Total Area            = 31.45
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:37 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -notopology -nointerface -nometrics output_file.gen 
+
+Processing File: output_file.gen...
+Reading block: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+Processing Skin...
+Processing block 1, 4448 elements of type QUAD4:
+
+Processing block 2, 1150 elements of type BEAM:
+
+Processing block 3, 84 elements of type HEX8:
+
+Processing block 4, 1672 elements of type HEX8:
+
+Processing block 5, 622 elements of type HEX8:
+
+Processing block 6, 168 elements of type HEX8:
+
+Processing block 7, 280 elements of type HEX8:
+
+Processing block 8, 112 elements of type HEX8:
+
+Processing block 9, 56 elements of type HEX8:
+
+Processing block 10, 196 elements of type HEX8:
+
+Processing block 11, 84 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 2.12
+   Elements Processed    = 8872
+   Elements Per Second   = 4184
+
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:40 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -print_failed_elements -individual -blocks 1 antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 8, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+
+Metrics for block 1, 261 elements of type HEX:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9365728   0.06763   0.7280812 (83)  0.9995819 (14)
+             Shape  0.8436976   0.08131   0.5719705 (83)  0.9323170 (7)
+     Relative Size  0.6347661   0.23405   0.0378336 (4)  0.9451913 (71)
+    Shape and Size  0.5448156   0.22754   0.0309850 (4)  0.8618883 (71)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0057980   0.00194   0.0011278 (4)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.7362097   0.32215   1.1708546 (85)  2.5065930 (51)
+              Skew  0.1775799   0.11213   0.0076833 (14)  0.4113108 (67)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.6493944   0.07783   0.4619636 (51)  0.8104993 (19)
+    Diagonal Ratio  0.8686778   0.08181   0.7132422 (48)  0.9937155 (14)
+         Dimension  0.0956184   0.01005   0.0580768 (4)  0.1062584 (57)
+              Oddy  1.6274593   1.56094   0.3913877 (7)  8.8820686 (83)
+     Condition No.  1.1913434   0.11939   1.0788959 (7)  1.6601227 (83)
+          Jacobian  0.0051162   0.00197   0.0007351 (84)  0.0086663 (57)
+   Scaled Jacobian  0.9365728   0.06763   0.7280812 (83)  0.9995819 (14)
+
+Block 1 Volume:        1.513
+
+Metrics for block 8, 189 elements of type SHELL:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+             Shape  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+     Relative Size  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+    Shape and Size  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3333841   0.00000   1.3333841 (7436)  1.3333841 (7436)
+              Skew  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+             Taper  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+           Warpage  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+           Stretch  0.8485075   0.00000   0.8485075 (7436)  0.8485075 (7436)
+     Maximum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+     Minimum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+              Oddy  0.1701852   0.00000   0.1701852 (7436)  0.1701852 (7436)
+     Condition No.  1.0416778   0.00000   1.0416778 (7436)  1.0416778 (7436)
+          Jacobian  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+
+Block 8 Area:        5.462
+
+Metrics for block 10, 1039 elements of type HEX:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9436883   0.08229   0.5993188 (2784)  0.9996536 (3113)
+             Shape  0.8611206   0.09739   0.5773142 (2784)  0.9790331 (2978)
+     Relative Size  0.5684429   0.23323   0.0913475 (3654)  0.9947024 (2983)
+    Shape and Size  0.4862080   0.20150   0.0793582 (3654)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0014049   0.00065   0.0004245 (3654)  0.0039343 (2713)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.6237847   0.36268   1.0112389 (2979)  2.5221822 (2670)
+              Skew  0.1186978   0.10413   0.0000930 (3106)  0.4961227 (2691)
+             Taper  0.0029919   0.00817   0.0000000 (2859)  0.0346601 (2857)
+           Stretch  0.6975090   0.10796   0.4189603 (2670)  0.8732918 (3665)
+    Diagonal Ratio  0.9256873   0.05561   0.7481319 (2932)  0.9999243 (3106)
+         Dimension  0.0598921   0.00736   0.0426257 (3654)  0.0864831 (2697)
+              Oddy  1.2918834   1.35584   0.1271596 (2978)  5.5514231 (2771)
+     Condition No.  1.1911661   0.18724   1.0209791 (2935)  1.9454097 (2784)
+          Jacobian  0.0011781   0.00052   0.0003001 (3654)  0.0033631 (2697)
+   Scaled Jacobian  0.9436883   0.08229   0.5993188 (2784)  0.9996536 (3113)
+
+Block 10 Volume:        1.460
+
+Summary Hex Metrics, total = 1300 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9436883   0.08229   0.5993188 (2784)  0.9996536 (3113)
+             Shape  0.8611206   0.09739   0.5773142 (2784)  0.9790331 (2978)
+     Relative Size  0.5684429   0.23323   0.0913475 (3654)  0.9947024 (2983)
+    Shape and Size  0.4862080   0.20150   0.0793582 (3654)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0014049   0.00065   0.0004245 (3654)  0.0039343 (2713)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.6237847   0.36268   1.0112389 (2979)  2.5221822 (2670)
+              Skew  0.1186978   0.10413   0.0000930 (3106)  0.4961227 (2691)
+             Taper  0.0029919   0.00817   0.0000000 (2859)  0.0346601 (2857)
+           Stretch  0.6975090   0.10796   0.4189603 (2670)  0.8732918 (3665)
+    Diagonal Ratio  0.9256873   0.05561   0.7481319 (2932)  0.9999243 (3106)
+         Dimension  0.0598921   0.00736   0.0426257 (3654)  0.0864831 (2697)
+              Oddy  1.2918834   1.35584   0.1271596 (2978)  5.5514231 (2771)
+     Condition No.  1.1911661   0.18724   1.0209791 (2935)  1.9454097 (2784)
+          Jacobian  0.0011781   0.00052   0.0003001 (3654)  0.0033631 (2697)
+   Scaled Jacobian  0.9436883   0.08229   0.5993188 (2784)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 189 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+             Shape  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+     Relative Size  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+    Shape and Size  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3333841   0.00000   1.3333841 (7436)  1.3333841 (7436)
+              Skew  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+             Taper  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+           Warpage  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+           Stretch  0.8485075   0.00000   0.8485075 (7436)  0.8485075 (7436)
+     Maximum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+     Minimum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+              Oddy  0.1701852   0.00000   0.1701852 (7436)  0.1701852 (7436)
+     Condition No.  1.0416778   0.00000   1.0416778 (7436)  1.0416778 (7436)
+          Jacobian  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 619
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+   Relative Size        1         1    0.2429120    0.5000000    1.0000000
+                        1         2    0.1201926
+                        1         3    0.0391557
+                        1         4    0.0378336
+                        1         5    0.0978390
+                        1         6    0.1893877
+                        1        10    0.3428354
+                        1        19    0.4578742
+                        1        21    0.4999511
+                        1        36    0.4834549
+                        1        38    0.4567765
+                        1        47    0.4937731
+                        1        48    0.3881504
+                        1        49    0.4675579
+                        1        50    0.4731354
+                        1        51    0.4277452
+                        1        52    0.4905785
+                        1        54    0.4880231
+                        1        55    0.4172030
+                        1        56    0.4455775
+                        1        57    0.3833986
+                        1        58    0.4928467
+                        1        67    0.3718353
+                        1        82    0.4235853
+                        1        83    0.4894512
+                        1        84    0.0609515
+                        1        85    0.1849188
+                        1        86    0.4256379
+                        1        87    0.4912541
+                        1        88    0.2429120
+                        1        89    0.1201926
+                        1        90    0.0391557
+                        1        91    0.0378336
+                        1        92    0.0978390
+                        1        93    0.1893877
+                        1        97    0.3428354
+                        1       106    0.4578742
+                        1       108    0.4999511
+                        1       123    0.4834549
+                        1       125    0.4567765
+                        1       134    0.4937731
+                        1       135    0.3881504
+                        1       136    0.4675579
+                        1       137    0.4731354
+                        1       138    0.4277452
+                        1       139    0.4905785
+                        1       141    0.4880231
+                        1       142    0.4172030
+                        1       143    0.4455775
+                        1       144    0.3833986
+                        1       145    0.4928467
+                        1       154    0.3718353
+                        1       169    0.4235853
+                        1       170    0.4894512
+                        1       171    0.0609515
+                        1       172    0.1849188
+                        1       173    0.4256379
+                        1       174    0.4912541
+                        1       175    0.2429120
+                        1       176    0.1201926
+                        1       177    0.0391557
+                        1       178    0.0378336
+                        1       179    0.0978390
+                        1       180    0.1893877
+                        1       184    0.3428354
+                        1       193    0.4578742
+                        1       195    0.4999511
+                        1       210    0.4834549
+                        1       212    0.4567765
+                        1       221    0.4937731
+                        1       222    0.3881504
+                        1       223    0.4675579
+                        1       224    0.4731354
+                        1       225    0.4277452
+                        1       226    0.4905785
+                        1       228    0.4880231
+                        1       229    0.4172030
+                        1       230    0.4455775
+                        1       231    0.3833986
+                        1       232    0.4928467
+                        1       241    0.3718353
+                        1       256    0.4235853
+                        1       257    0.4894512
+                        1       258    0.0609515
+                        1       259    0.1849188
+                        1       260    0.4256379
+                        1       261    0.4912541
+                       10      2695    0.4226140
+                       10      2697    0.1274774
+                       10      2698    0.1785362
+                       10      2703    0.4256705
+                       10      2705    0.1274983
+                       10      2706    0.1773631
+                       10      2711    0.4285881
+                       10      2713    0.1275169
+                       10      2714    0.1762672
+                       10      2719    0.4313124
+                       10      2721    0.1275331
+                       10      2722    0.1752639
+                       10      2727    0.4337920
+                       10      2729    0.1275469
+                       10      2730    0.1743671
+                       10      2735    0.4359791
+                       10      2737    0.1275582
+                       10      2738    0.1735886
+                       10      2743    0.4378311
+                       10      2745    0.1275671
+                       10      2746    0.1729382
+                       10      2751    0.4393116
+                       10      2753    0.1275739
+                       10      2754    0.1724240
+                       10      2759    0.4403909
+                       10      2761    0.1275786
+                       10      2762    0.1720523
+                       10      2767    0.4410474
+                       10      2769    0.1275814
+                       10      2770    0.1718275
+                       10      2775    0.4412676
+                       10      2777    0.1275824
+                       10      2778    0.1717523
+                       10      2783    0.4410472
+                       10      2785    0.1275815
+                       10      2786    0.1718275
+                       10      2791    0.4403906
+                       10      2793    0.1275787
+                       10      2794    0.1720523
+                       10      2799    0.4393111
+                       10      2801    0.1275740
+                       10      2802    0.1724240
+                       10      2807    0.4378304
+                       10      2809    0.1275673
+                       10      2810    0.1729382
+                       10      2815    0.4359782
+                       10      2817    0.1275584
+                       10      2818    0.1735886
+                       10      2823    0.4337909
+                       10      2825    0.1275471
+                       10      2826    0.1743671
+                       10      2831    0.4313112
+                       10      2833    0.1275335
+                       10      2834    0.1752639
+                       10      2839    0.4285867
+                       10      2841    0.1275173
+                       10      2842    0.1762672
+                       10      2847    0.4256689
+                       10      2849    0.1274988
+                       10      2850    0.1773631
+                       10      2855    0.4226128
+                       10      2857    0.1274781
+                       10      2858    0.1785362
+                       10      2861    0.4222848
+                       10      2862    0.4034119
+                       10      2863    0.4214542
+                       10      2864    0.4348731
+                       10      2865    0.4185735
+                       10      2866    0.3426271
+                       10      2867    0.1501992
+                       10      2868    0.1444308
+                       10      2869    0.3023616
+                       10      2870    0.3400172
+                       10      2871    0.3186006
+                       10      2872    0.2785334
+                       10      2873    0.3328218
+                       10      2874    0.4872228
+                       10      2884    0.4949146
+                       10      2885    0.4712905
+                       10      2886    0.3899694
+                       10      2887    0.1746230
+                       10      2888    0.1675647
+                       10      2889    0.3531434
+                       10      2890    0.4088560
+                       10      2891    0.4184716
+                       10      2892    0.4289838
+                       10      2893    0.4753973
+                       10      2899    0.4574718
+                       10      2900    0.4378885
+                       10      2901    0.4313163
+                       10      2902    0.4271827
+                       10      2903    0.3976827
+                       10      2904    0.3373742
+                       10      2905    0.2152505
+                       10      2906    0.2395321
+                       10      2907    0.4088456
+                       10      2908    0.4675518
+                       10      2909    0.4629917
+                       10      2910    0.4701000
+                       10      2919    0.4917761
+                       10      2923    0.3190755
+                       10      2926    0.4593414
+                       10      2927    0.4059369
+                       10      2928    0.3731113
+                       10      2934    0.4409446
+                       10      2935    0.3280192
+                       10      2936    0.3758784
+                       10      2937    0.4530728
+                       10      2941    0.2870449
+                       10      2943    0.4380379
+                       10      2944    0.3504092
+                       10      2945    0.1635486
+                       10      2946    0.1874707
+                       10      2947    0.4782066
+                       10      2958    0.3767058
+                       10      2970    0.4156556
+                       10      2971    0.3877106
+                       10      2977    0.4928366
+                       10      2978    0.3545893
+                       10      2979    0.1699622
+                       10      2980    0.2105972
+                       10      2985    0.1689917
+                       10      2986    0.1409606
+                       10      2987    0.3137609
+                       10      2988    0.4824760
+                       10      2995    0.3833570
+                       10      3007    0.3750874
+                       10      3009    0.3236982
+                       10      3010    0.3170692
+                       10      3017    0.1990021
+                       10      3018    0.1952651
+                       10      3025    0.4409648
+                       10      3026    0.2156002
+                       10      3034    0.4907504
+                       10      3036    0.2772002
+                       10      3038    0.4867973
+                       10      3039    0.1586988
+                       10      3040    0.3663526
+                       10      3046    0.4557847
+                       10      3054    0.4021743
+                       10      3055    0.4603003
+                       10      3057    0.2719950
+                       10      3064    0.4497958
+                       10      3065    0.3638003
+                       10      3072    0.4688842
+                       10      3073    0.3484563
+                       10      3074    0.3621038
+                       10      3076    0.2835590
+                       10      3079    0.4648107
+                       10      3087    0.3821875
+                       10      3088    0.3120586
+                       10      3101    0.2571581
+                       10      3102    0.2101426
+                       10      3103    0.2144076
+                       10      3116    0.2711924
+                       10      3118    0.1654787
+                       10      3119    0.1484799
+                       10      3120    0.1467529
+                       10      3123    0.4222848
+                       10      3124    0.4034119
+                       10      3125    0.4214542
+                       10      3126    0.4348731
+                       10      3127    0.4185735
+                       10      3128    0.3426271
+                       10      3129    0.1501992
+                       10      3130    0.1444308
+                       10      3131    0.3023616
+                       10      3132    0.3400172
+                       10      3133    0.3186006
+                       10      3134    0.2785334
+                       10      3135    0.3328218
+                       10      3136    0.4872228
+                       10      3146    0.4949146
+                       10      3147    0.4712905
+                       10      3148    0.3899694
+                       10      3149    0.1746230
+                       10      3150    0.1675647
+                       10      3151    0.3531434
+                       10      3152    0.4088560
+                       10      3153    0.4184716
+                       10      3154    0.4289838
+                       10      3155    0.4753973
+                       10      3161    0.4574718
+                       10      3162    0.4378885
+                       10      3163    0.4313163
+                       10      3164    0.4271827
+                       10      3165    0.3976827
+                       10      3166    0.3373742
+                       10      3167    0.2152505
+                       10      3168    0.2395321
+                       10      3169    0.4088456
+                       10      3170    0.4675518
+                       10      3171    0.4629917
+                       10      3172    0.4701000
+                       10      3181    0.4917761
+                       10      3185    0.3190755
+                       10      3188    0.4593414
+                       10      3189    0.4059369
+                       10      3190    0.3731113
+                       10      3196    0.4409446
+                       10      3197    0.3280192
+                       10      3198    0.3758784
+                       10      3199    0.4530728
+                       10      3203    0.2870449
+                       10      3205    0.4380379
+                       10      3206    0.3504092
+                       10      3207    0.1635486
+                       10      3208    0.1874707
+                       10      3209    0.4782066
+                       10      3220    0.3767058
+                       10      3232    0.4156556
+                       10      3233    0.3877106
+                       10      3239    0.4928366
+                       10      3240    0.3545893
+                       10      3241    0.1699622
+                       10      3242    0.2105972
+                       10      3247    0.1689917
+                       10      3248    0.1409606
+                       10      3249    0.3137609
+                       10      3250    0.4824760
+                       10      3257    0.3833570
+                       10      3269    0.3750874
+                       10      3271    0.3236982
+                       10      3272    0.3170692
+                       10      3279    0.1990021
+                       10      3280    0.1952651
+                       10      3287    0.4409648
+                       10      3288    0.2156002
+                       10      3296    0.4907504
+                       10      3298    0.2772002
+                       10      3300    0.4867973
+                       10      3301    0.1586988
+                       10      3302    0.3663526
+                       10      3308    0.4557847
+                       10      3316    0.4021743
+                       10      3317    0.4603003
+                       10      3319    0.2719950
+                       10      3326    0.4497958
+                       10      3327    0.3638003
+                       10      3334    0.4688842
+                       10      3335    0.3484563
+                       10      3336    0.3621038
+                       10      3338    0.2835590
+                       10      3341    0.4648107
+                       10      3349    0.3821875
+                       10      3350    0.3120586
+                       10      3363    0.2571581
+                       10      3364    0.2101426
+                       10      3365    0.2144076
+                       10      3378    0.2711924
+                       10      3380    0.1654787
+                       10      3381    0.1484799
+                       10      3382    0.1467529
+                       10      3385    0.4222848
+                       10      3386    0.4034119
+                       10      3387    0.4214542
+                       10      3388    0.4348731
+                       10      3389    0.4185735
+                       10      3390    0.3426271
+                       10      3391    0.1501992
+                       10      3392    0.1444308
+                       10      3393    0.3023616
+                       10      3394    0.3400172
+                       10      3395    0.3186006
+                       10      3396    0.2785334
+                       10      3397    0.3328218
+                       10      3398    0.4872228
+                       10      3408    0.4949146
+                       10      3409    0.4712905
+                       10      3410    0.3899694
+                       10      3411    0.1746230
+                       10      3412    0.1675647
+                       10      3413    0.3531434
+                       10      3414    0.4088560
+                       10      3415    0.4184716
+                       10      3416    0.4289838
+                       10      3417    0.4753973
+                       10      3423    0.4574718
+                       10      3424    0.4378885
+                       10      3425    0.4313163
+                       10      3426    0.4271827
+                       10      3427    0.3976827
+                       10      3428    0.3373742
+                       10      3429    0.2152505
+                       10      3430    0.2395321
+                       10      3431    0.4088456
+                       10      3432    0.4675518
+                       10      3433    0.4629917
+                       10      3434    0.4701000
+                       10      3443    0.4917761
+                       10      3447    0.3190755
+                       10      3450    0.4593414
+                       10      3451    0.4059369
+                       10      3452    0.3731113
+                       10      3458    0.4409446
+                       10      3459    0.3280192
+                       10      3460    0.3758784
+                       10      3461    0.4530728
+                       10      3465    0.2870449
+                       10      3467    0.4380379
+                       10      3468    0.3504092
+                       10      3469    0.1635486
+                       10      3470    0.1874707
+                       10      3471    0.4782066
+                       10      3482    0.3767058
+                       10      3494    0.4156556
+                       10      3495    0.3877106
+                       10      3501    0.4928366
+                       10      3502    0.3545893
+                       10      3503    0.1699622
+                       10      3504    0.2105972
+                       10      3509    0.1689917
+                       10      3510    0.1409606
+                       10      3511    0.3137609
+                       10      3512    0.4824760
+                       10      3519    0.3833570
+                       10      3531    0.3750874
+                       10      3533    0.3236982
+                       10      3534    0.3170692
+                       10      3541    0.1990021
+                       10      3542    0.1952651
+                       10      3549    0.4409648
+                       10      3550    0.2156002
+                       10      3558    0.4907504
+                       10      3560    0.2772002
+                       10      3562    0.4867973
+                       10      3563    0.1586988
+                       10      3564    0.3663526
+                       10      3570    0.4557847
+                       10      3578    0.4021743
+                       10      3579    0.4603003
+                       10      3581    0.2719950
+                       10      3588    0.4497958
+                       10      3589    0.3638003
+                       10      3596    0.4688842
+                       10      3597    0.3484563
+                       10      3598    0.3621038
+                       10      3600    0.2835590
+                       10      3603    0.4648107
+                       10      3611    0.3821875
+                       10      3612    0.3120586
+                       10      3625    0.2571581
+                       10      3626    0.2101426
+                       10      3627    0.2144076
+                       10      3640    0.2711924
+                       10      3642    0.1654787
+                       10      3643    0.1484799
+                       10      3644    0.1467529
+                       10      3647    0.2976831
+                       10      3648    0.2142027
+                       10      3649    0.2641616
+                       10      3650    0.2130453
+                       10      3651    0.2966301
+                       10      3654    0.0913475
+                       10      3655    0.1232826
+                       10      3656    0.1236482
+                       10      3659    0.4579977
+                       10      3660    0.4561623
+                       10      3663    0.3111608
+                       10      3664    0.2205167
+                       10      3665    0.2680413
+                       10      3666    0.2193277
+                       10      3667    0.3100745
+                       10      3670    0.0948552
+                       10      3671    0.1295728
+                       10      3672    0.1299522
+                       10      3675    0.4884348
+                       10      3676    0.4864978
+                       10      3679    0.3111608
+                       10      3680    0.2205167
+                       10      3681    0.2680413
+                       10      3682    0.2193277
+                       10      3683    0.3100745
+                       10      3686    0.0948552
+                       10      3687    0.1295728
+                       10      3688    0.1299522
+                       10      3691    0.4884348
+                       10      3692    0.4864978
+                       10      3695    0.3111608
+                       10      3696    0.2205167
+                       10      3697    0.2680413
+                       10      3698    0.2193277
+                       10      3699    0.3100745
+                       10      3702    0.0948552
+                       10      3703    0.1295728
+                       10      3704    0.1299522
+                       10      3707    0.4884348
+                       10      3708    0.4864978
+      Failed Relative Size: 475  	(valid range:      0.500 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Shape and Size        1         1    0.1932263    0.2000000    1.0000000
+                        1         2    0.1066815
+                        1         3    0.0317462
+                        1         4    0.0309850
+                        1         5    0.0898058
+                        1         6    0.1582294
+                        1        84    0.0479698
+                        1        85    0.1702092
+                        1        88    0.1932263
+                        1        89    0.1066815
+                        1        90    0.0317462
+                        1        91    0.0309850
+                        1        92    0.0898058
+                        1        93    0.1582294
+                        1       171    0.0479698
+                        1       172    0.1702092
+                        1       175    0.1932263
+                        1       176    0.1066815
+                        1       177    0.0317462
+                        1       178    0.0309850
+                        1       179    0.0898058
+                        1       180    0.1582294
+                        1       258    0.0479698
+                        1       259    0.1702092
+                       10      2697    0.1142096
+                       10      2698    0.1203557
+                       10      2705    0.1140182
+                       10      2706    0.1195264
+                       10      2713    0.1138380
+                       10      2714    0.1187495
+                       10      2721    0.1136725
+                       10      2722    0.1180370
+                       10      2729    0.1135249
+                       10      2730    0.1173992
+                       10      2737    0.1133979
+                       10      2738    0.1168451
+                       10      2745    0.1132938
+                       10      2746    0.1163823
+                       10      2753    0.1132145
+                       10      2754    0.1160168
+                       10      2761    0.1131615
+                       10      2762    0.1157535
+                       10      2769    0.1131357
+                       10      2770    0.1155955
+                       10      2777    0.1131375
+                       10      2778    0.1155449
+                       10      2785    0.1131357
+                       10      2786    0.1155955
+                       10      2793    0.1131615
+                       10      2794    0.1157535
+                       10      2801    0.1132146
+                       10      2802    0.1160168
+                       10      2809    0.1132939
+                       10      2810    0.1163823
+                       10      2817    0.1133980
+                       10      2818    0.1168451
+                       10      2825    0.1135251
+                       10      2826    0.1173992
+                       10      2833    0.1136728
+                       10      2834    0.1180370
+                       10      2841    0.1138383
+                       10      2842    0.1187495
+                       10      2849    0.1140185
+                       10      2850    0.1195264
+                       10      2857    0.1142101
+                       10      2858    0.1203557
+                       10      2867    0.1368902
+                       10      2868    0.1323047
+                       10      2887    0.1611329
+                       10      2888    0.1530811
+                       10      2905    0.1571295
+                       10      2906    0.1810021
+                       10      2945    0.1459006
+                       10      2946    0.1745780
+                       10      2979    0.1562835
+                       10      2980    0.1877702
+                       10      2985    0.1491158
+                       10      2986    0.1278055
+                       10      3017    0.1845702
+                       10      3018    0.1742934
+                       10      3026    0.1943728
+                       10      3039    0.1438520
+                       10      3101    0.1937518
+                       10      3102    0.1928362
+                       10      3103    0.1949295
+                       10      3118    0.1448672
+                       10      3119    0.1347997
+                       10      3120    0.1332279
+                       10      3129    0.1368902
+                       10      3130    0.1323047
+                       10      3149    0.1611329
+                       10      3150    0.1530811
+                       10      3167    0.1571295
+                       10      3168    0.1810021
+                       10      3207    0.1459006
+                       10      3208    0.1745780
+                       10      3241    0.1562835
+                       10      3242    0.1877702
+                       10      3247    0.1491158
+                       10      3248    0.1278055
+                       10      3279    0.1845702
+                       10      3280    0.1742934
+                       10      3288    0.1943728
+                       10      3301    0.1438520
+                       10      3363    0.1937518
+                       10      3364    0.1928362
+                       10      3365    0.1949295
+                       10      3380    0.1448672
+                       10      3381    0.1347997
+                       10      3382    0.1332279
+                       10      3391    0.1368902
+                       10      3392    0.1323047
+                       10      3411    0.1611329
+                       10      3412    0.1530811
+                       10      3429    0.1571295
+                       10      3430    0.1810021
+                       10      3469    0.1459006
+                       10      3470    0.1745780
+                       10      3503    0.1562835
+                       10      3504    0.1877702
+                       10      3509    0.1491158
+                       10      3510    0.1278055
+                       10      3541    0.1845702
+                       10      3542    0.1742934
+                       10      3550    0.1943728
+                       10      3563    0.1438520
+                       10      3625    0.1937518
+                       10      3626    0.1928362
+                       10      3627    0.1949295
+                       10      3642    0.1448672
+                       10      3643    0.1347997
+                       10      3644    0.1332279
+                       10      3654    0.0793582
+                       10      3655    0.1110131
+                       10      3656    0.1116166
+                       10      3670    0.0820427
+                       10      3671    0.1161338
+                       10      3672    0.1167640
+                       10      3686    0.0820429
+                       10      3687    0.1161345
+                       10      3688    0.1167646
+                       10      3702    0.0820430
+                       10      3703    0.1161348
+                       10      3704    0.1167650
+      Failed Shape and Size: 144  	(valid range:      0.200 to      1.000)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  21
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     1539
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       433
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.41
+   Elements Processed    = 4758
+   Elements Per Second   = 11604
+   Total Volume          = 2.97
+   Total Area            = 5.46
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:40 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -print_failed_elements -blocks 1 antenna_support.gen 
+
+Processing File: antenna_support.gen...
+Reading block: 1, 8, 10,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 261 elements of type HEX:
+
+Processing block 8, 189 elements of type SHELL:
+
+Processing block 10, 1039 elements of type HEX:
+
+
+Summary Hex Metrics, total = 1300 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9422597   0.07959   0.5993188 (2784)  0.9996536 (3113)
+             Shape  0.8576226   0.09461   0.5719705 (83)  0.9790331 (2978)
+     Relative Size  0.5817585   0.23482   0.0378336 (4)  0.9947024 (2983)
+    Shape and Size  0.4979746   0.20823   0.0309850 (4)  0.8997068 (3031)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0022869   0.00205   0.0004245 (3654)  0.0093638 (57)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.6463562   0.35764   1.0112389 (2979)  2.5221822 (2670)
+              Skew  0.1305195   0.10834   0.0000930 (3106)  0.4961227 (2691)
+             Taper  0.0023912   0.00740   0.0000000 (1)  0.0346601 (2857)
+           Stretch  0.6878491   0.10439   0.4189603 (2670)  0.8732918 (3665)
+    Diagonal Ratio  0.9142415   0.06582   0.7132422 (48)  0.9999243 (3106)
+         Dimension  0.0670649   0.01639   0.0426257 (3654)  0.1062584 (57)
+              Oddy  1.3592567   1.40524   0.1271596 (2978)  8.8820686 (83)
+     Condition No.  1.1912017   0.17569   1.0209791 (2935)  1.9454097 (2784)
+          Jacobian  0.0019688   0.00187   0.0003001 (3654)  0.0086663 (57)
+   Scaled Jacobian  0.9422597   0.07959   0.5993188 (2784)  0.9996536 (3113)
+
+Summary Quad Metrics, total = 189 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+             Shape  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+     Relative Size  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+    Shape and Size  0.9599898   0.00000   0.9599898 (7436)  0.9599898 (7436)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3333841   0.00000   1.3333841 (7436)  1.3333841 (7436)
+              Skew  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+             Taper  0.0000000   0.00000   0.0000000 (7436)  0.0000000 (7436)
+           Warpage  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+           Stretch  0.8485075   0.00000   0.8485075 (7436)  0.8485075 (7436)
+     Maximum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+     Minimum Angle  90.000000   0.00000   90.000000 (7436)  90.000000 (7436)
+              Oddy  0.1701852   0.00000   0.1701852 (7436)  0.1701852 (7436)
+     Condition No.  1.0416778   0.00000   1.0416778 (7436)  1.0416778 (7436)
+          Jacobian  0.0289003   0.00000   0.0289003 (7436)  0.0289003 (7436)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (7436)  1.0000000 (7436)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 619
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+   Relative Size        1         1    0.2429120    0.5000000    1.0000000
+                        1         2    0.1201926
+                        1         3    0.0391557
+                        1         4    0.0378336
+                        1         5    0.0978390
+                        1         6    0.1893877
+                        1        10    0.3428354
+                        1        19    0.4578742
+                        1        21    0.4999511
+                        1        36    0.4834549
+                        1        38    0.4567765
+                        1        47    0.4937731
+                        1        48    0.3881504
+                        1        49    0.4675579
+                        1        50    0.4731354
+                        1        51    0.4277452
+                        1        52    0.4905785
+                        1        54    0.4880231
+                        1        55    0.4172030
+                        1        56    0.4455775
+                        1        57    0.3833986
+                        1        58    0.4928467
+                        1        67    0.3718353
+                        1        82    0.4235853
+                        1        83    0.4894512
+                        1        84    0.0609515
+                        1        85    0.1849188
+                        1        86    0.4256379
+                        1        87    0.4912541
+                        1        88    0.2429120
+                        1        89    0.1201926
+                        1        90    0.0391557
+                        1        91    0.0378336
+                        1        92    0.0978390
+                        1        93    0.1893877
+                        1        97    0.3428354
+                        1       106    0.4578742
+                        1       108    0.4999511
+                        1       123    0.4834549
+                        1       125    0.4567765
+                        1       134    0.4937731
+                        1       135    0.3881504
+                        1       136    0.4675579
+                        1       137    0.4731354
+                        1       138    0.4277452
+                        1       139    0.4905785
+                        1       141    0.4880231
+                        1       142    0.4172030
+                        1       143    0.4455775
+                        1       144    0.3833986
+                        1       145    0.4928467
+                        1       154    0.3718353
+                        1       169    0.4235853
+                        1       170    0.4894512
+                        1       171    0.0609515
+                        1       172    0.1849188
+                        1       173    0.4256379
+                        1       174    0.4912541
+                        1       175    0.2429120
+                        1       176    0.1201926
+                        1       177    0.0391557
+                        1       178    0.0378336
+                        1       179    0.0978390
+                        1       180    0.1893877
+                        1       184    0.3428354
+                        1       193    0.4578742
+                        1       195    0.4999511
+                        1       210    0.4834549
+                        1       212    0.4567765
+                        1       221    0.4937731
+                        1       222    0.3881504
+                        1       223    0.4675579
+                        1       224    0.4731354
+                        1       225    0.4277452
+                        1       226    0.4905785
+                        1       228    0.4880231
+                        1       229    0.4172030
+                        1       230    0.4455775
+                        1       231    0.3833986
+                        1       232    0.4928467
+                        1       241    0.3718353
+                        1       256    0.4235853
+                        1       257    0.4894512
+                        1       258    0.0609515
+                        1       259    0.1849188
+                        1       260    0.4256379
+                        1       261    0.4912541
+                       10      2695    0.4226140
+                       10      2697    0.1274774
+                       10      2698    0.1785362
+                       10      2703    0.4256705
+                       10      2705    0.1274983
+                       10      2706    0.1773631
+                       10      2711    0.4285881
+                       10      2713    0.1275169
+                       10      2714    0.1762672
+                       10      2719    0.4313124
+                       10      2721    0.1275331
+                       10      2722    0.1752639
+                       10      2727    0.4337920
+                       10      2729    0.1275469
+                       10      2730    0.1743671
+                       10      2735    0.4359791
+                       10      2737    0.1275582
+                       10      2738    0.1735886
+                       10      2743    0.4378311
+                       10      2745    0.1275671
+                       10      2746    0.1729382
+                       10      2751    0.4393116
+                       10      2753    0.1275739
+                       10      2754    0.1724240
+                       10      2759    0.4403909
+                       10      2761    0.1275786
+                       10      2762    0.1720523
+                       10      2767    0.4410474
+                       10      2769    0.1275814
+                       10      2770    0.1718275
+                       10      2775    0.4412676
+                       10      2777    0.1275824
+                       10      2778    0.1717523
+                       10      2783    0.4410472
+                       10      2785    0.1275815
+                       10      2786    0.1718275
+                       10      2791    0.4403906
+                       10      2793    0.1275787
+                       10      2794    0.1720523
+                       10      2799    0.4393111
+                       10      2801    0.1275740
+                       10      2802    0.1724240
+                       10      2807    0.4378304
+                       10      2809    0.1275673
+                       10      2810    0.1729382
+                       10      2815    0.4359782
+                       10      2817    0.1275584
+                       10      2818    0.1735886
+                       10      2823    0.4337909
+                       10      2825    0.1275471
+                       10      2826    0.1743671
+                       10      2831    0.4313112
+                       10      2833    0.1275335
+                       10      2834    0.1752639
+                       10      2839    0.4285867
+                       10      2841    0.1275173
+                       10      2842    0.1762672
+                       10      2847    0.4256689
+                       10      2849    0.1274988
+                       10      2850    0.1773631
+                       10      2855    0.4226128
+                       10      2857    0.1274781
+                       10      2858    0.1785362
+                       10      2861    0.4222848
+                       10      2862    0.4034119
+                       10      2863    0.4214542
+                       10      2864    0.4348731
+                       10      2865    0.4185735
+                       10      2866    0.3426271
+                       10      2867    0.1501992
+                       10      2868    0.1444308
+                       10      2869    0.3023616
+                       10      2870    0.3400172
+                       10      2871    0.3186006
+                       10      2872    0.2785334
+                       10      2873    0.3328218
+                       10      2874    0.4872228
+                       10      2884    0.4949146
+                       10      2885    0.4712905
+                       10      2886    0.3899694
+                       10      2887    0.1746230
+                       10      2888    0.1675647
+                       10      2889    0.3531434
+                       10      2890    0.4088560
+                       10      2891    0.4184716
+                       10      2892    0.4289838
+                       10      2893    0.4753973
+                       10      2899    0.4574718
+                       10      2900    0.4378885
+                       10      2901    0.4313163
+                       10      2902    0.4271827
+                       10      2903    0.3976827
+                       10      2904    0.3373742
+                       10      2905    0.2152505
+                       10      2906    0.2395321
+                       10      2907    0.4088456
+                       10      2908    0.4675518
+                       10      2909    0.4629917
+                       10      2910    0.4701000
+                       10      2919    0.4917761
+                       10      2923    0.3190755
+                       10      2926    0.4593414
+                       10      2927    0.4059369
+                       10      2928    0.3731113
+                       10      2934    0.4409446
+                       10      2935    0.3280192
+                       10      2936    0.3758784
+                       10      2937    0.4530728
+                       10      2941    0.2870449
+                       10      2943    0.4380379
+                       10      2944    0.3504092
+                       10      2945    0.1635486
+                       10      2946    0.1874707
+                       10      2947    0.4782066
+                       10      2958    0.3767058
+                       10      2970    0.4156556
+                       10      2971    0.3877106
+                       10      2977    0.4928366
+                       10      2978    0.3545893
+                       10      2979    0.1699622
+                       10      2980    0.2105972
+                       10      2985    0.1689917
+                       10      2986    0.1409606
+                       10      2987    0.3137609
+                       10      2988    0.4824760
+                       10      2995    0.3833570
+                       10      3007    0.3750874
+                       10      3009    0.3236982
+                       10      3010    0.3170692
+                       10      3017    0.1990021
+                       10      3018    0.1952651
+                       10      3025    0.4409648
+                       10      3026    0.2156002
+                       10      3034    0.4907504
+                       10      3036    0.2772002
+                       10      3038    0.4867973
+                       10      3039    0.1586988
+                       10      3040    0.3663526
+                       10      3046    0.4557847
+                       10      3054    0.4021743
+                       10      3055    0.4603003
+                       10      3057    0.2719950
+                       10      3064    0.4497958
+                       10      3065    0.3638003
+                       10      3072    0.4688842
+                       10      3073    0.3484563
+                       10      3074    0.3621038
+                       10      3076    0.2835590
+                       10      3079    0.4648107
+                       10      3087    0.3821875
+                       10      3088    0.3120586
+                       10      3101    0.2571581
+                       10      3102    0.2101426
+                       10      3103    0.2144076
+                       10      3116    0.2711924
+                       10      3118    0.1654787
+                       10      3119    0.1484799
+                       10      3120    0.1467529
+                       10      3123    0.4222848
+                       10      3124    0.4034119
+                       10      3125    0.4214542
+                       10      3126    0.4348731
+                       10      3127    0.4185735
+                       10      3128    0.3426271
+                       10      3129    0.1501992
+                       10      3130    0.1444308
+                       10      3131    0.3023616
+                       10      3132    0.3400172
+                       10      3133    0.3186006
+                       10      3134    0.2785334
+                       10      3135    0.3328218
+                       10      3136    0.4872228
+                       10      3146    0.4949146
+                       10      3147    0.4712905
+                       10      3148    0.3899694
+                       10      3149    0.1746230
+                       10      3150    0.1675647
+                       10      3151    0.3531434
+                       10      3152    0.4088560
+                       10      3153    0.4184716
+                       10      3154    0.4289838
+                       10      3155    0.4753973
+                       10      3161    0.4574718
+                       10      3162    0.4378885
+                       10      3163    0.4313163
+                       10      3164    0.4271827
+                       10      3165    0.3976827
+                       10      3166    0.3373742
+                       10      3167    0.2152505
+                       10      3168    0.2395321
+                       10      3169    0.4088456
+                       10      3170    0.4675518
+                       10      3171    0.4629917
+                       10      3172    0.4701000
+                       10      3181    0.4917761
+                       10      3185    0.3190755
+                       10      3188    0.4593414
+                       10      3189    0.4059369
+                       10      3190    0.3731113
+                       10      3196    0.4409446
+                       10      3197    0.3280192
+                       10      3198    0.3758784
+                       10      3199    0.4530728
+                       10      3203    0.2870449
+                       10      3205    0.4380379
+                       10      3206    0.3504092
+                       10      3207    0.1635486
+                       10      3208    0.1874707
+                       10      3209    0.4782066
+                       10      3220    0.3767058
+                       10      3232    0.4156556
+                       10      3233    0.3877106
+                       10      3239    0.4928366
+                       10      3240    0.3545893
+                       10      3241    0.1699622
+                       10      3242    0.2105972
+                       10      3247    0.1689917
+                       10      3248    0.1409606
+                       10      3249    0.3137609
+                       10      3250    0.4824760
+                       10      3257    0.3833570
+                       10      3269    0.3750874
+                       10      3271    0.3236982
+                       10      3272    0.3170692
+                       10      3279    0.1990021
+                       10      3280    0.1952651
+                       10      3287    0.4409648
+                       10      3288    0.2156002
+                       10      3296    0.4907504
+                       10      3298    0.2772002
+                       10      3300    0.4867973
+                       10      3301    0.1586988
+                       10      3302    0.3663526
+                       10      3308    0.4557847
+                       10      3316    0.4021743
+                       10      3317    0.4603003
+                       10      3319    0.2719950
+                       10      3326    0.4497958
+                       10      3327    0.3638003
+                       10      3334    0.4688842
+                       10      3335    0.3484563
+                       10      3336    0.3621038
+                       10      3338    0.2835590
+                       10      3341    0.4648107
+                       10      3349    0.3821875
+                       10      3350    0.3120586
+                       10      3363    0.2571581
+                       10      3364    0.2101426
+                       10      3365    0.2144076
+                       10      3378    0.2711924
+                       10      3380    0.1654787
+                       10      3381    0.1484799
+                       10      3382    0.1467529
+                       10      3385    0.4222848
+                       10      3386    0.4034119
+                       10      3387    0.4214542
+                       10      3388    0.4348731
+                       10      3389    0.4185735
+                       10      3390    0.3426271
+                       10      3391    0.1501992
+                       10      3392    0.1444308
+                       10      3393    0.3023616
+                       10      3394    0.3400172
+                       10      3395    0.3186006
+                       10      3396    0.2785334
+                       10      3397    0.3328218
+                       10      3398    0.4872228
+                       10      3408    0.4949146
+                       10      3409    0.4712905
+                       10      3410    0.3899694
+                       10      3411    0.1746230
+                       10      3412    0.1675647
+                       10      3413    0.3531434
+                       10      3414    0.4088560
+                       10      3415    0.4184716
+                       10      3416    0.4289838
+                       10      3417    0.4753973
+                       10      3423    0.4574718
+                       10      3424    0.4378885
+                       10      3425    0.4313163
+                       10      3426    0.4271827
+                       10      3427    0.3976827
+                       10      3428    0.3373742
+                       10      3429    0.2152505
+                       10      3430    0.2395321
+                       10      3431    0.4088456
+                       10      3432    0.4675518
+                       10      3433    0.4629917
+                       10      3434    0.4701000
+                       10      3443    0.4917761
+                       10      3447    0.3190755
+                       10      3450    0.4593414
+                       10      3451    0.4059369
+                       10      3452    0.3731113
+                       10      3458    0.4409446
+                       10      3459    0.3280192
+                       10      3460    0.3758784
+                       10      3461    0.4530728
+                       10      3465    0.2870449
+                       10      3467    0.4380379
+                       10      3468    0.3504092
+                       10      3469    0.1635486
+                       10      3470    0.1874707
+                       10      3471    0.4782066
+                       10      3482    0.3767058
+                       10      3494    0.4156556
+                       10      3495    0.3877106
+                       10      3501    0.4928366
+                       10      3502    0.3545893
+                       10      3503    0.1699622
+                       10      3504    0.2105972
+                       10      3509    0.1689917
+                       10      3510    0.1409606
+                       10      3511    0.3137609
+                       10      3512    0.4824760
+                       10      3519    0.3833570
+                       10      3531    0.3750874
+                       10      3533    0.3236982
+                       10      3534    0.3170692
+                       10      3541    0.1990021
+                       10      3542    0.1952651
+                       10      3549    0.4409648
+                       10      3550    0.2156002
+                       10      3558    0.4907504
+                       10      3560    0.2772002
+                       10      3562    0.4867973
+                       10      3563    0.1586988
+                       10      3564    0.3663526
+                       10      3570    0.4557847
+                       10      3578    0.4021743
+                       10      3579    0.4603003
+                       10      3581    0.2719950
+                       10      3588    0.4497958
+                       10      3589    0.3638003
+                       10      3596    0.4688842
+                       10      3597    0.3484563
+                       10      3598    0.3621038
+                       10      3600    0.2835590
+                       10      3603    0.4648107
+                       10      3611    0.3821875
+                       10      3612    0.3120586
+                       10      3625    0.2571581
+                       10      3626    0.2101426
+                       10      3627    0.2144076
+                       10      3640    0.2711924
+                       10      3642    0.1654787
+                       10      3643    0.1484799
+                       10      3644    0.1467529
+                       10      3647    0.2976831
+                       10      3648    0.2142027
+                       10      3649    0.2641616
+                       10      3650    0.2130453
+                       10      3651    0.2966301
+                       10      3654    0.0913475
+                       10      3655    0.1232826
+                       10      3656    0.1236482
+                       10      3659    0.4579977
+                       10      3660    0.4561623
+                       10      3663    0.3111608
+                       10      3664    0.2205167
+                       10      3665    0.2680413
+                       10      3666    0.2193277
+                       10      3667    0.3100745
+                       10      3670    0.0948552
+                       10      3671    0.1295728
+                       10      3672    0.1299522
+                       10      3675    0.4884348
+                       10      3676    0.4864978
+                       10      3679    0.3111608
+                       10      3680    0.2205167
+                       10      3681    0.2680413
+                       10      3682    0.2193277
+                       10      3683    0.3100745
+                       10      3686    0.0948552
+                       10      3687    0.1295728
+                       10      3688    0.1299522
+                       10      3691    0.4884348
+                       10      3692    0.4864978
+                       10      3695    0.3111608
+                       10      3696    0.2205167
+                       10      3697    0.2680413
+                       10      3698    0.2193277
+                       10      3699    0.3100745
+                       10      3702    0.0948552
+                       10      3703    0.1295728
+                       10      3704    0.1299522
+                       10      3707    0.4884348
+                       10      3708    0.4864978
+      Failed Relative Size: 475  	(valid range:      0.500 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Shape and Size        1         1    0.1932263    0.2000000    1.0000000
+                        1         2    0.1066815
+                        1         3    0.0317462
+                        1         4    0.0309850
+                        1         5    0.0898058
+                        1         6    0.1582294
+                        1        84    0.0479698
+                        1        85    0.1702092
+                        1        88    0.1932263
+                        1        89    0.1066815
+                        1        90    0.0317462
+                        1        91    0.0309850
+                        1        92    0.0898058
+                        1        93    0.1582294
+                        1       171    0.0479698
+                        1       172    0.1702092
+                        1       175    0.1932263
+                        1       176    0.1066815
+                        1       177    0.0317462
+                        1       178    0.0309850
+                        1       179    0.0898058
+                        1       180    0.1582294
+                        1       258    0.0479698
+                        1       259    0.1702092
+                       10      2697    0.1142096
+                       10      2698    0.1203557
+                       10      2705    0.1140182
+                       10      2706    0.1195264
+                       10      2713    0.1138380
+                       10      2714    0.1187495
+                       10      2721    0.1136725
+                       10      2722    0.1180370
+                       10      2729    0.1135249
+                       10      2730    0.1173992
+                       10      2737    0.1133979
+                       10      2738    0.1168451
+                       10      2745    0.1132938
+                       10      2746    0.1163823
+                       10      2753    0.1132145
+                       10      2754    0.1160168
+                       10      2761    0.1131615
+                       10      2762    0.1157535
+                       10      2769    0.1131357
+                       10      2770    0.1155955
+                       10      2777    0.1131375
+                       10      2778    0.1155449
+                       10      2785    0.1131357
+                       10      2786    0.1155955
+                       10      2793    0.1131615
+                       10      2794    0.1157535
+                       10      2801    0.1132146
+                       10      2802    0.1160168
+                       10      2809    0.1132939
+                       10      2810    0.1163823
+                       10      2817    0.1133980
+                       10      2818    0.1168451
+                       10      2825    0.1135251
+                       10      2826    0.1173992
+                       10      2833    0.1136728
+                       10      2834    0.1180370
+                       10      2841    0.1138383
+                       10      2842    0.1187495
+                       10      2849    0.1140185
+                       10      2850    0.1195264
+                       10      2857    0.1142101
+                       10      2858    0.1203557
+                       10      2867    0.1368902
+                       10      2868    0.1323047
+                       10      2887    0.1611329
+                       10      2888    0.1530811
+                       10      2905    0.1571295
+                       10      2906    0.1810021
+                       10      2945    0.1459006
+                       10      2946    0.1745780
+                       10      2979    0.1562835
+                       10      2980    0.1877702
+                       10      2985    0.1491158
+                       10      2986    0.1278055
+                       10      3017    0.1845702
+                       10      3018    0.1742934
+                       10      3026    0.1943728
+                       10      3039    0.1438520
+                       10      3101    0.1937518
+                       10      3102    0.1928362
+                       10      3103    0.1949295
+                       10      3118    0.1448672
+                       10      3119    0.1347997
+                       10      3120    0.1332279
+                       10      3129    0.1368902
+                       10      3130    0.1323047
+                       10      3149    0.1611329
+                       10      3150    0.1530811
+                       10      3167    0.1571295
+                       10      3168    0.1810021
+                       10      3207    0.1459006
+                       10      3208    0.1745780
+                       10      3241    0.1562835
+                       10      3242    0.1877702
+                       10      3247    0.1491158
+                       10      3248    0.1278055
+                       10      3279    0.1845702
+                       10      3280    0.1742934
+                       10      3288    0.1943728
+                       10      3301    0.1438520
+                       10      3363    0.1937518
+                       10      3364    0.1928362
+                       10      3365    0.1949295
+                       10      3380    0.1448672
+                       10      3381    0.1347997
+                       10      3382    0.1332279
+                       10      3391    0.1368902
+                       10      3392    0.1323047
+                       10      3411    0.1611329
+                       10      3412    0.1530811
+                       10      3429    0.1571295
+                       10      3430    0.1810021
+                       10      3469    0.1459006
+                       10      3470    0.1745780
+                       10      3503    0.1562835
+                       10      3504    0.1877702
+                       10      3509    0.1491158
+                       10      3510    0.1278055
+                       10      3541    0.1845702
+                       10      3542    0.1742934
+                       10      3550    0.1943728
+                       10      3563    0.1438520
+                       10      3625    0.1937518
+                       10      3626    0.1928362
+                       10      3627    0.1949295
+                       10      3642    0.1448672
+                       10      3643    0.1347997
+                       10      3644    0.1332279
+                       10      3654    0.0793582
+                       10      3655    0.1110131
+                       10      3656    0.1116166
+                       10      3670    0.0820427
+                       10      3671    0.1161338
+                       10      3672    0.1167640
+                       10      3686    0.0820429
+                       10      3687    0.1161345
+                       10      3688    0.1167646
+                       10      3702    0.0820430
+                       10      3703    0.1161348
+                       10      3704    0.1167650
+      Failed Shape and Size: 144  	(valid range:      0.200 to      1.000)
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  21
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     1539
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       433
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.42
+   Elements Processed    = 4758
+   Elements Per Second   = 11328
+   Total Volume          = 2.97
+   Total Area            = 5.46
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:47 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- File Menu</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_11.html"><img alt="Edit Menu" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_9.html"><img alt="Command Line Window" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>File Menu</b></td></tr></table>
+<h3>File Menu</h3>
+<p>The File menu provides standard file manipulation capabilities for 
+loading an Exodus II file into Verde, reading and recording journal 
+files and ending journal file recording, printing, capturing screen 
+images, saving a model to Exodus II format,
+<sup><a HREF="verde_29.html#footnote-1">1</a></sup>
+and exiting the program.
+<h4><A NAME="open_mesh">Open Mesh</a></h4>
+
+<p>If Verde is invoked without the optional file name, a blank screen is 
+displayed and the user must select a model using the File/Open Mesh 
+dialog as shown in figure <a HREF="#2">*</a>.
+<p><HR >  <div align="center">
+    <img hspace=3 src="images/file_open.jpg">
+    <div align="center">Verde Open Mesh dialog.</div>
+    <A NAME="2">&nbsp;</A>
+  </div>
+<p>     
+<HR ><p>The Open Mesh dialog includes an option that allows the user to select 
+blocks to be imported from the Exodus II file. The block 
+selection dialog lists the blocks that are defined in the Exodus II file 
+and the element type for each block. Verde considers the imported 
+blocks "active".  Only active blocks are displayed in the graphics 
+region and considered during metrics and topology calculations.
+<p>If there is an existing model in Verde 2.6, an additional checkbox
+will appear labeled "Add Mesh."  This will allow additional models to
+be added into the existing model.  When models are concatenated, the
+original element and node ids are replaced with new global ids.
+<p>When the mesh has been imported, the skin of the model is displayed in 
+the viewing region as shown in figure <a HREF="#3">*</a>.
+<p>Verde always remembers the previous directory from which a file was 
+selected and opens any subsequent file dialog boxes to this previous directory. 
+If no previous directory exists, as when Verde is first invoked, the first file 
+dialog defaults to the directory from which Verde is running, "./". 
+<p><HR >  <div align="center">
+    <img hspace=3 src="images/model_screen.jpg">
+    <div align="center">Model skin displayed in hidden line mode.</div>
+    <A NAME="3">&nbsp;</A>
+  </div>
+     
+
+<h4><A NAME="play_journal">Play Journal File</a></h4>
+
+<p>The Play Journal File option brings up a file open dialog that allows 
+the user to select a journal file and replay a set of predefined Verde 
+commands that are stored in that file.  
+<p>Appendix C gives a description of the commands used in a journal file.
+<h4><A NAME="record_journal">Record Journal File</a></h4>
+
+<p>The Record Journal File option brings up a file save dialog that allows 
+the user to specify a file to save the commands used during a Verde 
+session.  As soon as this file is opened, all journal commands are 
+written into this file.  Note that most graphics manipulation commands 
+are not supported in journal files in Verde version 2.6.
+<h4><A NAME="stop_journal">End Record Journal File</a></h4>
+
+<p>This option stops the journaling process.  No additional commands are 
+written to the specified journal file.
+<h4><A NAME="save_mesh">Save Mesh</a></h4>
+
+<p>The save mesh command saves the currently active blocks, sidesets, and
+nodesets to an Exodus II file.
+<h4><A NAME="save_image">Save Image As</a></h4>
+
+<p>This menu item allows the user to save the currently displayed view as 
+a PNG or JPEG image file.  An extension (either .png or .jpg) 
+will be appended to the file name if 
+the extension doesn't already exist.  These image formats can be imported 
+into many display and manipulation programs including the Microsoft 
+Office Suite<i><sup>TM</sup></i>.
+<h4><A NAME="print">Print</a></h4>
+
+<p>The print option brings up a print dialog and 
+allows the user to print the currently 
+displayed image or save the print image to a file.  This method 
+currently prints a raster display of the image, so some degradation of 
+image quality may occur due to the printer resolution.  
+<p>If the image is displayed on the default black background, a message 
+box is displayed that allows the selection of a white background.  If 
+the user clicks yes in this message box the display region will 
+momentarily flash with a white background.  The image will then be 
+printed in the current line color and a white background.
+<p>Note:  Verde 2.6 does not currently provide a method of printing the 
+results of metrics or topology calculation.   To print this data, the 
+user must select and cut the desired information from the Command Line 
+window and paste it into a separate application (the editor or word 
+processor of choice) for printing.
+<h4><A NAME="exit">Exit</a></h4>
+
+<p>Exits Verde. If Save Settings on Exit toggle (see section <a HREF="verde_11.html#preferences">*</a>) 
+is on, Verde saves settings information out to file, otherwise no state 
+or data is saved.
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_11.html"><img alt="Edit Menu" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_9.html"><img alt="Command Line Window" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>File Menu</b></td></tr></table></body></html>

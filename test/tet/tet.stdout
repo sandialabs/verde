@@ -1,0 +1,380 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 05-20-02 11:58:07 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 05/20/02 at 12:16:07 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tet1.gen 
+
+Processing File: tet1.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8796 elements of type TETRA4:
+
+
+Summary Tet Metrics, total = 8796 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4223838   0.09137   0.1615131 (5025)  0.8475421 (1182)
+             Shape  0.8593588   0.07971   0.4714910 (5595)  0.9996128 (3504)
+     Relative Size  0.6656579   0.20010   0.1099009 (4376)  0.9998527 (6879)
+    Shape and Size  0.5737243   0.18604   0.0605751 (4376)  0.9948142 (3504)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0141739   0.00439   0.0046988 (4376)  0.0425043 (784)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.2288414   0.16939   1.0005131 (3504)  2.9748085 (5595)
+Aspect Ratio Gamma  1.2786241   0.19914   1.0012432 (3504)  3.0908452 (5595)
+     Condition No.  1.1846488   0.13838   1.0003874 (3504)  2.6979762 (5595)
+          Jacobian  0.0850432   0.02634   0.0281929 (4376)  0.2550255 (784)
+   Scaled Jacobian  0.6670511   0.12144   0.3021040 (1)  0.9754221 (3504)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 3651
+      Failed Shear: 728  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 2017  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 136  	(valid range:      0.200 to      1.010)
+      Failed Aspect Ratio Gamma: 1  	(valid range:      1.000 to      3.000)
+      Failed Scaled Jacobian: 769  	(valid range:      0.500 to      1.414)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      1392
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       50
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.95
+   Elements Processed    = 8796
+   Elements Per Second   = 9258
+   Total Volume          = 124.67
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 05-20-02 11:58:07 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 05/20/02 at 12:16:08 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tet2.gen 
+
+Processing File: tet2.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 17711 elements of type TETRA4:
+
+
+Summary Tet Metrics, total = 17711 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4237519   0.09492   0.1444824 (3037)  0.8178959 (1467)
+             Shape  0.8561379   0.08037   0.5112697 (3037)  0.9987149 (2366)
+     Relative Size  0.6636948   0.20338   0.0652756 (16651)  0.9999524 (3764)
+    Shape and Size  0.5697515   0.18664   0.0403889 (16651)  0.9950471 (7394)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1110136   0.03411   0.0283630 (16651)  0.3492092 (1730)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.2338170   0.17242   1.0017046 (2366)  2.8274057 (15283)
+Aspect Ratio Gamma  1.2865475   0.20359   1.0025938 (2366)  2.7372357 (3037)
+     Condition No.  1.1909195   0.14261   1.0012816 (2366)  2.3907986 (3037)
+          Jacobian  0.6660819   0.20467   0.1701778 (16651)  2.0952552 (1730)
+   Scaled Jacobian  0.6659632   0.12002   0.2956453 (10836)  0.9829827 (6995)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 7604
+      Failed Shear: 1454  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 4214  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 308  	(valid range:      0.200 to      1.010)
+      Failed Scaled Jacobian: 1628  	(valid range:      0.500 to      1.414)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      2544
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       89
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 1.93
+   Elements Processed    = 17711
+   Elements Per Second   = 9176
+   Total Volume          = 1966.16
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 05-20-02 11:58:07 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 05/20/02 at 12:16:11 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tet3.gen 
+
+Processing File: tet3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 32065 elements of type TETRA4:
+
+
+Summary Tet Metrics, total = 32065 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4225138   0.09208   0.1448540 (1527)  0.8313254 (31395)
+             Shape  0.8556970   0.08063   0.4986469 (18399)  0.9982825 (3067)
+     Relative Size  0.6156747   0.20981   0.0538853 (2205)  0.9999824 (22817)
+    Shape and Size  0.5270639   0.18784   0.0496360 (2205)  0.9857047 (29540)
+
+DIAGNOSTIC METRICS
+    Element Volume  18.994602   7.41317   5.3152608 (18723)  81.826664 (2205)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.2325642   0.16695   1.0017317 (3067)  2.7725518 (18399)
+Aspect Ratio Gamma  1.2875538   0.20304   1.0032453 (3067)  2.8418272 (18399)
+     Condition No.  1.1894826   0.14043   1.0017030 (3067)  2.4727806 (18399)
+          Jacobian  113.96761   44.4790   31.891565 (18723)  490.95998 (2205)
+   Scaled Jacobian  0.6568368   0.11811   0.2496764 (3058)  0.9902698 (3067)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 16961
+      Failed Shear: 2480  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 9901  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 1137  	(valid range:      0.200 to      1.010)
+      Failed Scaled Jacobian: 3443  	(valid range:      0.500 to      1.414)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      3386
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       31
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 3.47
+   Elements Processed    = 32065
+   Elements Per Second   = 9240
+   Total Volume          = 609061.90
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 05-20-02 11:58:07 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 05/20/02 at 12:16:15 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tet4.gen 
+
+Processing File: tet4.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 17963 elements of type TETRA4:
+
+
+Summary Tet Metrics, total = 17963 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4178707   0.10175   0.1115456 (2291)  0.8252885 (8972)
+             Shape  0.8364677   0.08334   0.4092474 (2291)  0.9996237 (7851)
+     Relative Size  0.6178895   0.23035   0.0198078 (2402)  0.9999101 (6428)
+    Shape and Size  0.5176677   0.20126   0.0143624 (2402)  0.9792896 (15579)
+
+DIAGNOSTIC METRICS
+    Element Volume  35.522905   12.9112   4.9995041 (2402)  123.25827 (5305)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.2734582   0.19166   1.0004291 (7851)  3.5608726 (2291)
+Aspect Ratio Gamma  1.3350913   0.22369   1.0012269 (7851)  3.8221565 (2291)
+     Condition No.  1.2216188   0.15618   1.0003745 (7851)  3.3185824 (2291)
+          Jacobian  213.13743   77.4671   29.997024 (2402)  739.54962 (5305)
+   Scaled Jacobian  0.6339004   0.11840   0.2446031 (874)  0.9842970 (7851)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 11373
+      Failed Shear: 1971  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 5781  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 1191  	(valid range:      0.200 to      1.010)
+      Failed Aspect Ratio: 5  	(valid range:      1.000 to      3.000)
+      Failed Aspect Ratio Gamma: 8  	(valid range:      1.000 to      3.000)
+      Failed Condition No.: 2  	(valid range:      1.000 to      3.000)
+      Failed Scaled Jacobian: 2415  	(valid range:      0.500 to      1.414)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      2844
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       148
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 1.92
+   Elements Processed    = 17963
+   Elements Per Second   = 9355
+   Total Volume          = 638097.94
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL

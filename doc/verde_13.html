@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:48 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- Display Menu</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_14.html"><img alt="Windows" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_prefs.html"><img alt="Reset" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Display Menu</b></td></tr></table>
+<h3>Display Menu</h3>
+
+<p>The Display Menu controls how the graphics are displayed in the display 
+region.  The display region is drawn using the portable OpenGL<i><sup>TM</sup></i>
+graphics API.  
+<h4><A NAME="mode">Wireframe/Hidden/Smooth Shade</a></h4>
+
+<p>These toggle actions control how the model is displayed.  The graphics 
+modes can be controlled from both the Display menu and the Verde 
+toolbar.  
+<h4><A NAME="normals">Normals</a></h4>
+
+This menu item toggles the display of normal vectors on the model.  
+Figure <a HREF="verde_20.html#3">*</a> shows an example of this type of display.
+<h4><A NAME="skin">Skin</a></h4>
+
+This menu item toggles the skin on or off.  Turning off the skin can 
+be useful for visualizing failed elements or interfaces internal to
+the model.
+<h4><A NAME="edges">Model Edges</a></h4>
+
+This menu item toggles the model edges on or off.  Turning off the skin and
+turning on the model edges 
+is useful for visualizing failed elements or interfaces internal to
+the model.
+<p>Verde displays both inferred edges and free edges, edges which belong
+to only one polygon.
+The inferred model edges are determined by calculating feature 
+angles between adjacent
+polygons.  This can cause problems if the object is primarily smooth.
+For example the object displayed in figure <a HREF="verde_10.html#3">*</a> only
+has one edge as shown in figure <a HREF="#5">*</a>
+<p><HR >  <div align="center">
+    <img hspace=3 src="images/edge_only.jpg">
+    <div align="center">Edge calculated for a relatively smooth object.</div>
+    <A NAME="5">&nbsp;</A>
+  </div>
+<p>     
+<HR ><h4><A NAME="labels">Labels</a></h4>
+
+Verde can display labels (ids) of the following entities:
+<ul><li>nodesets
+<li>sidesets 
+<li>blocks
+<li>failed elements
+<li>nodes
+<li>elements
+</ul>
+<p>Node and element ids are based on the implicit numbering present
+in the Exodux II file.  The ids are not based on any mapping defined
+in a prior application.  Element ids are unique for all element topologies
+so that no element id duplicated.  For example, a quad and a hex cannot
+share the same id number.
+<h4><A NAME="colors">Background Color</a></h4>
+
+<p>The display menu also provides methods of setting the  
+background color of the display area via a color dialog box as shown in figure
+<a HREF="#8">*</a>.
+<p><HR >  <div align="center">
+    <img width=400 hspace=3 src="images/color_dlg.jpg">
+    <div align="center">Select Color dialog for foreground and background colors.</div>
+    <A NAME="8">&nbsp;</A>
+  </div>
+<p>     
+<HR ><p>The background can be set to any color by choosing 
+either one of the predefined colors in the color table or by creating a 
+custom color.  Note that in version 2.6 of Verde the custom colors are 
+not maintained between sessions.
+<h4><A NAME="manipulation">Model Manipulation</a></h4>
+
+<p>In addition to the display options that are available from the Display 
+menu, the graphics model may also be transformed using the mouse.  
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+Left mouse:   </td><td colspan="1" align="LEFT"> Rotation about the model X and Y axes.  </td></tr>
+<tr><td colspan="1" align="LEFT">
+Right mouse:  </td><td colspan="1" align="LEFT"> Translation in the screen X and Y axes. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Middle mouse: </td><td colspan="1" align="LEFT"> Zoom in the screen Z axis.              </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+</div>
+<p>The mapping of mouse button to transformation can be defined 
+by the user as described in section <a HREF="verde_11.html#preferences">*</a>.
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_14.html"><img alt="Windows" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_prefs.html"><img alt="Reset" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Display Menu</b></td></tr></table></body></html>

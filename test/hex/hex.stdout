@@ -1,0 +1,308 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:27 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex1.gen 
+
+Processing File: hex1.gen...
+Reading block: 1, 2,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 147 elements of type HEX8:
+
+Processing block 2, 585 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 732 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9469702   0.07397   0.6202990 (9)  0.9998407 (15)
+             Shape  0.3021142   0.10541   0.0712647 (591)  0.5157536 (153)
+     Relative Size  0.6624292   0.21623   0.1838892 (155)  0.9981684 (105)
+    Shape and Size  0.2111811   0.10424   0.0209116 (591)  0.3691822 (25)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0000000   0.00000   0.0000000 (586)  0.0000000 (586)
+
+TRADITIONAL METRICS
+      Aspect Ratio  6.0128399   2.54018   3.2834754 (153)  12.747377 (592)
+              Skew  0.0980768   0.10986   0.0000000 (586)  0.5289187 (195)
+             Taper  0.0000000   0.00000   0.0000000 (586)  0.0000000 (586)
+           Stretch  0.2960237   0.08601   0.1060503 (591)  0.4735584 (153)
+    Diagonal Ratio  0.9920782   0.01094   0.9216721 (195)  1.0000000 (586)
+         Dimension  0.0000000   0.00000   0.0000000 (590)  0.0000001 (153)
+              Oddy  149.12786   280.523   13.109921 (153)  1154.6882 (591)
+     Condition No.  3.1843484   1.72966   1.7471674 (153)  8.4735081 (590)
+          Jacobian  0.0000000   0.00000   0.0000000 (586)  0.0000000 (586)
+   Scaled Jacobian  0.9469702   0.07397   0.6202990 (9)  0.9998407 (15)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 2382
+      Failed Shape: 252  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 204  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 285  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 687  	(valid range:      1.000 to      4.000)
+      Failed Skew: 6  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 189  	(valid range:      0.250 to      1.000)
+      Failed Oddy: 717  	(valid range:      0.000 to     20.000)
+      Failed Condition No.: 42  	(valid range:      1.000 to      8.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     662
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       128
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.13
+   Elements Processed    = 732
+   Elements Per Second   = 5630
+   Total Volume          = 0.00
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:27 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex2.gen 
+
+Processing File: hex2.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 1298 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 1298 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9178792   0.06618   0.6951265 (373)  0.9988091 (345)
+             Shape  0.8877818   0.07193   0.6499066 (470)  0.9979573 (47)
+     Relative Size  0.5833713   0.23035   0.2270576 (1146)  0.9996403 (994)
+    Shape and Size  0.5242262   0.22223   0.1864377 (855)  0.9338229 (412)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0009296   0.00035   0.0004474 (1291)  0.0019536 (1146)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3389172   0.19302   1.0021752 (47)  1.9893597 (1209)
+              Skew  0.1403900   0.09614   0.0021798 (3)  0.4787524 (1248)
+             Taper  0.0013648   0.00312   0.0000000 (49)  0.0382591 (44)
+           Stretch  0.7556941   0.08952   0.4906204 (470)  0.9620119 (351)
+    Diagonal Ratio  0.9133365   0.05986   0.6961258 (472)  0.9927624 (1080)
+         Dimension  0.0542189   0.00700   0.0421650 (1286)  0.0714764 (47)
+              Oddy  0.8825746   0.67156   0.0119456 (47)  3.5632280 (373)
+     Condition No.  1.1419904   0.10825   1.0020769 (47)  1.6736055 (470)
+          Jacobian  0.0007484   0.00035   0.0003055 (1284)  0.0018024 (47)
+   Scaled Jacobian  0.9178792   0.06618   0.6951265 (373)  0.9988091 (345)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 666
+      Failed Relative Size: 596  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 70  	(valid range:      0.200 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     758
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       324
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.18
+   Elements Processed    = 1298
+   Elements Per Second   = 7211
+   Total Volume          = 1.21
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 10-03-02 11:08:30 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 10/03/02 at 11:37:27 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex3.gen 
+
+Processing File: hex3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 11226 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 11226 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.9536513   0.06891   0.1047072 (6296)  1.0000000 (1252)
+             Shape  0.9456410   0.07841   0.0906026 (48)  0.9999764 (1151)
+     Relative Size  0.7159431   0.22705   0.0083618 (6296)  0.9999507 (1691)
+    Shape and Size  0.6872181   0.23848   0.0014434 (6296)  0.9996567 (260)
+
+DIAGNOSTIC METRICS
+    Element Volume  7.7540056   2.09727   0.7130641 (5252)  16.927606 (10773)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.2017713   0.27317   1.0024791 (1151)  9.4196018 (5252)
+              Skew  0.1466694   0.13190   0.0000282 (1172)  0.8907296 (6296)
+             Taper  0.0054811   0.02021   0.0000000 (1018)  0.2785088 (47)
+           Stretch  0.8543240   0.11517   0.0293029 (10243)  0.9951382 (133)
+    Diagonal Ratio  0.8996833   0.08835   0.4962324 (11222)  0.9999815 (1172)
+         Dimension  1.1151082   0.11528   0.1901783 (6296)  1.4012075 (10773)
+              Oddy  0.6823650   5.67042   0.0001412 (1151)  269.02511 (48)
+     Condition No.  1.1082683   0.86309   1.0000236 (1151)  29.149111 (48)
+          Jacobian  7.1471605   2.03005   0.1489220 (48)  14.502328 (218)
+   Scaled Jacobian  0.9536513   0.06891   0.1047072 (6296)  1.0000000 (1252)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 2909
+      Failed Shear: 6  	(valid range:      0.300 to      1.000)
+      Failed Shape: 32  	(valid range:      0.300 to      1.000)
+      Failed Relative Size: 2272  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 236  	(valid range:      0.200 to      1.000)
+      Failed Aspect Ratio: 14  	(valid range:      1.000 to      4.000)
+      Failed Skew: 126  	(valid range:      0.000 to      0.500)
+      Failed Stretch: 41  	(valid range:      0.250 to      1.000)
+      Failed Diagonal Ratio: 92  	(valid range:      0.650 to      1.000)
+      Failed Oddy: 32  	(valid range:      0.000 to     20.000)
+      Failed Condition No.: 32  	(valid range:      1.000 to      8.000)
+      Failed Scaled Jacobian: 26  	(valid range:      0.500 to      1.010)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume with 2 holes
+   Possible Topologies: N Volumes with N-2 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     5872
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       1033
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 1.61
+   Elements Processed    = 11226
+   Elements Per Second   = 6972
+   Total Volume          = 87046.47
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL

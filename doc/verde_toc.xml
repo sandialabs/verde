@@ -1,0 +1,80 @@
+<xml>
+<title HREF="verde.html">Verde Users Manual Version 2.6</title> 
+<menu>
+<a HREF="verde_1.html">Introduction</a>
+<menu>
+<a HREF="verde_2.html">Element Types</a>
+<a HREF="verde_3.html">Types of Verification</a>
+<a HREF="verde_4.html">Invoking Verde</a>
+</menu>
+<a HREF="verde_5.html">An Overview of the GUI</a>
+<menu>
+<a HREF="verde_6.html">Controlling the Verde GUI</a>
+<menu>
+<a HREF="verde_7.html">Model Window</a>
+<menu>
+<a HREF="verde_7.html#nodesets">Node Set Display</a>
+<a HREF="verde_7.html#sidesets">Side Set Display</a>
+</menu>
+<a HREF="verde_8.html">Results Window</a>
+<a HREF="verde_9.html">Command Line Window</a>
+<a HREF="verde_10.html">File Menu</a>
+<menu>
+<a HREF="verde_10.html#open_mesh">Open Mesh</a>
+<a HREF="verde_10.html#play_journal">Play Journal File</a>
+<a HREF="verde_10.html#record_journal">Record Journal File</a>
+<a HREF="verde_10.html#stop_journal">End Record Journal File</a>
+<a HREF="verde_10.html#save_mesh">Save Mesh</a>
+<a HREF="verde_10.html#save_image">Save Image As</a>
+<a HREF="verde_10.html#print">Print</a>
+<a HREF="verde_10.html#exit">Exit</a>
+</menu>
+<a HREF="verde_11.html">Edit Menu</a>
+<menu>
+<a HREF="verde_11.html#metric_ranges">Metric Ranges</a>
+<a HREF="verde_11.html#preferences">Preferences</a>
+<a HREF="verde_11.html#mouse_buttons">Mouse Buttons</a>
+<a HREF="verde_11.html#save_settings">Save Setting on Exit</a>
+</menu>
+<a HREF="verde_prefs.html">View Menu</a>
+<menu>
+<a HREF="verde_prefs.html#perspective_menu">Perspective View</a>
+<a HREF="verde_prefs.html#autofit_menu">AutoFit</a>
+<a HREF="verde_prefs.html#quick_transform">Quick Transform</a>
+<a HREF="verde_prefs.html#reset">Reset</a>
+</menu>
+<a HREF="verde_13.html">Display Menu</a>
+<menu>
+<a HREF="verde_13.html#mode">Wireframe/Hidden/Smooth Shade</a>
+<a HREF="verde_13.html#normals">Normals</a>
+<a HREF="verde_13.html#skin">Skin</a>
+<a HREF="verde_13.html#edges">Model Edges</a>
+<a HREF="verde_13.html#labels">Labels</a>
+<a HREF="verde_13.html#colors">Background Color</a>
+<a HREF="verde_13.html#manipulation">Model Manipulation</a>
+</menu>
+<a HREF="verde_14.html">Windows</a>
+<a HREF="verde_15.html">Help</a>
+</menu>
+</menu>
+<a HREF="verde_batch.html">Controlling Verde in Batch Mode</a>
+<a HREF="verde_17.html">Program Output</a>
+<menu>
+<a HREF="verde_18.html">GUI Output</a>
+<menu>
+<a HREF="verde_19.html">Individual Element Metrics</a>
+<a HREF="verde_20.html">Topology Checks</a>
+<a HREF="verde_21.html">Interface Checks</a>
+<a HREF="verde_22.html">Quadrilaterals Sharing 3 Nodes</a>
+</menu>
+<a HREF="verde_23.html">Command Line Output</a>
+</menu>
+<a HREF="verde_24.html">The .verde Preferences File</a>
+<a HREF="verde_25.html">Descriptions of Verde Metrics</a>
+<a HREF="verde_26.html">Command Line and Journal File Keywords</a>
+<a HREF="verde_27.html">References</a>
+<a HREF="verde_toc.html">Contents</a>
+<a HREF="verde_29.html">Footnotes</a>
+</menu>
+</xml>
+

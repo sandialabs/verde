@@ -1,0 +1,21 @@
+record 'temp.jou'
+open 'hex.gen'
+analyize
+open '2blocks.gen'
+block 1 off
+block 2 off
+block 1 on
+block 2 on
+analyize
+save exodus 'test.gen'
+record stop
+
+#put the rest here to make sure 'stop' works
+open '2blocks.gen'
+analyize
+block 1 off
+block 1 on
+
+#make sure journal file got recorded correctly
+playback 'temp.jou'
+

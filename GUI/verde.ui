@@ -1,0 +1,1103 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>VerdeForm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>VerdeForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>625</width>
+            <height>547</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>VERDE</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>4</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="GLWindow">
+            <property name="name">
+                <cstring>GLWindowView</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>150</width>
+                    <height>150</height>
+                </size>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>Window</cstring>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileOpenMeshAction"/>
+        <action name="playJournalAction"/>
+        <action name="recordJournalAction"/>
+        <action name="endRecordJournalAction"/>
+        <action name="saveMesh"/>
+        <action name="fileSaveAction"/>
+        <action name="fileImageSaveAction"/>
+        <separator/>
+        <action name="filePrintAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="Edit" name="PopupMenu_2">
+        <action name="editMetricRangesAction"/>
+        <action name="editPreferencesAction"/>
+        <action name="mouseMap"/>
+        <action name="editFont"/>
+        <separator/>
+        <action name="saveSettings"/>
+    </item>
+    <item text="View" name="PopupMenu_4">
+        <action name="perspectiveView"/>
+        <action name="autoFit"/>
+        <action name="quickTransform"/>
+        <separator/>
+        <action name="reset"/>
+    </item>
+    <item text="Display" name="PopupMenu">
+        <action name="wireFrame"/>
+        <action name="hiddenLine"/>
+        <action name="smoothShade"/>
+        <separator/>
+        <action name="showNormals"/>
+        <action name="showSkin"/>
+        <action name="showEdges"/>
+        <action name="showLabels"/>
+        <action name="backGroundColor"/>
+    </item>
+    <item text="Window" name="PopupMenu_3">
+        <action name="Menu_Window_ModelView"/>
+        <action name="Menu_Window_ModelResultsView"/>
+        <action name="Menu_Window_CommandLine"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpContentsAction"/>
+        <action name="helpIndexAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>Graphics_Toolbar</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="label">
+            <string></string>
+        </property>
+        <action name="wireFrame"/>
+        <action name="hiddenLine"/>
+        <action name="smoothShade"/>
+        <action name="showNormals"/>
+        <action name="showSkin"/>
+        <action name="showEdges"/>
+    </toolbar>
+</toolbars>
+<customwidgets>
+    <customwidget>
+        <class>GLWindow</class>
+        <header location="local">GLWindow.hpp</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+    </customwidget>
+</customwidgets>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileOpenMeshAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image2</iconset>
+        </property>
+        <property name="text">
+            <string>Open Mesh</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open Mesh...</string>
+        </property>
+        <property name="toolTip">
+            <string>Open Mesh</string>
+        </property>
+        <property name="accel">
+            <number>4194383</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image3</iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <number>4194387</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Save As</string>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;As...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image4</iconset>
+        </property>
+        <property name="text">
+            <string>Print</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Print...</string>
+        </property>
+        <property name="accel">
+            <number>4194384</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Contents</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Contents...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>prefsAction</cstring>
+        </property>
+        <property name="text">
+            <string>P&amp;references</string>
+        </property>
+        <property name="accel">
+            <number>272629842</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>blocksAction</cstring>
+        </property>
+        <property name="text">
+            <string>Specify &amp;Blocks</string>
+        </property>
+        <property name="accel">
+            <number>4194370</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>recordJournalAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Record Journal File...</string>
+        </property>
+        <property name="accel">
+            <number>4194386</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>playJournalAction</cstring>
+        </property>
+        <property name="text">
+            <string>Play &amp;Journal File...</string>
+        </property>
+        <property name="menuText">
+            <string>Play &amp;Journal File...</string>
+        </property>
+        <property name="accel">
+            <number>4194378</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPreferencesAction</cstring>
+        </property>
+        <property name="text">
+            <string>Preferences...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editMetricRangesAction</cstring>
+        </property>
+        <property name="text">
+            <string>Metric Ranges...</string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>Menu_View_GraphicsModes</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Graphics Modes</string>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>display</cstring>
+        </property>
+        <property name="text">
+            <string>Display</string>
+        </property>
+        <property name="usesDropDown">
+            <bool>false</bool>
+        </property>
+        <action>
+            <property name="name">
+                <cstring>wireFrame</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>true</bool>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>image5</iconset>
+            </property>
+            <property name="text">
+                <string>Wireframe</string>
+            </property>
+            <property name="toolTip">
+                <string>Wire Frame</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>hiddenLine</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>image6</iconset>
+            </property>
+            <property name="text">
+                <string>Hidden Line</string>
+            </property>
+            <property name="toolTip">
+                <string>Hidden Line</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>smoothShade</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="iconSet">
+                <iconset>image7</iconset>
+            </property>
+            <property name="text">
+                <string>Smooth Shade</string>
+            </property>
+            <property name="toolTip">
+                <string>Smooth Shade</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>reset</cstring>
+            </property>
+            <property name="text">
+                <string>Reset</string>
+            </property>
+        </action>
+    </actiongroup>
+    <action>
+        <property name="name">
+            <cstring>backGroundColor</cstring>
+        </property>
+        <property name="text">
+            <string>Background Color...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileImageSaveAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Save &amp;Image As...</string>
+        </property>
+        <property name="accel">
+            <number>4194377</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>endRecordJournalAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;End Record Journal File</string>
+        </property>
+        <property name="accel">
+            <number>4194373</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>showNormals</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image8</iconset>
+        </property>
+        <property name="text">
+            <string>Normals</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>showSkin</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image9</iconset>
+        </property>
+        <property name="text">
+            <string>Skin</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>showEdges</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image10</iconset>
+        </property>
+        <property name="text">
+            <string>Model Edges</string>
+        </property>
+        <property name="whatsThis">
+            <string></string>
+        </property>
+        <property name="accel">
+            <number>0</number>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>showLabels</cstring>
+        </property>
+        <property name="text">
+            <string>Labels</string>
+        </property>
+        <property name="exclusive">
+            <bool>false</bool>
+        </property>
+        <property name="usesDropDown">
+            <bool>true</bool>
+        </property>
+        <action>
+            <property name="name">
+                <cstring>nodesetLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Node Sets</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>sidesetLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Side Sets</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>blockLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Blocks</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>failedElemLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="on">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Failed Elements</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>nodeLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Nodes</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>elementLabels</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Elements</string>
+            </property>
+        </action>
+    </actiongroup>
+    <action>
+        <property name="name">
+            <cstring>editFont</cstring>
+        </property>
+        <property name="text">
+            <string>Label Font...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveSettings</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Save Settings on Exit</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>mouseMap</cstring>
+        </property>
+        <property name="text">
+            <string>Mouse Buttons...</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>perspectiveView</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Perspective View</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>saveMesh</cstring>
+        </property>
+        <property name="text">
+            <string>Save Mesh...</string>
+        </property>
+        <property name="accel">
+            <number>4194387</number>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>autoFit</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>AutoFit</string>
+        </property>
+    </action>
+    <actiongroup>
+        <property name="name">
+            <cstring>Menu_Window</cstring>
+        </property>
+        <property name="text">
+            <string>Window</string>
+        </property>
+        <property name="exclusive">
+            <bool>false</bool>
+        </property>
+        <property name="usesDropDown">
+            <bool>false</bool>
+        </property>
+        <action>
+            <property name="name">
+                <cstring>Menu_Window_ModelView</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Model</string>
+            </property>
+            <property name="toolTip">
+                <string>Model</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>Menu_Window_ModelResultsView</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Model Results</string>
+            </property>
+            <property name="toolTip">
+                <string>Model Results</string>
+            </property>
+        </action>
+        <action>
+            <property name="name">
+                <cstring>Menu_Window_CommandLine</cstring>
+            </property>
+            <property name="toggleAction">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Command Line</string>
+            </property>
+            <property name="toolTip">
+                <string>Command Line</string>
+            </property>
+        </action>
+    </actiongroup>
+    <action>
+        <property name="name">
+            <cstring>quickTransform</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Quick Transform</string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1512">789cbd93c16edb300c86ef790a23ff2d18d2b5c68205c31e61c38e038a1d6286921dc6569b7487a1e8bb57142347690de4d4d141a02ffc44d19272b3a87efffa512d6e66c7a7cd534715b59b43b5d8feedfb7ff77fbe3fcfe6f55d153f77b7d5edfcd36cbeaca8fa1906d631e2189f53283ac3ba36ec0d572bc360f8f524b786ebb5e143c6ba56ec0c892c3b64b4ac3774ceb27bc5bace0b35194d16c35c796b982b5346cbb2a17386c78cab95e226e15a1fc583e297148abb844e1fc547459722eddb95f85807c0356783a694261dd0960be9d201d22a70ec0ba97400cfe4bde6e05b3f4a67271abec38e93b304cb288d0e88fd1e31d7a505215162140eb06791b408f5cde0fd10449a073fa0a8036ab457046cfd18ed608de73a3b2c7b04f665b02342d18f561973606693f0e6bdc622645db36e924e3ebf57fc4502f1b918d079b8d8f6e8c4aded1b09fd70d152dc025cd491c743a0422011c701653f1d4923bad6693d893b2ff1bb3cafd468838eadfb988cbbfdc6c96a1bdb653b2ca4d39bb83f5ae9749cf0134e9adc7ae4bbe669a20ef412e54b11cb88bcaf13a70e1881c9f144cfd29f2f321a3ae2bd53fe6be2106efabd2ea62caf3b29feabf3f26df60a1ebf48bf</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="45">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523250004143a55a6b2e0026630c4f</data>
+    </image>
+    <image name="image2">
+        <data format="XPM.GZ" length="1307">789c9dd24b6fda401007f03b9fc2821baa12bc6bbcb6aa1e782624bc9253a5aa07cfdac60e8f24bc1288faddeb999d7549a1970e96f18fffce78c15cd79defd39153bfae6cb6d136d78ecea2b5538f77cbe5e1c7cf6f1f95aa104e7178bee356bf54aa578e76c6cfab04afa1b8ae35a89011d3334c8801be9007a636ac21dd86ebb9b478450c5ced52ba440a573404dd34667a865b62280211225f99daf011295dc9bb1a317957cf969246dd11431998f481a90db5a5a4c9b7484f145ba6f4c9d213c829b369d2d4d2a44362e48526ed3263c31b64533479f284c9a33ac4a8c98b07485ffabcb8cfe4c5f744f0f9466d26f7f6904a2aee6d31b9f74804c5bdef48ed6b69bec286a97c897c41c67e2c7d40be31951721f7c84425cc9d659346ad8969028a468d91a94aa5a2510ba632cc2d030f9995d4c8b96548e9ac24a55717eb2ca945703901c0e342429fe209cea7952b4ca2e3e4af80937496e5f03930c9d36c9e2f20a92de37895942be8ef3bcff2c522cfb3ac787f8193e435cb8ba4888a5a6f4e932db6eca8f66fef67c97e0fb6a2039e6d520447ac1656bbd385b287038c7afd9b5b30d3e22cdfd9e0d86a0fba77c0f75915418bab77df198ec0eee03086beadc1643afaf35b034cba43aee9c3e3e9f3814ff5af675ad67f25bfbe567e03b5cc27fe</data>
+    </image>
+    <image name="image3">
+        <data format="XPM.GZ" length="1097">789cb5d2cb6e82401406e0bd4f4174671a85110748d385976d9b2e9b345dcc0d19151d75bc367df772ce8c068d4dbbe90f8bf9f21f060274dbc1dbeb73d0ee363696592d0251b075d096dbb23cbe7f3c7d369a8404d5d92341d47c68343b81085e960b05eb56b56e85182047a6a10853200346211c400124110909ee23813189a39800674816cb98015740daa311ed012d92d38c72e0d2533a4e81492f89121c5e78f61d0b244fb204878da774d4c0344e491a03734feab8438a94a502b8f1548e7360166724c3e1b52775544891b10c87879eca7100647d46581f78f4a48e27a4648c49e0c15339ee81bccf09c7e1d2933a4e9092338ec35b4fe538024a2573895f700c54091cf871efc6352d7615ce856faaedf2492d859ece5cc3d4bc281797944b6d56c635ebcdb4acc55a63b7ae99ef967b7bc9fea6a9c59a1faf31ff764d6e6bd1578daee77e638cd17fdcedfc5c8763d5e8df1bbec9f5b9395d37b074391d07709fc237626acecd70a8aa377d693ab395bdc968ecff10b3bdc9b8d3fc7a6c7c03ef664582</data>
+    </image>
+    <image name="image4">
+        <data format="XPM.GZ" length="2512">789c7d944973db381085effe152af7cd95ea88a4448235350727ceea2576968993540e244068b36cc992bc646afefb34ba1b503647cfa0f9e93d349a20c5c77bbdf3d3e3dedee39dd5ba594f6ccf8e9bebde9edbcce7f75fbefefdefce6e9ef7e8cf985ebefb686717f39eed419f3fccef988df77d13186e0267fdbec9c4ff201cc4be4dcc793c663691a15336eaef47ce33e6a3c07916192e84f3befadf12d7eccf99ebc41b65a37c19b990f96f85bd57ff2a709125ffbd70d117864562cee36761efd55f32d7d187b5b2d1fc7de401ef2fac020ff2c878253cc8d41f3337837a283ef73f6c86d9b061ff5ab92e0bf65f095baf7e1bb86ccbac6cd95f28d7ca77912b99ff49d87badc7fb5d15c9e7eba9da2aab64fe2ab21930f785bd579ffb3383aa567f93d8727f2361530a233f4fc65675cd79980827ff36b2fa53e54e7d13597ce4e7a11e4486596259df0bd75a0f9789a5de6b616a48e63b661b7d68223743cecf94b53e9e4456ffa5b0f5ca8781e9f6a90f98d8b13f116e62fd2231fb00cc2ee5ff118e3e3ae5e84f23b752af0edc0e1383705b0a9fad856de13af6f97a5bd776add4ab845da5ccbf775bdaca96cc43e68e58e6b7ca5e7910d949fe796057267e9158f2636157a9ff2cb1f867c23ece7fc2dc253f8bdc55cc23e558ff20b2fa65e0ae4aec85bb38ff6962cf7c2eec63fe0db34f7ea7ec953f06f65510f329337f64ffb742c0065b95253524874df47fc937d8a14fea58a33fe62d2bd69735ec8379e00e82408ff0703f54cb49bdd47b38876de2a7fcb66e93d27fce43aa2be930dc8379fb43ed74250fe61ded8aa7fddb6a4c63429afe9ca73a33bca07ec634673bc29c395ee2152ec23a314fe9255ee30ad73f688337788b77788fdf709fe64c24cfb59fe0533ca0e333d5737c812ff115bec6434a1e918ef15e7eaf78826ff0f4179de15b7c47a3a555de53fd0f7824ef0ffcf89bf4299ee327fc8c7d3acba8b77dcc355fd0ea031cd2187327232cb9b3033aafa8afe019ea26c77d791f638d535aa500a4b987e191c1098d70061076c2400b36d59f537a2a59d6090f1634e0c0e1ade4a193f73957fc2e473567922435388711b4a11f186b7dae9c52e93f555e926b60827760a143a7f547f4cd2d4c694ce8cae46842926acff89b163af0727fa9998b70ff808e30675dc21569415a92167ceebf7f7ed0c135ac486b58d0bd21c1063634bf23ddd0fd9de9f3f6df5f3bff03c88d5da9</data>
+    </image>
+    <image name="image5">
+        <data format="XPM.GZ" length="749">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232325100210543251d2e25658564056503300071f540dc64b364e364333017074091534601287240ae1e923a2439204719590a490ea4092107e6c0e494e104cc70981cd42665647b1172280ed44391d343d2378ce5b0c5119a060c7df0d8832b84cb212216ae1026871cad30ad28710477911e8a1c9648d2c39b066badb900cedc7f57</data>
+    </image>
+    <image name="image6">
+        <data format="XPM.GZ" length="749">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232325100210543251d2e25658564056503300071f540dc64b364e3643330170720564e191520cb2923eb4191534693d243c8a1498131540e5d13921cba2b50e4d00d1c95c321070a381c72e030c52e07e1639383c525ee382290ce6aadb90090a580c2</data>
+    </image>
+    <image name="image7">
+        <data format="XPM.GZ" length="764">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523232510022630543251d2e256585640565033000711321dcb43408570fc44d364b364e360373710062e5945101b29c72221240915346934a44c8a14981304c0e5d13921c9a2b1251e4d00d1c95c321078c225c7220291c72ca48690223ca91e5d0520a11e9acd69a0b00b1e0bf4e</data>
+    </image>
+    <image name="image8">
+        <data format="XPM.GZ" length="802">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232325500210543251d2e25658564056503300071f540dc3430007371013a492ae391545656c629a9ac8c228b22a9ac8c2a4b8a9da3923494d4a38764ad3517004b1e8e0d</data>
+    </image>
+    <image name="image9">
+        <data format="XPM.GZ" length="764">789c95923d0bc2400c86f7fb15e1b21569fddac49f20380ae2102a45872e5a8722fe77dbdc57d27a83e12824cfbd6fd2a65501a7e3018aca3c3beaee35d4377a40717db56d7fbeecdfc6aeb7309c0dacecc258821a70c931a6e8d2a6716939a60d07a799f89721e618628e0d80c843cd468251a8188b889513c6229679d7c842cd3d244b35f4a618586a44ce993b320bd329530cba54a37841784a914bc22c01a4ae28e68c35d75dbc1f17285ed0dfccbbf299ee4fb8ce77ab56f093c95dea3de83f40b132cb66613f3bf305934c914e</data>
+    </image>
+    <image name="image10">
+        <data format="XPM.GZ" length="749">789c95d1bd0ac2301000e03d4f71e4b620a97f4b111f417014c4a1c441872e5a8722bebb4d2e8df9bbc16ba1bd7cdcd1bb360a4ec703a8463c876eb81b30b7ee01eafaeafbf17cd9bf855c6fc1deb0920b21110ce0668ab6b5a9b6a959dacba54cfc6b889c2172e6c06366feb462a11b3d230b3217068bc5e36ca9504e960b153aab903df375a569e47b4e67fe5b0ac3d0332fa481c20cf900f5f9c2eb6f2f49bbd40893cd4586f94e99ff509a66ad08f9d9892fb256821b</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>filePrintAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>filePrint()</slot>
+    </connection>
+    <connection>
+        <sender>helpIndexAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>helpIndex()</slot>
+    </connection>
+    <connection>
+        <sender>helpContentsAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>helpContents()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenMeshAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileOpenMesh()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAsAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileSaveAs()</slot>
+    </connection>
+    <connection>
+        <sender>playJournalAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>filePlayJournal()</slot>
+    </connection>
+    <connection>
+        <sender>recordJournalAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileRecordJournal()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>editPreferencesAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>editPreferences()</slot>
+    </connection>
+    <connection>
+        <sender>editMetricRangesAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>ediMetricRanges()</slot>
+    </connection>
+    <connection>
+        <sender>reset</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>Reset_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>backGroundColor</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>BackgroundColor_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>fileImageSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>fileImageSave()</slot>
+    </connection>
+    <connection>
+        <sender>endRecordJournalAction</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>endRecordJournalFile()</slot>
+    </connection>
+    <connection>
+        <sender>showNormals</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>showNormals_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>showSkin</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>showSkin_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>showEdges</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>showEdges_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>editFont</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>LabelFont_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>nodesetLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelNodesets_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>sidesetLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelSidesets_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>blockLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelBlocks_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>failedElemLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelFailed_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>mouseMap</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>editMouseButtons()</slot>
+    </connection>
+    <connection>
+        <sender>saveSettings</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>save_settings(bool)</slot>
+    </connection>
+    <connection>
+        <sender>perspectiveView</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>perspective_view(bool)</slot>
+    </connection>
+    <connection>
+        <sender>nodeLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelNodes_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>elementLabels</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>labelElements_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>saveMesh</sender>
+        <signal>activated()</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>save_mesh()</slot>
+    </connection>
+    <connection>
+        <sender>autoFit</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>auto_fit(bool)</slot>
+    </connection>
+    <connection>
+        <sender>Menu_Window_ModelView</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>ModelView_toggle(bool)</slot>
+    </connection>
+    <connection>
+        <sender>Menu_Window_ModelResultsView</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>ModelResultView_toggle(bool)</slot>
+    </connection>
+    <connection>
+        <sender>Menu_Window_CommandLine</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>CommandLineView_toggle(bool)</slot>
+    </connection>
+    <connection>
+        <sender>quickTransform</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>quickTransformtoggle(bool)</slot>
+    </connection>
+    <connection>
+        <sender>wireFrame</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>Wireframe_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>hiddenLine</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>Hiddenline_clicked(bool)</slot>
+    </connection>
+    <connection>
+        <sender>smoothShade</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>VerdeForm</receiver>
+        <slot>Smoothshade_clicked(bool)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">MouseMap.h</include>
+    <include location="local" impldecl="in declaration">MetricRangeDialog.h</include>
+    <include location="global" impldecl="in declaration">qguardedptr.h</include>
+    <include location="local" impldecl="in declaration">GUITextBox.hpp</include>
+    <include location="local" impldecl="in declaration">Preferences.h</include>
+    <include location="local" impldecl="in implementation">VerdeGUIApp.hpp</include>
+    <include location="local" impldecl="in implementation">../UserInterface.hpp</include>
+    <include location="global" impldecl="in implementation">qpainter.h</include>
+    <include location="global" impldecl="in implementation">qprinter.h</include>
+    <include location="local" impldecl="in implementation">../VerdeApp.hpp</include>
+    <include location="local" impldecl="in implementation">OpenMeshFileDialog.hpp</include>
+    <include location="global" impldecl="in implementation">qdockwindow.h</include>
+    <include location="local" impldecl="in implementation">ModelTreeView.h</include>
+    <include location="local" impldecl="in implementation">GUICommandHandler.hpp</include>
+    <include location="global" impldecl="in implementation">qfiledialog.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="local" impldecl="in implementation">ModelResultsTreeView.h</include>
+    <include location="local" impldecl="in implementation">GUITextBox.hpp</include>
+    <include location="local" impldecl="in implementation">BlockImport.h</include>
+    <include location="global" impldecl="in implementation">qcolordialog.h</include>
+    <include location="local" impldecl="in implementation">DrawingTool.hpp</include>
+    <include location="local" impldecl="in implementation">AboutBox.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="global" impldecl="in implementation">qimage.h</include>
+    <include location="global" impldecl="in implementation">qfontdialog.h</include>
+    <include location="local" impldecl="in implementation">verde.ui.h</include>
+</includes>
+<forwards>
+    <forward>class ModelTreeView;</forward>
+    <forward>class ModelResultsTreeView;</forward>
+</forwards>
+<variables>
+    <variable>bool is_resetting_normals_button;</variable>
+    <variable>QGuardedPtr&lt;PreferencesDialog&gt; preferencesDialog;</variable>
+    <variable>QDockWindow* ModelView;</variable>
+    <variable>QDockWindow* ModelResultView;</variable>
+    <variable>QDockWindow* GUITextBoxView;</variable>
+    <variable>GUITextBox* GUITextBoxWindow;</variable>
+    <variable>QGuardedPtr&lt;MetricRangeDialog&gt; metricRangeDialog;</variable>
+    <variable>QGuardedPtr&lt;MouseMap&gt; mouseDialog</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>destroy( bool, bool )</slot>
+    <slot>ModelView_toggle( bool toggle )</slot>
+    <slot>ModelResultView_toggle( bool toggle )</slot>
+    <slot>CommandLineView_toggle( bool toggle )</slot>
+    <slot>Graphics_Toolbar_toggle( bool )</slot>
+    <slot>fileExit()</slot>
+    <slot>fileNew()</slot>
+    <slot>fileOpenMesh()</slot>
+    <slot>filePlayJournal()</slot>
+    <slot>save_mesh()</slot>
+    <slot>filePrint()</slot>
+    <slot>fileRecordJournal()</slot>
+    <slot>fileSave()</slot>
+    <slot>fileSaveAs()</slot>
+    <slot>editPreferences()</slot>
+    <slot>editMouseButtons()</slot>
+    <slot>ediMetricRanges()</slot>
+    <slot>helpAbout()</slot>
+    <slot>helpContents()</slot>
+    <slot>helpIndex()</slot>
+    <slot returnType="GUITextBox *">getTextBox()</slot>
+    <slot>secondary_init()</slot>
+    <slot>Wireframe_clicked( bool )</slot>
+    <slot>Hiddenline_clicked( bool )</slot>
+    <slot>Smoothshade_clicked( bool )</slot>
+    <slot returnType="ModelTreeView *">getModelView()</slot>
+    <slot returnType="ModelResultsTreeView *">getModelResultsView()</slot>
+    <slot returnType="GUITextBox *">getGUITextBoxWindow()</slot>
+    <slot>Reset_clicked()</slot>
+    <slot>BackgroundColor_clicked()</slot>
+    <slot>LabelFont_clicked()</slot>
+    <slot>fileImageSave()</slot>
+    <slot>endRecordJournalFile()</slot>
+    <slot>showAxis( bool on_off_flag )</slot>
+    <slot>showNormals_clicked( bool on_off_flag )</slot>
+    <slot>labelNodes_clicked( bool on_off_flag )</slot>
+    <slot>labelElements_clicked( bool on_off_flag )</slot>
+    <slot>labelFailed_clicked( bool on_off_flag )</slot>
+    <slot>labelNodesets_clicked( bool on_off_flag )</slot>
+    <slot>labelSidesets_clicked( bool on_off_flag )</slot>
+    <slot>labelBlocks_clicked( bool on_off_flag )</slot>
+    <slot>showSkin_clicked( bool on_off_flag )</slot>
+    <slot>showEdges_clicked( bool on_off_flag )</slot>
+    <slot>perspective_view( bool on_off_flag )</slot>
+    <slot>auto_fit( bool on_off_flag )</slot>
+    <slot>save_settings( bool on_off_flag )</slot>
+    <slot>quickTransformtoggle( bool val )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="4"/>
+</UI>

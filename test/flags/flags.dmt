@@ -1,0 +1,83 @@
+Name:
+     flags 
+
+Purpose:
+     Tests the ability of verde to properly parse and correctly use
+     command line flags.
+
+Description:
+     This test tests command-line arguements with many different combinations
+     of command line flags.  
+
+Inputs:
+      1. command verde -blocks 1,4,5 -list_error_command antenna_support.gen
+         flags   -blocks -list_error_command 
+             
+
+      2. command verde -help -notopology -blocks 1,4,5 antenna_support.gen
+         flags   -help -notopology -blocks 
+
+
+      3. command verde -notopology -version antenna_support.gen
+         flags -notopology -version
+
+
+      4. command verde -nometrics -nointerface -list_defaults antenna_support.gen
+         flags -nometrics -nointerface -list_defaults
+
+      
+      5. command verde -nodefaults -nointerface -nometrics -notopology -blocks 1,2-8 antenna_support.gen
+         flags   -nodefaults -nointerface -nometrics -notopology -blocks 
+
+
+      6. command verde -warning_level 0 -notopology antenna_support.gen
+         flags   -warning_level -notopology 
+
+
+      7. command verde -print_failed_elements -individual -warning_level 1 -blocks 1,8 antenna_support.gen
+         flags   -print_failed_elements -individual -warning_level -blocks 
+
+
+      8. command verde -warning_level 2  -print_failed_elements -blocks 1-10 antenna_support.gen
+         flags   -warning_level -print_failed_elements -blocks 
+     
+
+Outputs:
+      
+      1. A list of commands available in error command file.  Verifies that verde exits after printing this list.
+   
+      2. A list of all the possible command line options that can be used when invoking verde. Verifies that verde exits after printing this list.
+
+      3. Verde version number.  Verifies that Verde exits after printing version number.
+
+      4. A lists of defaults settable in .verde defaults file.  Verifies that Verde exits after printing this list.  
+
+      5. Block processing info.  Tests flags -nodefaults, -nointerface, -nometrics, and -notopology.  
+
+      6. Metrics info but no topology info. Tests flags -notopology, and -warning_level. 
+
+      7. Metrics info, including failed elements info, individual block metrics,  some warnings.  Tests flags -print_failed_elements, -warning_level, -individual and -blocks.
+
+      8. Metrics info, including failed elements, all warnings.  Tests flags -warning_level, -print_failed_elemnts, and -blocks. 
+
+
+      NOTE:  All commands use the "-batch" flag to execute.  This is done inside verd_test.
+
+
+Pass/Fail Criteria:
+      
+      1. Passes if list of commands avaliable in error command file is output.  Otherwise faile.
+
+      2. Passes if list of all possible command line options for verde is output.  Otherwise fails.
+
+      3. Passes if Verde version number i output.  Otherwise fails.
+
+      4. Passes if list of defaults settable in .verde defaults file is output.  Otherwise fails.
+   
+      5. Passes if .verde file is not read in, and if interface, metric, and topology calculations are not done. 
+
+      6. Passes if no warning are output and if no topology calculations are done.  Otherwise, fails. 
+      
+      7. Passes if failed elements are output, individual block metrics are output, some warnings (if any exist) are output and appropriate blocks are processed.  Otherwise, fails. 
+
+      8. Passes if failed elements are output, all warning (if any exist) are output and appropriate block are processed.  Otherwire, fails.

@@ -1,0 +1,504 @@
+#!/bin/sh
+#\
+exec tclsh "$0" "$@"
+
+
+
+
+# delete generated files from the test directory
+
+file delete test/flags/output_file.gen
+
+
+
+#------------------------------------------------------------------
+#	Procedure name: 	del_wspace
+#	Purpose: 			Accepts a string, removes white space 
+#					from it and returns it
+#	Author: 			Corey Ernst
+#	Date:  				12 April 2001
+#------------------------------------------------------------------
+proc del_wspace { string_list } {
+   set new_list [list]
+   foreach var $string_list {
+	if { ![string equal $var "" ] } { 
+	   lappend new_list $var
+	} 	
+   }
+   return $new_list
+}
+
+
+#------------------------------------------------------------------
+#	Procedure name: 	start_test
+#	Purpose: 		Takes as arguements the list of keys "checked"
+#                               by the user and a list of directories which contain
+#                               a *.test file.  With these 2 lists the function does:
+#                               1. Gets the total number of tasks in all *.test files
+#                                  which contain matching test keys
+#                               2. Executes all command lines in the *.test files
+#                               3. Diffs the output of the execution against *.stdout files
+#
+#	Author: 			Corey Ernst
+#	Date:  				12 April 2001
+#------------------------------------------------------------------
+proc execute { checked_keys directory_list argc } {
+   
+   #Declare global variable so they can be used in function scope
+   global pc
+   global platform
+
+   #Variables
+   set error_total 0
+   set verde_exe_error 0   
+     
+   #Alphabetize the list
+   set directory_list [lsort -dictionary $directory_list]
+   
+   set error_string [list]
+   set error_total 0
+
+   #This foreach check the validity of the checked_keys
+   foreach var $checked_keys {
+
+      #checked_key starts off without a match
+      set matched 0
+      set counter 0
+
+      foreach var2 $directory_list {
+         if { $matched == 1 } { break }
+         incr counter
+
+         #Go into the directory
+         cd $var2
+     
+         set valid_test_keys [list]
+
+         set temp $var2.test	   
+         set open_temp [open "$temp" r]
+
+         while { ![ eof $open_temp ]  } {
+            if { $matched == 1 } { break }
+	    gets $open_temp line 
+	    #Find the line with #TEST_KEY on it and get the keys on 
+	    #that line
+            if { [ string first "#TEST_KEY" $line ] != -1 } {	   
+	       #Discard "#TEST_KEY" in string	
+	       set temp1 [string trimleft $line "\#TEST_KEY" ]	
+   	       set valid_test_keys [ split $temp1 ]	
+	       set valid_test_keys [ del_wspace $valid_test_keys ]
+
+      	       #Look for matching test keys
+	       set b 0
+  
+	       #See if checked_keys match file keys
+	       while { $b < [llength $valid_test_keys] } {
+	          if { $matched == 1 } { break }
+		  if { [string equal -nocase [lindex $valid_test_keys $b] $var ] } {
+                     set matched 1 
+                  }
+                  incr b
+               }
+               break
+            }
+         }
+         cd ..
+      }
+      if { $matched == 0 && $counter == [llength $directory_list] } {
+         puts "WARNING: Test key $var is not valid."
+      } 
+   }
+
+
+   foreach var $directory_list {
+     
+       set file_test_keys [list]
+       
+       #Go into directory
+       cd $var
+
+       file delete temp_results
+       file delete diffs.txt
+       file delete diffs2.txt
+
+       set temp $var.test	   
+       set open_temp [open "$temp" r]
+
+       while { ![ eof $open_temp ]  } {
+	   gets $open_temp line 
+
+	   #Find the line with #TEST_KEY on it and get the keys on 
+	   #that line
+	   if { [ string first "#TEST_KEY" $line ] != -1 } {	   
+	       #Discard "#TEST_KEY" in string	
+	       set temp1 [string trimleft $line "\#TEST_KEY" ]	
+	       set file_test_keys [ split $temp1 ]	
+	       set file_test_keys [ del_wspace $file_test_keys ]
+
+               
+
+
+	       #Look for matching test keys
+	       set b 0
+	       set matched 0
+  
+	       #See if checked keys match file keys
+	       while { $b < [llength $file_test_keys] } {
+
+
+		   if { $matched == 1 } { break }
+
+		   foreach var1 $checked_keys {
+
+		       if { $matched == 1 } { break }
+		       #compare the test keys in file to checked keys       
+
+		       if { [string equal -nocase [lindex $file_test_keys $b] $var1] } {
+			   
+			   set matched 1
+			   
+			   #Scan in each line for execution
+			   while { ![ eof $open_temp ]   } {
+
+			     gets $open_temp line
+
+
+                              #ignore blank lines
+                              if { [string compare $line ""] == 0 } {
+                                continue
+                              }
+
+                              #ignore comments
+                              if { [string first "#"  $line ] != -1 } {
+                               continue 
+                              } 
+                               
+			      set line [ del_wspace $line ]
+			      puts "Executing verde -batch -nodefaults $line"
+			      
+			      #Execution line
+			      if { [catch { eval exec ../../verde -batch -nodefaults $line >> temp_results } result ]} {
+                                    puts stderr "FAILED: $var -- $line -- $result "
+                                    incr verde_exe_error
+                              }  
+			   
+			   }
+
+                           #Check for differences
+                           set file1 $var.stdout
+			
+			   if { [file exists $file1 ] } { 
+			    if { [file exists temp_results ] } { 
+			       if { [string equal $platform windows ] } {
+			         #Windows diff.exe must be in verde directory (2 up)
+				set error 0
+			         set error [catch { exec ../../diff \
+						   -I "VERDE Version" \
+						   -I "Revised" \
+						   -I "Executing" \
+						   -I "User time" \
+						   -I "Elements Per Second" \
+						   -I "usage:" \
+						   $file1 temp_results >> diffs.txt} ]
+			         file delete temp_results
+			       } else { 
+			           set error 0
+				   set error [catch { exec diff \
+							  -I "VERDE Version" \
+							  -I "Revised" \
+							  -I "Executing" \
+							  -I "User time" \
+							  -I "Elements Per Second" \
+							  -I "usage:" \
+							  $file1 temp_results >> diffs.txt} ]
+				   file delete temp_results
+			         }
+
+			         #Check for error 
+			         if { $error > 0 } {
+			           incr error_total
+				   set file_errors 0
+				   set temp_diff [open diffs.txt r]
+				   
+                                   #Parse the file for number of errors
+                                   while { ![ eof $temp_diff ]  } {
+				     gets $temp_diff line
+                                       incr file_errors
+				   }
+				   close $temp_diff
+
+                                   #Get all errors from diffs.txt and put them into diffs2.txt
+                                   #This gets all errors from executing all tests directory 
+                                   #and puts them into a single file
+				
+					
+                                   if { $file_errors > 0 } {
+				     lappend error_string "$var test failed ($file_errors lines of diff)"
+				 
+                                     puts stderr "ERROR: $var test failed"
+   
+				     set diffs2 [open diffs2.txt w ]
+				     puts $diffs2 "Test $var diff file ($file_errors lines)"
+				     puts $diffs2 "---------------------------------"
+
+				     #read everything from diffs.txt and place in diffs2.txt
+				     set diffs [ open diffs.txt r ]
+				     set file_contents [ read $diffs ]	
+				     close $diffs
+				 
+				     puts $diffs2 $file_contents
+				     close $diffs2
+				   }
+			         }
+			         file delete diffs.txt 
+			       } else { 
+				 puts "ERROR: NO VERDE OUTPUT FILE" 
+			         incr error_total
+			         }
+			     } else { 
+			         puts "ERROR: $file1 is NON-EXISTANT"
+			         incr error_total
+			       }
+		       }
+		   }
+		   incr b
+	       }  
+	   }
+	   #Get rid of any whitespace in lists
+	   set file_test_keys [ del_wspace $file_test_keys ]
+
+       } 
+       cd ..
+    }
+
+   foreach var $error_string {
+       puts $var
+   }
+ cd ..
+
+   puts "$error_total test(s) failed"
+   file delete result
+   if { $error_total > 0 } {
+
+       #Making the end results file
+       set result [ open result w ]
+       puts $result "TEST SUMMARY"
+       puts $result "***************************************"
+       puts $result "Testing verde output with keys: $checked_keys"
+       puts $result "Total number or errors: $error_total"
+       puts $result "***************************************\n\n"
+
+       puts $result "FILE ERROR SUMMARY"
+       puts $result "***************************************"
+       foreach var $error_string {
+	   puts $result $var
+       }
+       puts $result "***************************************\n\n"
+       puts $result "INDIVIDUAL FILE ERROR SUMMARY"
+       puts $result "***************************************\n\n"
+       close $result
+
+       foreach var $directory_list {
+	   cd test/$var 
+	   set wrote 0
+	   #get diffs.txt contents and put into results.out
+       
+       
+	   #read contents from diffs2.txt
+	   if { [file isfile diffs2.txt] } {
+	       set diffs2 [ open diffs2.txt r ]
+	       set file_contents [ read $diffs2 ]	
+	       close $diffs2
+	       
+	       #Delete diffs2.txt when finished
+	       file delete diffs2.txt
+	       set wrote 1
+	   }
+	   
+           #Have to break these to if statements becuase of this "cd-ing"
+	   cd ../..
+           
+           #Place that contents into "result" file
+	   if { $wrote == 1 } {   
+	       set result [ open result a ]
+	       puts $result $file_contents
+	       close $result
+	       set wrote 0
+	   }
+       }
+      return 1
+   }
+   if { $verde_exe_error > 0 } {
+      return $verde_exe_error 
+   }
+
+  return 0
+}
+
+
+#Find out what platfrom we are using
+global platform 
+set platform $tcl_platform(platform)
+
+set arg1 [ lindex $argv 0 ]
+
+
+#Rebuild all the *.stdout files
+if { $argc > 0 } {
+  if { [ string equal -nocase $arg1 rebuild_stdout ] } {
+    
+    set directory_list [ list ]
+
+    #checks to see if user want to build individual *.stdout files 
+    if {[llength $argv] > 1} {
+    
+      #put elements 2 -> end into temp_list
+      for {set i 1} {$i <= [llength $argv] -1} {incr i } {
+        lappend temp_list [ lindex $argv $i ] 
+      }
+      cd test 
+      #make sure all are directories
+      foreach var $temp_list {
+        #if var is a directory, add to directory_list
+         if { [file isdirectory $var] } {
+           lappend directory_list $var
+         } else {
+           puts "WARNING: $var is not a valid test key"
+         }
+       }
+
+       if { [llength $directory_list] == 0} {
+         exit
+       } 
+    } else {
+    
+      #Get into the directory "test"
+      cd test
+  
+      #Grab everything in Test directory
+      set dir_contents [ glob * ]
+
+      #Create a list by splitting the string at white spaces
+      set temp_list [ split $dir_contents ]
+
+      #Find which are directories in dir_contents and put in directory_list
+      foreach var $temp_list {
+	if { [file isdirectory $var] } {          
+	    lappend directory_list $var	
+	}
+      }
+   } 
+
+    #Get into each director to see if there is a *.test file
+    foreach var $directory_list { 
+	cd $var
+	set temp $var.test	
+      
+	#Check to see if "temp" is a file. If so, open and read it
+	if { [file isfile $temp] } {
+     
+	    #Put each file directory which contains a *.test file in a list
+	    lappend dir_list $var
+
+	} else { if {![string equal $var CVS]}  { puts "WARNING: File $temp does not exist!"} }
+        
+	#Back out
+	cd ..
+    }   
+
+
+    #execute the commands in the file
+    foreach var $dir_list {
+	
+      cd $var
+
+      file delete $var.stdout
+      set temp $var.test	   
+      set open_temp [open "$temp" r]
+
+      while { ![ eof $open_temp ]  } {
+        gets $open_temp line 
+
+        #Find the line with #TEST_KEY on it and get the keys on 
+        #that line
+        if { [ string first "#TEST_KEY" $line ] != -1 } {	   
+          while { ![ eof $open_temp ] } {
+
+              gets $open_temp line 
+               
+              #ignore blank lines
+              if { [string compare $line ""] == 0 } {
+              continue
+              }
+
+              #Ignore comments
+              if { [string first "#"  $line ] != -1 || [string length $line] == 0 } {
+                continue 
+              } 
+
+              set line [ del_wspace $line ]
+	      puts "Executing verde -batch -nodefaults $line"
+
+            #Execution line
+            catch [ eval exec ../../verde -batch -nodefaults $line >> $var.stdout ]
+	    }
+        }		   
+      }
+      cd ..
+    }
+    exit
+  }
+}
+	
+#  1. gets the input test keys 
+#  2. gets a list of  directories that have *.test files in them
+#  3. passes this list and the input test key list to the execute function
+
+if { $argc > 0 } {
+
+    #Get into the directory "test"
+    cd test
+  
+    #Grab everything in Test directory
+    set dir_contents [ glob * ]
+
+    #Create a list by splitting the string at white spaces
+    set temp_list [ split $dir_contents ]
+
+    #Find which are directories in dir_contents and put in directory_list
+    set directory_list [ list ]
+    foreach var $temp_list {
+	if { [ file isdirectory $var ] } {          
+	    lappend directory_list $var	
+	}
+    }
+
+    #Reset list 
+    set temp_list {}
+
+    #Get into each director to see if there is a *.test file
+    foreach var $directory_list { 
+	cd $var
+	set temp $var.test	
+      
+	#Check to see if "temp" is a file. If so, open and read it
+	if { [file isfile $temp] } {
+     
+	    #Put each file directory which contains a *.test file in a list
+	    lappend dir_list $var
+
+	} else { if {![string equal $var CVS]}  { puts "WARNING: File $temp does not exist!"} }
+        
+	#Back out
+	cd ..
+    }   
+
+    set return_value [ execute $argv $dir_list $argc ]	
+    exit $return_value 
+
+} else {
+
+puts "ERROR: No test key(s) input."
+
+}
+

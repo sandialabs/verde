@@ -1,0 +1,56 @@
+open 'hex.gen'
+
+# set everything ON and calculate
+set topology_calculations on
+set interface_calculations on
+set metric_calculations on
+set algebraic_calculations on
+set diagnostic_calculations on
+set traditional_calculations on
+set verbose_model on
+set individual_output on
+analyize
+
+# set everything OFF and calculate
+set topology_calculations off
+set interface_calculations off
+set metric_calculations off
+set algebraic_calculations off
+set diagnostic_calculations off
+set traditional_calculations off
+set verbose_model off
+set individual_output off
+analyize
+
+# set everything ON and calculate
+set topology_calculations on
+set interface_calculations on
+set metric_calculations on
+set algebraic_calculations on
+set diagnostic_calculations on
+set traditional_calculations on
+set verbose_model on
+set individual_output on
+analyize
+
+# set metric off 
+# you shouldn't get algb, diagn, or trad  
+set metric_calculations off
+set algebraic_calculations on
+set diagnostic_calculations on
+set traditional_calculations on
+set verbose_model off
+set individual_output off
+analyize
+
+# set interface off
+set interface_calculations off
+analyize
+
+# set topology off 
+# you shouldn't get anything here
+set topology_calculations off
+analyize
+
+exit
+

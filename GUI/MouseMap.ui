@@ -1,0 +1,520 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>MouseMap</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>MouseMap</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>230</width>
+            <height>269</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>230</width>
+            <height>300</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Mouse Buttons</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget" row="2" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>Layout26</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>PushButton7</cstring>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>PushButton7_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cancel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QButtonGroup" row="1" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>zoom_dir</cstring>
+            </property>
+            <property name="title">
+                <string>Zoom Direction</string>
+            </property>
+            <property name="alignment">
+                <set>AlignHCenter</set>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>11</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>zoom_neg_up</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="text">
+                        <string>zoom negative up</string>
+                    </property>
+                    <property name="checked">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>zoom_pos_up</cstring>
+                    </property>
+                    <property name="text">
+                        <string>zoom positive up</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="0">
+            <property name="name">
+                <cstring>left_mouse</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>105</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>105</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+            <property name="margin">
+                <number>1</number>
+            </property>
+            <property name="midLineWidth">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string>Left</string>
+            </property>
+            <property name="alignment">
+                <set>AlignRight</set>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>11</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout50</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>TextLabel3_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Rotate</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>TextLabel3_2_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Zoom</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>TextLabel3_2_3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Translate</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>Layout52</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <widget class="QRadioButton">
+                            <property name="name">
+                                <cstring>rot_lmb</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>3</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QRadioButton">
+                            <property name="name">
+                                <cstring>zoom_lmb</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>3</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                        <widget class="QRadioButton">
+                            <property name="name">
+                                <cstring>trans_lmb</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>1</hsizetype>
+                                    <vsizetype>3</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="1">
+            <property name="name">
+                <cstring>middle_mouse</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>45</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>45</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>192</red>
+                    <green>192</green>
+                    <blue>192</blue>
+                </color>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string>Middle</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignVCenter|AlignBottom|AlignTop</set>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>11</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>rot_mmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>zoom_mmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>trans_mmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>192</red>
+                            <green>192</green>
+                            <blue>192</blue>
+                        </color>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="checked">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="2">
+            <property name="name">
+                <cstring>right_mouse</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>50</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>50</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string>Right</string>
+            </property>
+            <property name="alignment">
+                <set>AlignAuto</set>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>11</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>rot_rmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>zoom_rmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="checked">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>trans_rmb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1512">789cbd93c16edb300c86ef790a23ff2d18d2b5c68205c31e61c38e038a1d6286921dc6569b7487a1e8bb57142347690de4d4d141a02ffc44d19272b3a87efffa512d6e66c7a7cd534715b59b43b5d8feedfb7ff77fbe3fcfe6f55d153f77b7d5edfcd36cbeaca8fa1906d631e2189f53283ac3ba36ec0d572bc360f8f524b786ebb5e143c6ba56ec0c892c3b64b4ac3774ceb27bc5bace0b35194d16c35c796b982b5346cbb2a17386c78cab95e226e15a1fc583e297148abb844e1fc547459722eddb95f85807c0356783a694261dd0960be9d201d22a70ec0ba97400cfe4bde6e05b3f4a67271abec38e93b304cb288d0e88fd1e31d7a505215162140eb06791b408f5cde0fd10449a073fa0a8036ab457046cfd18ed608de73a3b2c7b04f665b02342d18f561973606693f0e6bdc622645db36e924e3ebf57fc4502f1b918d079b8d8f6e8c4aded1b09fd70d152dc025cd491c743a0422011c701653f1d4923bad6693d893b2ff1bb3cafd468838eadfb988cbbfdc6c96a1bdb653b2ca4d39bb83f5ae9749cf0134e9adc7ae4bbe669a20ef412e54b11cb88bcaf13a70e1881c9f144cfd29f2f321a3ae2bd53fe6be2106efabd2ea62caf3b29feabf3f26df60a1ebf48bf</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>PushButton7_2</sender>
+        <signal>released()</signal>
+        <receiver>MouseMap</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>PushButton7</sender>
+        <signal>released()</signal>
+        <receiver>MouseMap</receiver>
+        <slot>ok()</slot>
+    </connection>
+    <connection>
+        <sender>left_mouse</sender>
+        <signal>clicked(int)</signal>
+        <receiver>MouseMap</receiver>
+        <slot>changing_lmb(int)</slot>
+    </connection>
+    <connection>
+        <sender>middle_mouse</sender>
+        <signal>clicked(int)</signal>
+        <receiver>MouseMap</receiver>
+        <slot>change_mmb(int)</slot>
+    </connection>
+    <connection>
+        <sender>right_mouse</sender>
+        <signal>clicked(int)</signal>
+        <receiver>MouseMap</receiver>
+        <slot>change_rmb(int)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">MouseMap.ui.h</include>
+</includes>
+<slots>
+    <slot>init()</slot>
+    <slot>changing_lmb( int changed_id )</slot>
+    <slot>change_mmb( int changed_id )</slot>
+    <slot>change_rmb( int changed_id )</slot>
+    <slot>ok()</slot>
+    <slot>error_message()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,285 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri1.gen 
+
+Processing File: tri1.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4142 elements of type TRI3:
+
+
+Summary Tri Metrics, total = 4142 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.9935829   0.01536   0.7604846 (21)  1.0000000 (3160)
+     Relative Size  0.9015749   0.11088   0.2803498 (3376)  0.9999528 (1617)
+    Shape and Size  0.8966376   0.11614   0.2759534 (3376)  0.9996976 (1005)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0000429   0.00000   0.0000227 (3376)  0.0000633 (923)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0067227   0.01716   1.0000000 (3160)  1.3149511 (21)
+             Angle  63.196210   4.11218   60.007135 (3160)  94.917801 (21)
+     Minimum Angle  57.122819   3.46577   31.663541 (21)  59.994908 (3160)
+     Condition No.  1.0067227   0.01716   1.0000000 (3160)  1.3149511 (21)
+   Scaled Jacobian  0.9680370   0.04143   0.6061371 (21)  0.9999487 (3160)
+             Shear  0.9942698   0.01366   0.7914018 (21)  1.0000000 (3160)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 929
+      Failed Relative Size: 441  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 483  	(valid range:      0.750 to      1.000)
+      Failed Aspect Ratio: 1  	(valid range:      1.000 to      1.300)
+      Failed Angle: 3  	(valid range:     60.000 to     90.000)
+      Failed Condition No.: 1  	(valid range:      1.000 to      1.300)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      4142
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       312
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.25
+   Elements Processed    = 4142
+   Elements Per Second   = 16568
+   Total Area            = 0.18
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:31 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri2.gen 
+
+Processing File: tri2.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 942 elements of type TRI3:
+
+
+Summary Tri Metrics, total = 942 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.9701145   0.06252   0.2084104 (315)  0.9999988 (523)
+     Relative Size  0.7721334   0.16278   0.0201363 (317)  0.9997897 (160)
+    Shape and Size  0.7541454   0.16962   0.0042188 (315)  0.9993134 (387)
+
+DIAGNOSTIC METRICS
+      Element Area  41.912555   7.47708   5.9474962 (317)  61.212157 (370)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0413596   0.19171   1.0000012 (523)  4.7982251 (315)
+             Angle  68.014030   7.21331   60.050499 (523)  114.00087 (9)
+     Minimum Angle  52.476069   6.38463   6.9641767 (315)  59.923435 (523)
+     Condition No.  1.0413596   0.19171   1.0000012 (523)  4.7982251 (315)
+   Scaled Jacobian  0.9105485   0.08979   0.1400060 (315)  0.9992276 (523)
+             Shear  0.9720697   0.06042   0.2084709 (315)  0.9999988 (523)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 855
+      Failed Shape: 14  	(valid range:      0.750 to      1.000)
+      Failed Relative Size: 360  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 403  	(valid range:      0.750 to      1.000)
+      Failed Aspect Ratio: 16  	(valid range:      1.000 to      1.300)
+      Failed Angle: 19  	(valid range:     60.000 to     90.000)
+      Failed Minimum Angle: 9  	(valid range:     30.000 to     60.000)
+      Failed Condition No.: 16  	(valid range:      1.000 to      1.300)
+      Failed Scaled Jacobian: 6  	(valid range:      0.500 to      1.155)
+      Failed Shear: 12  	(valid range:      0.750 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  Open Surface with 1 hole(s)
+   Possible Topologies: N Open surfaces with N hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      942
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       223
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.05
+   Elements Processed    = 942
+   Elements Per Second   = 18839
+   Total Area            = 39481.63
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:31 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri3.gen 
+
+Processing File: tri3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 865 elements of type TRI3:
+
+
+Summary Tri Metrics, total = 865 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.9850751   0.02837   0.6913501 (865)  0.9999983 (264)
+     Relative Size  0.8468252   0.14721   0.3171489 (865)  0.9999667 (802)
+    Shape and Size  0.8359346   0.15344   0.2192609 (865)  0.9997299 (802)
+
+DIAGNOSTIC METRICS
+      Element Area  3.6475795   0.47320   2.0541699 (865)  5.0957210 (462)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0161586   0.03533   1.0000017 (264)  1.4464452 (865)
+             Angle  65.670868   5.89480   60.086124 (260)  107.53975 (865)
+     Minimum Angle  55.102660   4.67797   30.112256 (865)  59.946021 (79)
+     Condition No.  1.0161586   0.03533   1.0000017 (264)  1.4464452 (865)
+   Scaled Jacobian  0.9440109   0.05857   0.5793084 (865)  0.9994556 (79)
+             Shear  0.9864680   0.02595   0.7176275 (865)  0.9999985 (260)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 480
+      Failed Shape: 2  	(valid range:      0.750 to      1.000)
+      Failed Relative Size: 227  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 238  	(valid range:      0.750 to      1.000)
+      Failed Aspect Ratio: 3  	(valid range:      1.000 to      1.300)
+      Failed Angle: 5  	(valid range:     60.000 to     90.000)
+      Failed Condition No.: 3  	(valid range:      1.000 to      1.300)
+      Failed Shear: 2  	(valid range:      0.750 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      865
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       121
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.05
+   Elements Processed    = 865
+   Elements Per Second   = 17299
+   Total Area            = 3155.16
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL

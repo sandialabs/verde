@@ -1,0 +1,8 @@
+
+
+To compile the defaults_converter2_5:
+
+qmake defaults_converter2_5.pro
+make
+
+

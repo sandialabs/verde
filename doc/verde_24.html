@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:48 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- The .verde Preferences File</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_25.html"><img alt="Descriptions of Verde Metrics" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_23.html"><img alt="Command Line Output" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>The .verde Preferences File</b></td></tr></table>
+<h1>The .verde Preferences File</h1>
+
+<p>For Verde version 2.6, the .verde preferences file format has been changed
+to a journal file format.  <sup><a HREF="verde_29.html#footnote-3">3</a></sup>
+<p>The .verde preferences file can be used to customize the behavior of 
+Verde to a large extent.  Verde looks for a valid verification file 
+first in the current working directory (./.verde) and then in the home 
+directory (&#36;(HOME)/.verde).  If a valid file is found, it is processed 
+first, before any flags on the command line.  Therefore, if an option 
+is listed in both the .verde file and on the command line, the command 
+line flag will take precedence.  The .verde file can set the same flags 
+as are available on the command line.  It is also possible to control 
+the valid range of any Verde metric using the file.  Thus, if there are 
+certain element metric limits for a given application, these can be 
+stored in the .verde file and used in place of the default limits.
+<p>Below is an example journal file which sets topology calculations on, 
+interface calculations off, metric calculations on, sets the hexahedral 
+aspect range, and sets the tetrahedral Jacobian range.
+<pre>
+# Command Line Flags:
+set topology&#95;calculations on
+set interface&#95;calculations off
+set metric&#95;calculations on
+# Hex Metrics failure criteria:
+set hex aspect minimum .5
+set hex aspect maximum 1
+# Tet Metrics failure criteria:
+set tet jacobian minimum .8
+set tet jacobian maximum 1
+
+</pre><HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_25.html"><img alt="Descriptions of Verde Metrics" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_23.html"><img alt="Command Line Output" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>The .verde Preferences File</b></td></tr></table></body></html>

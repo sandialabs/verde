@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:47 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- Invoking Verde</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_5.html"><img alt="An Overview of the GUI" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_1.html"><img alt="Introduction" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_3.html"><img alt="Types of Verification" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Invoking Verde</b></td></tr></table>
+<h2>Invoking Verde</h2>
+
+<p>The Verde graphical user interface (GUI) can be invoked from the 
+command prompt.
+<div align="center">
+&#37; verde [options] [journal&#95;file.jou] [input&#95;file.gen]
+</div>
+<p>where the input file is the file to be verified (in Exodus II format) and the 
+options are optional control flags.  Options are preceded by the "-" 
+character ("minus" or "dash") and can be specified in any order. 
+Current valid options for version 2.6 are:
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+-help </td><td colspan="1" align="LEFT"> Print this summary                                                   </td></tr>
+<tr><td colspan="1" align="LEFT">
+-batch </td><td colspan="1" align="LEFT"> Runs verde in batch mode                                            </td></tr>
+<tr><td colspan="1" align="LEFT">
+-blocks <i>&lt;</i>&#36;val<i>&gt;</i> </td><td colspan="1" align="LEFT"> Specifies block(s) to be processed (e.g. 1,5-7,9)      </td></tr>
+<tr><td colspan="1" align="LEFT">
+-individual </td><td colspan="1" align="LEFT"> Prints metrics for each block individually                     </td></tr>
+<tr><td colspan="1" align="LEFT">
+-defaults <i>&lt;</i>&#36;val<i>&gt;</i> </td><td colspan="1" align="LEFT"> Specifies path and file of defaults file (e.g ../defaults1) </td></tr>
+<tr><td colspan="1" align="LEFT">
+-nodefaults </td><td colspan="1" align="LEFT"> Do not process .verde default file                             </td></tr>
+<tr><td colspan="1" align="LEFT">
+-nointerface </td><td colspan="1" align="LEFT"> Suppresses mesh interface verification calculations           </td></tr>
+<tr><td colspan="1" align="LEFT">
+-nometrics </td><td colspan="1" align="LEFT"> Suppresses element metric calculations                          </td></tr>
+<tr><td colspan="1" align="LEFT">
+-output <i>&lt;</i>&#36;val<i>&gt;</i> </td><td colspan="1" align="LEFT"> Generates an Exodus II output file specified by <i>val</i>  </td></tr>
+<tr><td colspan="1" align="LEFT">
+-notopology </td><td colspan="1" align="LEFT"> Suppresses mesh topology verification calculations             </td></tr>
+<tr><td colspan="1" align="LEFT">
+-print&#95;failed&#95;elements </td><td colspan="1" align="LEFT"> Prints individual failed elements and values      </td></tr>
+<tr><td colspan="1" align="LEFT">
+-version </td><td colspan="1" align="LEFT"> Prints the verde version number                                   </td></tr>
+<tr><td colspan="1" align="LEFT">
+-quads&#95;share&#95;3&#95;nodes <i>&lt;</i>&#36;val<i>&gt;</i> </td><td colspan="1" align="LEFT"> Check entire mesh, exterior quads, 
+or nothing for quads sharing 3 nodes (all, exterior, none)                   </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+</div>
+If Verde is invoked without the optional file name, a blank screen is displayed and 
+the user may select a file using the File/Open menu item.
+<p>The basic syntax of the Verde batch command is:
+<div align="center">
+&#37; verde -batch [options] [journal&#95;file.jou] input&#95;file.gen 
+</div>
+<p>For more details regarding the batch execution of Verde, see 
+section <a HREF="verde_batch.html">*</a>,
+<a HREF="verde_batch.html"> Controlling Verde in Batch Mode</a>.
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_5.html"><img alt="An Overview of the GUI" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_1.html"><img alt="Introduction" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_3.html"><img alt="Types of Verification" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Invoking Verde</b></td></tr></table></body></html>

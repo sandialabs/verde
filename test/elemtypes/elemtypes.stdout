@@ -1,0 +1,234 @@
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:27 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults 1knife.gen 
+
+Processing File: 1knife.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 1 elements of type KNIFE:
+
+
+Summary Knife Metrics, total = 1 Knives:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Volume  0.6666667   0.00000   0.6666667 (1)  0.6666667 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Knife Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+WARNING: Nodes 1, 6 and 5 are shared by two quads.
+WARNING: Nodes 3, 7 and 6 are shared by two quads.
+
+   Number Quads sharing three nodes:  4
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     5
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       10
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 1
+   Elements Per Second   = 10000
+   Total Volume          = 0.67
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:27 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults 1wedge.gen 
+
+Processing File: 1wedge.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 1 elements of type WEDGE:
+
+
+Summary Wedge Metrics, total = 1 Wedges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Volume  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Wedge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     3
+   Number Surface Tris:      2
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       9
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 1
+   Elements Per Second   = 10000
+   Total Volume          = 0.25
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:27 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults 1pyramid.gen 
+
+Processing File: 1pyramid.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 1 elements of type PYRAMID:
+
+
+Summary Pyramid Metrics, total = 1 Pyramids:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Volume  0.3333333   0.00000   0.3333333 (1)  0.3333333 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Pyramid Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     1
+   Number Surface Tris:      4
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 1
+   Elements Per Second   = 10000
+   Total Volume          = 0.33
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS

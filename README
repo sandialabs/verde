@@ -1,0 +1,109 @@
+
+This README file contains -- BUILDING VERDE, USING VERDE, and 
+  CUSTOM CONFIGURATIONS.
+
+
+BUILDING VERDE:
+
+1. The MACHINE_TYPE environment variable needs to be set for the
+   verdict library to build.  Verdict uses VERDICT.x files to control
+   its build.
+
+   where the valid values of x are:
+
+   Solaris:  ss
+   DEC:      da
+   HP:       hp
+   SGI:      sg
+   Linux:    lin
+
+   In order to select the correct machine control file, the environment
+   variable MACHINE_TYPE will need to be set to the proper value:
+
+   setenv MACHINE_TYPE ss  (or the appropriate value)
+
+2. This software requires the exodusII include files and libraries to link.
+   If these are not available, send e-mail to rjmeyer@sandia.gov to obtain
+   copies.
+
+3. This software required Qt by trolltech.  Correct setup of Qt will make
+   verde build succesfully.  This includes QTDIR, and QMAKESPEC.
+
+4. change to the directory containing the verde code and makefiles.
+
+5. create a blank verde.local file:
+
+% touch verde.local
+
+6. make the executable:
+
+% make
+
+7.  For windows, there are project files and a workspace included.
+
+USING VERDE:
+   A users manual is included in this release.  It is found in the doc directory.
+
+
+CUSTOM CONFIGURATIONS:
+
+   The makefile system works on qmake by trolltech.
+
+   The makefile is, by default, configured to produce an optimized build of verde
+   and to link with a non-threaded qt library.
+
+   The verde.local file accepts any syntax that qmake understands.  For more options
+   not included in here, consult the qmake documentation.
+
+   Doing "make depend" is not necessary since qmake will handle that.
+
+   To clean all:
+     % make clean_all
+
+   To clean the base dir (including MDB):
+     % make clean
+
+   To clean the GUI dir from the base dir:
+     % make cleanGUI
+
+   To clean the GUI dir in the GUI dir:
+     % make clean
+
+   To clean the MDB:
+     % make cleanMDB
+ 
+   To clean the help dir in the base dir:
+     % make cleanHELP
+
+   To clean the help dir in the help dir:
+     % make clean
+
+   To make a debug build,  add the following line to your verde.local file.
+     CONFIG += debug
+
+   To add a compiler flag:
+     QMAKE_CXXFLAGS += MyFlag
+
+   To add a define:
+     DEFINES += MY_DEFINE
+
+   To add a linker flag:
+     QMAKE_CXXFLAGS += MyFlag
+
+   To add a library to link with:
+     LIBS += -Ldir_to_lib -llibname
+
+   Other options available are scoping the options to particular platforms and/or
+   particular parts of verde (MDB, GUI, etc...).  Consult the qmake docs for additional
+   information.  For example:
+
+   verde_EXE:CONFIG += debug
+   verde_GUI:CONFIG += debug
+   verde_MDB:CONFIG += release
+   ss5_vplatform:verde_EXE:TARGET = myVerde
+
+   will build the base executable and the GUI portion with debug symbols but the MDB
+   will be a release build.  The resultant verde executable will be named myVerde on the SUN.
+
+
+

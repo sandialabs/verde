@@ -1,0 +1,135 @@
+# Hex Metrics failure criteria:
+
+set hex aspect minimum 2
+set hex aspect maximum 0
+set hex skew minimum 2
+set hex skew maximum 0
+set hex taper minimum 2
+set hex taper maximum 0
+set hex volume minimum 2
+set hex volume maximum 0
+set hex stretch minimum 2
+set hex stretch maximum 0
+set hex diagonal minimum 2
+set hex diagonal maximum 0
+set hex dimension minimum 2
+set hex dimension maximum 0
+set hex oddy minimum 2
+set hex oddy maximum 0
+set hex condition minimum 2
+set hex condition maximum 0
+set hex jacobian minimum 2
+set hex jacobian maximum 0
+set hex scaled jacobian minimum 2
+set hex scaled jacobian maximum 0
+set hex shear minimum 2
+set hex shear maximum 0
+set hex shape minimum 2
+set hex shape maximum 0
+set hex relative size minimum 2
+set hex relative size maximum 0
+set hex shape and size minimum 2
+set hex shape and size maximum 0
+
+# Tet Metrics failure criteria:
+
+set tet aspect minimum 2
+set tet aspect maximum 0
+set tet aspect gamma minimum 2
+set tet aspect gamma maximum 0
+set tet volume minimum 2
+set tet volume maximum 0
+set tet condition minimum 2
+set tet condition maximum 0
+set tet jacobian minimum 2
+set tet jacobian maximum 0
+set tet scaled jacobian minimum 2
+set tet scaled jacobian maximum 0
+set tet shear minimum 2
+set tet shear maximum 0
+set tet shape minimum 2
+set tet shape maximum 0
+set tet relative size minimum 2
+set tet relative size maximum 0
+set tet shape and size minimum 2
+set tet shape and size maximum 0
+
+# Pyramid Metrics failure criteria:
+
+set pyramid volume minimum 2
+set pyramid volume maximum 0
+
+# Wedge Metrics failure criteria:
+
+set wedge volume minimum 2
+set wedge volume maximum 0
+
+# Knife Metrics failure criteria:
+
+set knife volume minimum 2
+set knife volume maximum 0
+
+# Quad Metrics failure criteria:
+
+set quad aspect minimum 2
+set quad aspect maximum 0
+set quad skew minimum 2
+set quad skew maximum 0
+set quad taper minimum 2
+set quad taper maximum 0
+set quad warpage minimum 2
+set quad warpage maximum 0
+set quad area minimum 2
+set quad area maximum 0
+set quad stretch minimum 2
+set quad stretch maximum 0
+set quad largest angle minimum 2
+set quad largest angle maximum 0
+set quad smallest angle minimum 2
+set quad smallest angle maximum 0
+set quad oddy minimum 2
+set quad oddy maximum 0
+set quad condition minimum 2
+set quad condition maximum 0
+set quad jacobian minimum 2
+set quad jacobian maximum 0
+set quad scaled jacobian minimum 2
+set quad scaled jacobian maximum 0
+set quad shear minimum 2
+set quad shear maximum 0
+set quad shape minimum 2
+set quad shape maximum 0
+set quad relative size minimum 2
+set quad relative size maximum 0
+set quad shape and size minimum 2
+set quad shape and size maximum 0
+
+
+# Tri Metrics failure criteria:
+
+set tri aspect minimum 2
+set tri aspect maximum 0
+set tri area minimum 2
+set tri area maximum 0
+set tri largest angle minimum 2
+set tri largest angle maximum 0
+set tri smallest angle minimum 2
+set tri smallest angle maximum 0
+set tri condition minimum 2
+set tri condition maximum 0
+set tri scaled jacobian minimum 2
+set tri scaled jacobian maximum 0
+set tri shear minimum 2
+set tri shear maximum 0
+set tri shape minimum 2
+set tri shape maximum 0
+set tri relative size minimum 2
+set tri relative size maximum 0
+set tri shape and size minimum 2
+set tri shape and size maximum 0
+
+# Edge Metrics failure criteria:
+
+set edge length minimum 2
+set edge length maximum 0
+

@@ -1,0 +1,1288 @@
+Input File entered: exodus.jou
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 06-05-02 03:00:06 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 06/05/02 at 03:33:20 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults exodus.jou 
+ERROR: Couldn't save mesh
+
+Processing File: hex.gen...
+Reading block: 1,
+Processing Skin...
+Journaled Command: open "hex.gen" 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+
+Processing File: 2blocks.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "2blocks.gen" 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 2 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: block 2 on 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 2 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: block 2 on 
+
+
+Processing File: 2blocks.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "2blocks.gen" 
+
+
+Processing File: 3blocks.gen...
+Reading block: 1, 2, 3, 4, 5,
+Processing Skin...
+Journaled Command: open "3blocks.gen" add 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1, 2, 3, 4, 5,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 2 off 
+
+Journaled Command: block 3 off 
+
+Journaled Command: block 4 off 
+
+Journaled Command: block 5 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: block 2 on 
+
+Journaled Command: block 3 on 
+
+Journaled Command: block 4 on 
+
+Journaled Command: block 5 on 
+
+
+Processing File: multi_blocks_sidesets_nodesets.gen...
+Reading block: 1, 2, 3,
+Processing Skin...
+Journaled Command: open "multi_blocks_sidesets_nodesets.gen" 
+
+Journaled Command: nodeset 1 on 
+
+Journaled Command: nodeset 2 on 
+
+Journaled Command: nodeset 7 on 
+
+Journaled Command: nodeset 8 on 
+
+Journaled Command: sideset 1 on 
+
+Journaled Command: sideset 3 on 
+
+Journaled Command: sideset 6 on 
+
+Journaled Command: sideset 7 on 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1, 2, 3,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+Journaled Command: nodeset 1 on 
+
+Journaled Command: nodeset 2 on 
+
+Journaled Command: nodeset 7 on 
+
+Journaled Command: nodeset 8 on 
+
+Journaled Command: sideset 1 on 
+
+Journaled Command: sideset 3 on 
+
+Journaled Command: sideset 6 on 
+
+Journaled Command: sideset 7 on 
+
+
+Processing File: multi_blocks_sidesets_nodesets.gen...
+Reading block: 1, 2, 3,
+Processing Skin...
+Journaled Command: open "multi_blocks_sidesets_nodesets.gen" 
+
+
+Processing File: multi_blocks_sidesets_nodesets2.gen...
+Reading block: 1, 2, 3, 4, 5, 6,
+Processing Skin...
+Journaled Command: open "multi_blocks_sidesets_nodesets2.gen" add 
+
+Journaled Command: nodeset 1 on 
+
+Journaled Command: nodeset 2 on 
+
+Journaled Command: nodeset 7 on 
+
+Journaled Command: nodeset 8 on 
+
+Journaled Command: nodeset 9 on 
+
+Journaled Command: sideset 1 on 
+
+Journaled Command: sideset 3 on 
+
+Journaled Command: sideset 6 on 
+
+Journaled Command: sideset 7 on 
+
+Journaled Command: sideset 8 on 
+
+Journaled Command: sideset 9 on 
+
+Journaled Command: sideset 10 on 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1, 2, 3, 4, 5, 6,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+Journaled Command: nodeset 1 on 
+
+Journaled Command: nodeset 2 on 
+
+Journaled Command: nodeset 7 on 
+
+Journaled Command: nodeset 8 on 
+
+Journaled Command: nodeset 9 on 
+
+Journaled Command: sideset 1 on 
+
+Journaled Command: sideset 3 on 
+
+Journaled Command: sideset 6 on 
+
+Journaled Command: sideset 7 on 
+
+Journaled Command: sideset 8 on 
+
+Journaled Command: sideset 9 on 
+
+Journaled Command: sideset 10 on 
+
+
+Processing File: import_gen.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "import_gen.gen" 
+
+Journaled Command: nodeset 100 on 
+
+Journaled Command: nodeset 200 on 
+
+Journaled Command: nodeset 300 on 
+
+Journaled Command: sideset 10 on 
+
+Journaled Command: sideset 20 on 
+
+Journaled Command: sideset 30 on 
+
+Journaled Command: sideset 40 on 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: test.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "test.gen" 
+
+Journaled Command: nodeset 100 on 
+
+Journaled Command: nodeset 200 on 
+
+Journaled Command: nodeset 300 on 
+
+Journaled Command: sideset 10 on 
+
+Journaled Command: sideset 20 on 
+
+Journaled Command: sideset 30 on 
+
+Journaled Command: sideset 40 on 
+
+Input File entered: record.jou
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 06-05-02 03:00:06 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 06/05/02 at 03:33:21 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults record.jou 
+
+Processing File: hex.gen...
+Reading block: 1,
+Processing Skin...
+Journaled Command: open "hex.gen" 
+
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 95 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 95 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 65
+      Failed Relative Size: 50  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 5  	(valid range:      0.200 to      1.000)
+      Failed Skew: 5  	(valid range:      0.000 to      0.500)
+      Failed Diagonal Ratio: 5  	(valid range:      0.650 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     168
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       102
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 95
+   Elements Per Second   = 4750
+   Total Volume          = 0.77
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+Journaled Command: analyize 
+
+
+Processing File: 2blocks.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "2blocks.gen" 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 2 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: block 2 on 
+
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 27 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 54 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.1924501   0.00000   0.1924501 (1)  0.1924501 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 2 Volume(s))
+   Possible Topologies: N Volumes with N-2 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     108
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       72
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 54
+   Elements Per Second   = 2700
+   Total Volume          = 2.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: save exodus "test.gen" 
+
+
+Processing File: 2blocks.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "2blocks.gen" 
+
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 27 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 54 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.1924501   0.00000   0.1924501 (1)  0.1924501 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 2 Volume(s))
+   Possible Topologies: N Volumes with N-2 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     108
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       72
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 54
+   Elements Per Second   = 2700
+   Total Volume          = 2.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: playback "temp.jou" 
+
+
+Processing File: hex.gen...
+Reading block: 1,
+Processing Skin...
+Journaled Command: open "hex.gen" 
+
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 95 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 95 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 65
+      Failed Relative Size: 50  	(valid range:      0.500 to      1.000)
+      Failed Shape and Size: 5  	(valid range:      0.200 to      1.000)
+      Failed Skew: 5  	(valid range:      0.000 to      0.500)
+      Failed Diagonal Ratio: 5  	(valid range:      0.650 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     168
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       102
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 95
+   Elements Per Second   = 4750
+   Total Volume          = 0.77
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+Journaled Command: analyize 
+
+
+Processing File: 2blocks.gen...
+Reading block: 1, 2,
+Processing Skin...
+Journaled Command: open "2blocks.gen" 
+
+Journaled Command: block 1 off 
+
+Journaled Command: block 2 off 
+
+Journaled Command: block 1 on 
+
+Journaled Command: block 2 on 
+
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 27 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 54 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.1924501   0.00000   0.1924501 (1)  0.1924501 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.0370370   0.00000   0.0370370 (1)  0.0370370 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 2 Volume(s))
+   Possible Topologies: N Volumes with N-2 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     108
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       72
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 54
+   Elements Per Second   = 2700
+   Total Volume          = 2.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: save exodus "test.gen" 
+
+Input File entered: preferences.jou
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 06-05-02 03:00:06 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 06/05/02 at 03:33:21 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults preferences.jou 
+
+Processing File: hex.gen...
+Reading block: 1,
+Processing Skin...
+Journaled Command: open "hex.gen" 
+
+Journaled Command: set topology_calculations on 
+
+Journaled Command: set interface_calculations on 
+
+Journaled Command: set metric_calculations on 
+
+Journaled Command: set algebraic_calculations on 
+
+Journaled Command: set diagnostic_calculations on 
+
+Journaled Command: set traditional_calculations on 
+
+Journaled Command: set verbose_model on 
+
+Journaled Command: set individual_output on 
+
+
+---------------
+Element Metrics
+---------------
+
+Metrics for block 1, 95 elements of type HEX8:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+Block 1 Volume:        0.766
+
+Summary Hex Metrics, total = 95 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 65
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+   Relative Size        1         1    0.4509705    0.5000000    1.0000000
+                        1         4    0.4125205
+                        1         5    0.4668307
+                        1         6    0.4509705
+                        1         7    0.3467444
+                        1         9    0.4123572
+                        1        12    0.3467444
+                        1        17    0.2193861
+                        1        18    0.4608975
+                        1        19    0.4954706
+                        1        20    0.4509705
+                        1        23    0.4125205
+                        1        24    0.4668307
+                        1        25    0.4509705
+                        1        26    0.3467444
+                        1        28    0.4123572
+                        1        31    0.3467444
+                        1        36    0.2193861
+                        1        37    0.4608975
+                        1        38    0.4954706
+                        1        39    0.4509705
+                        1        42    0.4125205
+                        1        43    0.4668307
+                        1        44    0.4509705
+                        1        45    0.3467444
+                        1        47    0.4123572
+                        1        50    0.3467444
+                        1        55    0.2193861
+                        1        56    0.4608975
+                        1        57    0.4954706
+                        1        58    0.4509705
+                        1        61    0.4125205
+                        1        62    0.4668307
+                        1        63    0.4509705
+                        1        64    0.3467444
+                        1        66    0.4123572
+                        1        69    0.3467444
+                        1        74    0.2193861
+                        1        75    0.4608975
+                        1        76    0.4954706
+                        1        77    0.4509705
+                        1        80    0.4125205
+                        1        81    0.4668307
+                        1        82    0.4509705
+                        1        83    0.3467444
+                        1        85    0.4123572
+                        1        88    0.3467444
+                        1        93    0.2193861
+                        1        94    0.4608975
+                        1        95    0.4954706
+      Failed Relative Size: 50  	(valid range:      0.500 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Shape and Size        1        17    0.1784944    0.2000000    1.0000000
+                        1        36    0.1784944
+                        1        55    0.1784944
+                        1        74    0.1784944
+                        1        93    0.1784944
+      Failed Shape and Size: 5  	(valid range:      0.200 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+            Skew        1         6    0.6398816    0.0000000    0.5000000
+                        1        25    0.6398816
+                        1        44    0.6398816
+                        1        63    0.6398816
+                        1        82    0.6398816
+      Failed Skew: 5  	(valid range:      0.000 to      0.500)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Diagonal Ratio        1         6    0.5777201    0.6500000    1.0000000
+                        1        25    0.5777201
+                        1        44    0.5777201
+                        1        63    0.5777201
+                        1        82    0.5777201
+      Failed Diagonal Ratio: 5  	(valid range:      0.650 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     168
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       102
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 95
+   Elements Per Second   = 4750
+   Total Volume          = 0.77
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+Journaled Command: analyize 
+
+Journaled Command: set topology_calculations off 
+
+Journaled Command: set interface_calculations off 
+
+Journaled Command: set metric_calculations off 
+
+Journaled Command: set algebraic_calculations off 
+
+Journaled Command: set diagnostic_calculations off 
+
+Journaled Command: set traditional_calculations off 
+
+Journaled Command: set verbose_model off 
+
+Journaled Command: set individual_output off 
+
+Processing block 1, 95 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 95
+   Elements Per Second   = 9500
+
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: set topology_calculations on 
+
+Journaled Command: set interface_calculations on 
+
+Journaled Command: set metric_calculations on 
+
+Journaled Command: set algebraic_calculations on 
+
+Journaled Command: set diagnostic_calculations on 
+
+Journaled Command: set traditional_calculations on 
+
+Journaled Command: set verbose_model on 
+
+Journaled Command: set individual_output on 
+
+
+---------------
+Element Metrics
+---------------
+
+Metrics for block 1, 95 elements of type HEX8:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+Block 1 Volume:        0.766
+
+Summary Hex Metrics, total = 95 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+             Shape  0.8318836   0.11138   0.5954148 (19)  0.9760714 (10)
+     Relative Size  0.5662717   0.20065   0.2193861 (17)  0.8625514 (2)
+    Shape and Size  0.4792675   0.20998   0.1784944 (17)  0.8341830 (2)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0080650   0.00302   0.0037775 (17)  0.0136962 (7)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.3945294   0.25420   1.1055361 (3)  2.1150216 (19)
+              Skew  0.2115939   0.16516   0.0000000 (1)  0.6398816 (6)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  0.7243058   0.10268   0.5479733 (18)  0.8783052 (2)
+    Diagonal Ratio  0.8781027   0.09750   0.5777201 (6)  1.0000000 (1)
+         Dimension  0.1101199   0.01469   0.0816804 (17)  0.1349812 (7)
+              Oddy  1.7721197   1.77684   0.1367469 (10)  6.8485863 (19)
+     Condition No.  1.2428925   0.19762   1.0256771 (10)  1.7464220 (19)
+          Jacobian  0.0056065   0.00240   0.0029505 (17)  0.0096077 (1)
+   Scaled Jacobian  0.8340241   0.12614   0.5528687 (19)  0.9865407 (10)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 65
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+   Relative Size        1         1    0.4509705    0.5000000    1.0000000
+                        1         4    0.4125205
+                        1         5    0.4668307
+                        1         6    0.4509705
+                        1         7    0.3467444
+                        1         9    0.4123572
+                        1        12    0.3467444
+                        1        17    0.2193861
+                        1        18    0.4608975
+                        1        19    0.4954706
+                        1        20    0.4509705
+                        1        23    0.4125205
+                        1        24    0.4668307
+                        1        25    0.4509705
+                        1        26    0.3467444
+                        1        28    0.4123572
+                        1        31    0.3467444
+                        1        36    0.2193861
+                        1        37    0.4608975
+                        1        38    0.4954706
+                        1        39    0.4509705
+                        1        42    0.4125205
+                        1        43    0.4668307
+                        1        44    0.4509705
+                        1        45    0.3467444
+                        1        47    0.4123572
+                        1        50    0.3467444
+                        1        55    0.2193861
+                        1        56    0.4608975
+                        1        57    0.4954706
+                        1        58    0.4509705
+                        1        61    0.4125205
+                        1        62    0.4668307
+                        1        63    0.4509705
+                        1        64    0.3467444
+                        1        66    0.4123572
+                        1        69    0.3467444
+                        1        74    0.2193861
+                        1        75    0.4608975
+                        1        76    0.4954706
+                        1        77    0.4509705
+                        1        80    0.4125205
+                        1        81    0.4668307
+                        1        82    0.4509705
+                        1        83    0.3467444
+                        1        85    0.4123572
+                        1        88    0.3467444
+                        1        93    0.2193861
+                        1        94    0.4608975
+                        1        95    0.4954706
+      Failed Relative Size: 50  	(valid range:      0.500 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Shape and Size        1        17    0.1784944    0.2000000    1.0000000
+                        1        36    0.1784944
+                        1        55    0.1784944
+                        1        74    0.1784944
+                        1        93    0.1784944
+      Failed Shape and Size: 5  	(valid range:      0.200 to      1.000)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+            Skew        1         6    0.6398816    0.0000000    0.5000000
+                        1        25    0.6398816
+                        1        44    0.6398816
+                        1        63    0.6398816
+                        1        82    0.6398816
+      Failed Skew: 5  	(valid range:      0.000 to      0.500)
+
+ Failed Metric      Block    Element     Value     Min. Valid   Max. Valid 
+----------------   -------   -------   ---------   ----------   ----------
+  Diagonal Ratio        1         6    0.5777201    0.6500000    1.0000000
+                        1        25    0.5777201
+                        1        44    0.5777201
+                        1        63    0.5777201
+                        1        82    0.5777201
+      Failed Diagonal Ratio: 5  	(valid range:      0.650 to      1.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     168
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       102
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 95
+   Elements Per Second   = 4750
+   Total Volume          = 0.77
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+Journaled Command: analyize 
+
+Journaled Command: set metric_calculations off 
+
+Journaled Command: set algebraic_calculations on 
+
+Journaled Command: set diagnostic_calculations on 
+
+Journaled Command: set traditional_calculations on 
+
+Journaled Command: set verbose_model off 
+
+Journaled Command: set individual_output off 
+
+Processing block 1, 95 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     168
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       102
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 95
+   Elements Per Second   = 4750
+
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: set interface_calculations off 
+
+Processing block 1, 95 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: Torus (Volume with through hole)
+   Possible Topologies: N Volumes with N holes
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 95
+   Elements Per Second   = 9500
+
+   Mesh Topology Tests   = PASS
+   VERDE                 = PASS
+Journaled Command: analyize 
+
+Journaled Command: set topology_calculations off 
+
+Processing block 1, 95 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 95
+   Elements Per Second   = 9500
+
+   VERDE                 = PASS
+Journaled Command: analyize 
+

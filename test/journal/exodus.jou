@@ -1,0 +1,161 @@
+
+#make sure verde won't crash when trying to export nothing
+save exodus "test.gen"
+
+#test export of simple 1-block model 
+open 'hex.gen'
+save exodus 'test.gen'
+
+#test import of that simple 1-block file
+open 'test.gen'
+
+
+#---------------------------
+#test export of multiple block model 
+open '2blocks.gen'
+
+block 1 off
+block 2 off
+block 1 on
+block 2 on
+
+save exodus 'test.gen'
+
+#test import of that multiple block file
+open 'test.gen'
+
+block 1 off
+block 2 off
+block 1 on
+block 2 on
+
+
+#---------------------------
+#test 'add' capability with export of model with multiple file and multiple blocks 
+open '2blocks.gen'
+open '3blocks.gen' add
+
+save exodus 'test.gen'
+
+#test import of this multiple file/block model 
+open 'test.gen'
+
+#test to see if the same blocks are there
+block 1 off
+block 2 off
+block 3 off
+block 4 off
+block 5 off
+
+block 1 on
+block 2 on
+block 3 on
+block 4 on
+block 5 on
+
+
+#---------------------------
+#test export of model with multiple block and sidesets and nodesets 
+open 'multi_blocks_sidesets_nodesets.gen'
+
+#turn on nodesets and sideset so they get exported
+nodeset 1 on
+nodeset 2 on
+nodeset 7 on
+nodeset 8 on
+
+sideset 1 on
+sideset 3 on
+sideset 6 on
+sideset 7 on
+
+save exodus 'test.gen'
+
+#test import of model this multiple sidesets/nodesets 
+open 'test.gen'
+
+#test to see if same sidesets and nodesets are there
+nodeset 1 on
+nodeset 2 on
+nodeset 7 on
+nodeset 8 on
+
+sideset 1 on
+sideset 3 on
+sideset 6 on
+sideset 7 on
+
+
+#---------------------------
+#test 'add' capability and export file of multiple models/blocks/sidesets/nodesets 
+open 'multi_blocks_sidesets_nodesets.gen'
+open 'multi_blocks_sidesets_nodesets2.gen' add
+
+#turn on nodesets and sideset so they get exported
+nodeset 1 on
+nodeset 2 on
+nodeset 7 on
+nodeset 8 on
+nodeset 9 on
+
+sideset 1 on
+sideset 3 on
+sideset 6 on
+sideset 7 on
+sideset 8 on
+sideset 9 on
+sideset 10 on
+
+save exodus 'test.gen'
+
+#test import of model this multiple models/blocks/sidesets/nodesets file 
+open 'test.gen'
+
+#test to see if same sidesets and nodesets are there
+nodeset 1 on
+nodeset 2 on
+nodeset 7 on
+nodeset 8 on
+nodeset 9 on
+
+sideset 1 on
+sideset 3 on
+sideset 6 on
+sideset 7 on
+sideset 8 on
+sideset 9 on
+sideset 10 on
+
+
+#---------------------------
+#test export and original import of model with sidesets that span multiple blocks
+#and sidesets and nodesets composed of individual entities faces and nodes
+#respectively 
+open 'import_gen.gen'
+
+#turn on nodesets and sideset so they get exported
+nodeset 100 on
+nodeset 200 on
+nodeset 300 on
+
+sideset 10 on
+sideset 20 on
+sideset 30 on
+sideset 40 on
+
+save exodus 'test.gen'
+
+#test importing this file
+open 'test.gen'
+
+#test to see if same sidesets and nodesets are there
+nodeset 100 on
+nodeset 200 on
+nodeset 300 on
+
+sideset 10 on
+sideset 20 on
+sideset 30 on
+sideset 40 on
+
+

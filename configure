@@ -1,0 +1,62 @@
+#!/bin/sh
+
+# Configures to build VERDE
+
+
+# create these files for the makefile
+touch make.dependencies
+touch verde.local
+
+
+if [ '!' -f VERDE.${MACHINE_TYPE} ]
+then
+   echo
+   echo
+   echo
+   echo '  The environment variable $MACHINE_TYPE is not set correctly.'
+   echo 
+   echo '  Supported $MACHINE_TYPE variables are: da, hp, lin, sg, ss5.'
+   echo
+   echo
+   exit 1
+fi
+
+# check for existance of env variable that points to the 
+# exodus and netcdf libraries
+
+
+
+# Find a make command
+if (make /dev/null ) > /dev/null 2>/dev/null
+then
+  MAKE=make
+else
+  if ( gmake /dev/null ) > /dev/null 2>/dev/null
+  then
+    MAKE=gmake
+  else
+    echo "  Can't find make or gmake in your PATH."
+    echo
+    exit 1
+   fi
+fi
+
+# create dependencies for the makefile
+${MAKE} depend
+
+if [ '!' -f  ${QTDIR}/bin/qmake ]
+then
+  echo
+  echo
+  echo "  QT is not installed."
+  echo "  The GUI version of VERDE will not be available."
+fi
+
+echo
+echo
+echo "  VERDE is now configured for building."
+echo "  Just run $MAKE."
+echo
+echo
+echo
+

@@ -1,0 +1,140 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>ModelTreeView</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ModelTreeView</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>343</width>
+            <height>598</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>ModelTreeView</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QListView" row="0" column="0">
+            <column>
+                <property name="text">
+                    <string>Model</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizeable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>ModelListView</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="selectionMode">
+                <enum>Extended</enum>
+            </property>
+            <property name="allColumnsShowFocus">
+                <bool>true</bool>
+            </property>
+            <property name="resizeMode">
+                <enum>AllColumns</enum>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>ModelListView</sender>
+        <signal>rightButtonPressed(QListViewItem*,const QPoint&amp;,int)</signal>
+        <receiver>ModelTreeView</receiver>
+        <slot>items_right_clicked(QListViewItem*,const QPoint&amp;,int)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">qpopupmenu.h</include>
+    <include location="global" impldecl="in declaration">qaction.h</include>
+    <include location="local" impldecl="in implementation">../ElementBC.hpp</include>
+    <include location="local" impldecl="in implementation">../VerdeDefines.hpp</include>
+    <include location="global" impldecl="in implementation">qcursor.h</include>
+    <include location="local" impldecl="in implementation">../Mesh.hpp</include>
+    <include location="local" impldecl="in implementation">../VerdeApp.hpp</include>
+    <include location="global" impldecl="in implementation">qfileinfo.h</include>
+    <include location="local" impldecl="in implementation">../ElementBlock.hpp</include>
+    <include location="local" impldecl="in implementation">GUICommandHandler.hpp</include>
+    <include location="local" impldecl="in implementation">../NodeBC.hpp</include>
+    <include location="local" impldecl="in implementation">ModelTreeView.ui.h</include>
+</includes>
+<variables>
+    <variable>QListViewItem* active_ns_item;</variable>
+    <variable>QListViewItem* side_set_item;</variable>
+    <variable>QListViewItem* inactive_ns_item;</variable>
+    <variable>QPopupMenu* act_deact_menu;</variable>
+    <variable>QAction* blockActivateAction;</variable>
+    <variable>QListViewItem* inactive_blocks_item;</variable>
+    <variable>QListViewItem* model_item;</variable>
+    <variable>QListViewItem* active_blocks_item;</variable>
+    <variable>QActionGroup* blockGroupAction;</variable>
+    <variable>QAction* blockDeactivateAction;</variable>
+    <variable>QListViewItem* blocks_item;</variable>
+    <variable>QListViewItem* node_set_item;</variable>
+    <variable>QListViewItem* inactive_ss_item;</variable>
+    <variable>QListViewItem* active_ss_item;</variable>
+    <variable>QString model_name;</variable>
+</variables>
+<slots>
+    <slot>init()</slot>
+    <slot>get_model_info()</slot>
+    <slot>make_block_active( int id )</slot>
+    <slot>make_block_inactive( int id )</slot>
+    <slot>make_ns_active( int id )</slot>
+    <slot>make_ns_inactive( int id )</slot>
+    <slot>make_ss_active( int id )</slot>
+    <slot>make_ss_inactive( int id )</slot>
+    <slot>items_right_clicked( QListViewItem * item, const QPoint &amp;, int )</slot>
+    <slot>activate_items()</slot>
+    <slot>deactivate_items()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="0"/>
+</UI>

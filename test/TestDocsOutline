@@ -1,0 +1,74 @@
+------------------------------------------------------------------------
+
+This file gives an outline of how the VERDE tests need to be documented.
+
+------------------------------------------------------------------------
+
+Name:
+  -  name of the test which is also the name of the sub-directory
+
+Purpose:
+   - a brief description of what the test does.
+
+Description:
+   - a detailed description of how the test 
+     accomplishes the purpose.
+
+Inputs:
+   - an outline of what the inputs are for verde
+     as well as a description of what the inputs are.
+
+Outputs:
+   - a description of what the expected results are.
+
+Pass/Fail Criteria:
+   - a description of how to verify the output with
+     respect to the input.
+
+
+
+
+----------------------------------------------------------------------
+
+Example Documentation for a flag_help test
+
+----------------------------------------------------------------------
+
+
+Name:
+
+	flag_help
+
+
+Purpose:
+
+	The purpose of this test is to make sure the -help 
+	flag works correctly.
+
+Description:
+
+	We test the -help option by invoking verde with the -help 
+	option and compare the output with the desired output.
+
+Inputs:
+
+	command: verde -help
+ 
+	flags: -help
+        	we want to see the verde help
+ 
+	mesh file: none
+
+Outputs:
+
+	The output with the -help option should generate a list
+	of all the possible command line options that can be
+	used when invoking verde.
+
+Pass/Fail Criteria:
+ 
+	If we get a list of command line options, our test
+	passes.  Otherwise, it failed.
+
+
+

@@ -1,0 +1,34 @@
+#TEST_KEYS
+
+# all these test should produce stable results that make sense
+
+# various degenerate edges
+deg_edge.gen
+
+# various degenerate tris
+deg_tri.gen
+
+# various degenerate quads
+deg_quad.gen
+
+# various degenerate tets
+deg_tet.gen
+
+# various degenerate hexes
+deg_hex.gen
+
+# quads and tris, also has degenerate quads 
+# that should be analyzed with tri metrics
+quad_degquad_tri.gen
+
+# a hex with another degenerate hex that 
+# should be analyzed as a pyramid
+hex_deghex-pyramid.gen
+
+# a hex with another degenerate hex that
+# should be analyzed as a wedge
+hex_deghex-wedge.gen
+
+# a hex with another degenerate hex that
+# should be analyzed as a knife
+hex_deghex-knife.gen

@@ -1,0 +1,212 @@
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:49 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics -notopology hex_coincident_nodes.gen 
+
+Processing File: hex_coincident_nodes.gen...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 1 elements of type HEX8:
+
+Processing block 2, 1 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     12
+   Number Surface Tris:      0
+   Number Coincident Nodes:  16
+   Number Coincident Quads:   6
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+   WARNING: model contains coincident nodes, quads and/or tris.
+   This may mean either:
+   1) There are unmerged surfaces in the model, and/or
+   2) There are contact surfaces in the model.
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 2
+   Elements Per Second   = 20000
+
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:49 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics -notopology tet_coincident_nodes.gen 
+
+Processing File: tet_coincident_nodes.gen...
+Reading block: 3, 4,
+Processing Skin...
+Processing block 3, 1 elements of type TETRA4:
+
+Processing block 4, 1 elements of type TETRA4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      8
+   Number Coincident Nodes:  6
+   Number Coincident Quads:   0
+   Number Coincident Tris:   1
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 2
+   Elements Per Second   = 20000
+
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:49 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics -notopology coincident_quads.gen 
+
+Processing File: coincident_quads.gen...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 8 elements of type HEX8:
+
+Processing block 2, 8 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     48
+   Number Surface Tris:      0
+   Number Coincident Nodes:  18
+   Number Coincident Quads:   4
+   Number Coincident Tris:   0
+   Number Model Edges:       48
+
+
+   WARNING: model contains coincident nodes, quads and/or tris.
+   This may mean either:
+   1) There are unmerged surfaces in the model, and/or
+   2) There are contact surfaces in the model.
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 16
+   Elements Per Second   = 1600
+
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 01:51:45 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 01:55:49 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics -notopology coincident_tris.gen 
+
+Processing File: coincident_tris.gen...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 24 elements of type TETRA4:
+
+Processing block 2, 24 elements of type TETRA4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      48
+   Number Coincident Nodes:  10
+   Number Coincident Quads:   0
+   Number Coincident Tris:   4
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 48
+   Elements Per Second   = 4800
+
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS

@@ -1,0 +1,24 @@
+#TEST_KEY FLAGS ALL
+# If one of these first 3 options is present, the GUI will not startup
+-help
+-version
+# Check block loading
+-blocks 1,4,5  antenna_support.gen
+# Check block loading and notopology
+-notopology -blocks 1-10 antenna_support.gen
+# This should be the same as the previous run
+-notopology antenna_support.gen
+# Check only topology
+-nometrics -nointerface antenna_support.gen
+# Should always PASS
+-nodefaults -nointerface -nometrics -notopology -blocks 1,2-8 antenna_support.gen
+# Check the defaults file, all elements should fail
+-defaults defaults_file -blocks 1 antenna_support.gen
+# Check the output file
+-notopology -nointerface -output output_file.gen antenna_support.gen
+# Did the output file actually get created?
+-notopology -nointerface -nometrics output_file.gen
+# Check individual and verbose modes.
+-print_failed_elements -individual -blocks 1,8,10 antenna_support.gen
+-print_failed_elements -blocks 1,8,10 antenna_support.gen
+# the quads_share_3_nodes flag is tested elsewhere.

@@ -1,0 +1,60 @@
+#!/bin/ksh
+
+# get the environment we need to build verde with
+#/big/rjmeyer/.profile
+
+export PATH=PATH=/big/ensight62/bin:/usr/bin:/opt/SUNWspro/bin:/opt/bin:/usr/openwin/bin:/usr/sbin:/usr/bin/kerberos:/usr/local/bin:/big/rjmeyer/bin:.:/usr/local/eng_sci/struct/etc:/usr/local/eng_sci/struct/bin:/usr/local/eng_sci/cubit/bin:/usr/ccs/bin:/usr/ucb:/usr/local/qt/bin
+
+export MACHINE_TYPE=ss5
+
+export LD_LIBRARY_PATH=/usr/lib:/opt/SUNWspro/lib:/usr/dt/lib:/usr/openwin/lib:/usr/local/lib:/usr/ucblib:/opt/SUNWspro/SC5.0/lib/CC4:/usr/lib:/big/rjmeyer/verde
+
+export QTDIR=/usr/local/qt
+
+export QMAKESPEC=/usr/local/qt/mkspecs/solaris-cc
+
+export CUBIT=/usr/local/eng_sci/cubit
+
+export MAKE=/usr/local/bin/gmake
+
+# cd into the verde directory
+cd
+cd verde
+
+# put header into the output e-mail
+echo "Subject:  Verde Tests on Solaris" > junk.out.verde_test
+echo "" >> junk.out.verde_test
+echo "VERDE tests results for Solaris" >> junk.out.verde_test
+echo >> junk.out.verde_test 
+
+# remake everything
+# pipe these to /dev/null so I don't get it in my email
+# clean up the object files
+$MAKE clean_all 1> /dev/null 2> /dev/null
+$MAKE depend 2> /dev/null 1> /dev/null
+
+# attempt to make and test
+eval $MAKE 2> /dev/null 1> /dev/null
+make_result=$?
+if [ make_result -eq 0 ]; 
+then
+  eval verde_test all 1> /dev/null 2>> junk.out.verde_test
+  test_result=$?
+  if [ test_result -eq 0 ];
+  then
+    echo "passed tests" >> junk.out.verde_test
+  else
+    echo >> junk.out.verde_test
+    echo "failed tests" >> junk.out.verde_test
+  fi
+else
+  echo "build failed" >> junk.out.verde_test
+fi
+
+
+# email the results
+#/bin/mail  clinton@elemtech.com ray@elemtech.com karl@elemtech.com corey@elemt#ech.com rakerr@sandia.gov < junk.out.verde_test
+
+/bin/mail    clinton@elemtech.com ray@elemtech.com karl@elemtech.com corey@elemt#ech.com rakerr@sandia.gov < junk.out.verde_test 1> /dev/null 2> /dev/null
+
+rm -f junk.out.verde_test

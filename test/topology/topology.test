@@ -1,0 +1,18 @@
+#TEST_KEY TOPOLOGY ALL
+-notopology hex_hex_hinge.g
+-nometrics -nointerface hex_hex_hinge.g
+-nometrics -nointerface hex_shell_hinge.g
+-nometrics -nointerface hex_bar_hinge.g
+
+# Following test commented out RJM 12/12/01 - dangling bar elements not handled in verde 2.5
+#-nometrics -nointerface hex_bar_hinge_one_node.g
+
+-nometrics -nointerface shell_bar_hinge.g
+
+# Following test commented out RJM 12/12/01 - dangling bar elements not handled in verde 2.5
+#-nometrics -nointerface shell_bar_hinge_one_node.g
+
+-nometrics -nointerface hex_shell_bar_hinge.g
+-nometrics -nointerface hex_shell_bar_hinge_one_node.g
+-nometrics -nointerface hex_shell_bar_separate.g
+

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Mon Nov 26 17:10:13 2001 -->
+<head>
+<title>Verde Users Manual Version 2.5 -- Topology Metrics.</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_34.html"><img alt="Interface Checks." border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_31.html"><img alt="GUI Output" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_32.html"><img alt="Individual Element Metrics" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Topology Metrics.</b></td></tr></table>
+<h3>Topology Metrics.</h3>
+<p>A topological analysis is performed that determines if the
+model is manifold, composed of a single complete solid or shell,
+or non-manifold.  Non-manifold objects may include a mixture
+of shell and solid elements, or they may be objects that are
+not correctly closed.  Non-manifold edges may indicate the presence 
+of  hinges in the model.
+<p>The command window prints a guess of the topology of the model.
+For example, the topology information for figure <a HREF="#3">*</a> 
+is calculated as:
+<pre>
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  Open Surface with 11 hole(s)
+   Possible Topologies: N Open surfaces with N+10 hole(s)
+</pre><p>This calculation is based on the Euler-Descartes formula <i>E= v - e + f</i>,
+where <i>v</i> is the number of vertices, <i>e</i> is the number of edges, and
+<i>f</i> is the number of faces<a HREF="verde_40.html#CRC">[3]</a>.
+<p>Verde 2.5 can display non-manifold edges as shown in figure 
+<a HREF="#1">*</a>.  
+A non-manifold edge occurs when more than two entities form part of a 
+boundary edge.
+The figure shows two blocks that are only
+connected along one edge.  This is not a valid solid object.  If the 
+model is not properly constrained, it could result in a hinge that
+may cause some analysis codes to fail.
+<p><HR >  <div align="center">
+    <img width=400 hspace=3 src="images/nonmanifold.jpg">
+    <div align="center">Display of non-manifold edges.</div>
+    <A NAME="1">&nbsp;</A>
+  </div>
+<p>     
+<HR ><p>Figure <a HREF="#2">*</a> demonstrates another case that
+reports non-manifold edges in Verde 2.5.  In this case there
+are shell elements super-imposed on a set of hexahedral elements.  
+Once again, this may be correct, but it allows the user to verify 
+that the desired elements are in the correct location.
+<p><HR >  <div align="center">
+    <img width=400 hspace=3 src="images/quads_on_hexes.jpg">
+    <div align="center">Display of shell elements superimposed on hex elements.</div>
+    <A NAME="2">&nbsp;</A>
+  </div>
+<p>     
+<HR ><p>The topology of a model is to can also be checked by 
+displaying the element normals.  Figure <a HREF="#3">*</a> shows a shell
+model with the normals turned on.  Note that in the upper left hand
+corner the normals of the flange have the opposite sense of the normals
+on the rest of the model.  Inverted normals can cause some analysis 
+programs to calculate negative areas for some of the elements and 
+<HR >  <div align="center">
+    <img width=400 hspace=3 src="images/normals.jpg">
+    <div align="center">Display of element normals on a shell model.</div>
+    <A NAME="3">&nbsp;</A>
+  </div>
+<p>     
+<HR ><HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_34.html"><img alt="Interface Checks." border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_31.html"><img alt="GUI Output" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_32.html"><img alt="Individual Element Metrics" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Topology Metrics.</b></td></tr></table></body></html>

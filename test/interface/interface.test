@@ -1,0 +1,13 @@
+#TEST_KEY ALL INTERFACE
+
+# two completely coincident hexes
+-nometrics -notopology hex_coincident_nodes.gen
+
+# two tets sharing 3 nodes and one tri
+-nometrics -notopology tet_coincident_nodes.gen
+
+# two blocks of hexes sharing 18 nodes and 4 quads
+-nometrics -notopology coincident_quads.gen
+
+# two blocks of tets sharing 10 nodes and 4 quads
+-nometrics -notopology coincident_tris.gen

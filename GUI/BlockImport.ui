@@ -1,0 +1,248 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>BlockImport</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>BlockImport</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>450</width>
+            <height>470</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Block Import</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QListView">
+            <column>
+                <property name="text">
+                    <string>Block Id</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizeable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Element Type</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizeable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Number of Elements</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizeable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>blockList</cstring>
+            </property>
+            <property name="resizePolicy">
+                <enum>AutoOneFit</enum>
+            </property>
+            <property name="selectionMode">
+                <enum>Multi</enum>
+            </property>
+            <property name="allColumnsShowFocus">
+                <bool>true</bool>
+            </property>
+            <property name="resizeMode">
+                <enum>AllColumns</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout8</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>selectAll</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Select All</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>clearAll</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Clear All</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout7</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name" stdset="0">
+                        <cstring>Spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cancel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1512">789cbd93c16edb300c86ef790a23ff2d18d2b5c68205c31e61c38e038a1d6286921dc6569b7487a1e8bb57142347690de4d4d141a02ffc44d19272b3a87efffa512d6e66c7a7cd534715b59b43b5d8feedfb7ff77fbe3fcfe6f55d153f77b7d5edfcd36cbeaca8fa1906d631e2189f53283ac3ba36ec0d572bc360f8f524b786ebb5e143c6ba56ec0c892c3b64b4ac3774ceb27bc5bace0b35194d16c35c796b982b5346cbb2a17386c78cab95e226e15a1fc583e297148abb844e1fc547459722eddb95f85807c0356783a694261dd0960be9d201d22a70ec0ba97400cfe4bde6e05b3f4a67271abec38e93b304cb288d0e88fd1e31d7a505215162140eb06791b408f5cde0fd10449a073fa0a8036ab457046cfd18ed608de73a3b2c7b04f665b02342d18f561973606693f0e6bdc622645db36e924e3ebf57fc4502f1b918d079b8d8f6e8c4aded1b09fd70d152dc025cd491c743a0422011c701653f1d4923bad6693d893b2ff1bb3cafd468838eadfb988cbbfdc6c96a1bdb653b2ca4d39bb83f5ae9749cf0134e9adc7ae4bbe669a20ef412e54b11cb88bcaf13a70e1881c9f144cfd29f2f321a3ae2bd53fe6be2106efabd2ea62caf3b29feabf3f26df60a1ebf48bf</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>okButton</sender>
+        <signal>clicked()</signal>
+        <receiver>BlockImport</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>clearAll</sender>
+        <signal>clicked()</signal>
+        <receiver>BlockImport</receiver>
+        <slot>clear_all()</slot>
+    </connection>
+    <connection>
+        <sender>selectAll</sender>
+        <signal>clicked()</signal>
+        <receiver>BlockImport</receiver>
+        <slot>select_all()</slot>
+    </connection>
+    <connection>
+        <sender>cancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>BlockImport</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in implementation">list</include>
+    <include location="local" impldecl="in implementation">../VerdeApp.hpp</include>
+    <include location="local" impldecl="in implementation">../Mesh.hpp</include>
+    <include location="local" impldecl="in implementation">../VerdeString.hpp</include>
+    <include location="local" impldecl="in implementation">../ElementBlock.hpp</include>
+    <include location="global" impldecl="in declaration">list</include>
+    <include location="local" impldecl="in implementation">BlockImport.ui.h</include>
+</includes>
+<forwards>
+    <forward>class ElementBlock;</forward>
+</forwards>
+<slots>
+    <slot>init()</slot>
+    <slot>select_all()</slot>
+    <slot>clear_all()</slot>
+    <slot>get_blocks(std::list&lt;int&gt;&amp; blocks)</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

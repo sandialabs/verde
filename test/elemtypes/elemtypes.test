@@ -1,0 +1,10 @@
+#TEST_KEYS ALL ELEMTYPES
+
+# should process knife correctly
+1knife.gen
+
+# should process wedge correctly
+1wedge.gen
+
+# should process pyramid correctly
+1pyramid.gen

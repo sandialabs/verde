@@ -1,0 +1,2573 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults bar.gen 
+
+Processing File: bar.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BAR:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 10
+   Elements Per Second   = 100000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults bar2.gen 
+
+Processing File: bar2.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BAR2:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 10
+   Elements Per Second   = 100000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults bar3.gen 
+
+Processing File: bar3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BAR3:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 10
+   Elements Per Second   = 1000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults beam.gen 
+
+Processing File: beam.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BEAM:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 10
+   Elements Per Second   = 100000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults beam2.gen 
+
+Processing File: beam2.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BEAM2:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 10
+   Elements Per Second   = 100000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults beam3.gen 
+
+Processing File: beam3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 10 elements of type BEAM3:
+
+
+Summary Edge Metrics, total = 10 Edges:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+DIAGNOSTIC METRICS
+            Length  0.5730871   0.01822   0.5385668 (3)  0.5828216 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Edge Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       0
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 10
+   Elements Per Second   = 100000
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex.gen 
+
+Processing File: hex.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8 elements of type HEX:
+
+
+Summary Hex Metrics, total = 8 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.2886751   0.00000   0.2886751 (1)  0.2886751 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     24
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 8
+   Elements Per Second   = 80000
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex8.gen 
+
+Processing File: hex8.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 8 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.2886751   0.00000   0.2886751 (1)  0.2886751 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     24
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 8
+   Elements Per Second   = 800
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex9.gen 
+
+Processing File: hex9.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8 elements of type HEX9:
+
+
+Summary Hex Metrics, total = 8 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.2886751   0.00000   0.2886751 (1)  0.2886751 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     24
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 8
+   Elements Per Second   = 80000
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:28 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex20.gen 
+
+Processing File: hex20.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8 elements of type HEX20:
+
+
+Summary Hex Metrics, total = 8 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.2886751   0.00000   0.2886751 (1)  0.2886751 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     24
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 8
+   Elements Per Second   = 80000
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults hex27.gen 
+
+Processing File: hex27.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 8 elements of type HEX27:
+
+
+Summary Hex Metrics, total = 8 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.2886751   0.00000   0.2886751 (1)  0.2886751 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1250000   0.00000   0.1250000 (1)  0.1250000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     24
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       24
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 8
+   Elements Per Second   = 800
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults quad.gen 
+
+Processing File: quad.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4 elements of type QUAD:
+
+
+Summary Quad Metrics, total = 4 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 4
+   Elements Per Second   = 40000
+   Total Area            = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults quad4.gen 
+
+Processing File: quad4.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4 elements of type QUAD4:
+
+
+Summary Quad Metrics, total = 4 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 4
+   Elements Per Second   = 40000
+   Total Area            = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults quad5.gen 
+
+Processing File: quad5.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4 elements of type QUAD5:
+
+
+Summary Quad Metrics, total = 4 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 4
+   Elements Per Second   = 40000
+   Total Area            = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults quad8.gen 
+
+Processing File: quad8.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4 elements of type QUAD8:
+
+
+Summary Quad Metrics, total = 4 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 4
+   Elements Per Second   = 40000
+   Total Area            = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults quad9.gen 
+
+Processing File: quad9.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 4 elements of type QUAD9:
+
+
+Summary Quad Metrics, total = 4 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.2500000   0.00000   0.2500000 (1)  0.2500000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     4
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 4
+   Elements Per Second   = 40000
+   Total Area            = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults shell.gen 
+
+Processing File: shell.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 54 elements of type SHELL:
+
+
+Summary Quad Metrics, total = 54 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology: 1 closed surface(s))
+   Possible Topologies: N Closed surfaces with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     54
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       36
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 54
+   Elements Per Second   = 5400
+   Total Area            = 6.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults shell4.gen 
+
+Processing File: shell4.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 54 elements of type SHELL4:
+
+
+Summary Quad Metrics, total = 54 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology: 1 closed surface(s))
+   Possible Topologies: N Closed surfaces with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     54
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       36
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 54
+   Elements Per Second   = 5400
+   Total Area            = 6.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults shell8.gen 
+
+Processing File: shell8.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 54 elements of type SHELL8:
+
+
+Summary Quad Metrics, total = 54 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology: 1 closed surface(s))
+   Possible Topologies: N Closed surfaces with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     54
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       36
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.02
+   Elements Processed    = 54
+   Elements Per Second   = 2700
+   Total Area            = 6.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults shell9.gen 
+
+Processing File: shell9.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 54 elements of type SHELL9:
+
+
+Summary Quad Metrics, total = 54 Quads:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+      Element Area  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Warpage  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Maximum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+     Minimum Angle  90.000000   0.00000   90.000000 (1)  90.000000 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  0.1111111   0.00000   0.1111111 (1)  0.1111111 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Quad Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology: 1 closed surface(s))
+   Possible Topologies: N Closed surfaces with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     54
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       36
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 54
+   Elements Per Second   = 5400
+   Total Area            = 6.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:29 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tetra.gen 
+
+Processing File: tetra.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 24 elements of type TETRA:
+
+
+Summary Tet Metrics, total = 24 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4329133   0.06855   0.3315872 (4)  0.5017452 (6)
+             Shape  0.9047619   0.06879   0.8571428 (5)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   0.9999999 (5)  1.0000000 (6)
+    Shape and Size  0.9047619   0.06879   0.8571427 (5)  1.0000000 (23)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0416667   0.00000   0.0416667 (1)  0.0416667 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1626780   0.11750   1.0000000 (1)  1.2440170 (5)
+Aspect Ratio Gamma  1.1742059   0.12535   1.0006617 (1)  1.2609779 (5)
+     Condition No.  1.1111111   0.08026   1.0000000 (1)  1.1666667 (5)
+          Jacobian  0.2500000   0.00000   0.2500000 (5)  0.2500000 (1)
+   Scaled Jacobian  0.8047378   0.14104   0.7071067 (5)  1.0000000 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      24
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 24
+   Elements Per Second   = 2400
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tetra4.gen 
+
+Processing File: tetra4.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 24 elements of type TETRA4:
+
+
+Summary Tet Metrics, total = 24 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4329133   0.06855   0.3315872 (4)  0.5017452 (6)
+             Shape  0.9047619   0.06879   0.8571428 (5)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   0.9999999 (5)  1.0000000 (6)
+    Shape and Size  0.9047619   0.06879   0.8571427 (5)  1.0000000 (23)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0416667   0.00000   0.0416667 (1)  0.0416667 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1626780   0.11750   1.0000000 (1)  1.2440170 (5)
+Aspect Ratio Gamma  1.1742059   0.12535   1.0006617 (1)  1.2609779 (5)
+     Condition No.  1.1111111   0.08026   1.0000000 (1)  1.1666667 (5)
+          Jacobian  0.2500000   0.00000   0.2500000 (5)  0.2500000 (1)
+   Scaled Jacobian  0.8047378   0.14104   0.7071067 (5)  1.0000000 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      24
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 24
+   Elements Per Second   = 240000
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tetra8.gen 
+
+Processing File: tetra8.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 24 elements of type TETRA8:
+
+
+Summary Tet Metrics, total = 24 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4329133   0.06855   0.3315872 (4)  0.5017452 (6)
+             Shape  0.9047619   0.06879   0.8571428 (5)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   0.9999999 (5)  1.0000000 (6)
+    Shape and Size  0.9047619   0.06879   0.8571427 (5)  1.0000000 (23)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0416667   0.00000   0.0416667 (1)  0.0416667 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1626780   0.11750   1.0000000 (1)  1.2440170 (5)
+Aspect Ratio Gamma  1.1742059   0.12535   1.0006617 (1)  1.2609779 (5)
+     Condition No.  1.1111111   0.08026   1.0000000 (1)  1.1666667 (5)
+          Jacobian  0.2500000   0.00000   0.2500000 (5)  0.2500000 (1)
+   Scaled Jacobian  0.8047378   0.14104   0.7071067 (5)  1.0000000 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      24
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 24
+   Elements Per Second   = 2400
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tetra10.gen 
+
+Processing File: tetra10.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 24 elements of type TETRA10:
+
+
+Summary Tet Metrics, total = 24 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4329133   0.06855   0.3315872 (4)  0.5017452 (6)
+             Shape  0.9047619   0.06879   0.8571428 (5)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   0.9999999 (5)  1.0000000 (6)
+    Shape and Size  0.9047619   0.06879   0.8571427 (5)  1.0000000 (23)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0416667   0.00000   0.0416667 (1)  0.0416667 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1626780   0.11750   1.0000000 (1)  1.2440170 (5)
+Aspect Ratio Gamma  1.1742059   0.12535   1.0006617 (1)  1.2609779 (5)
+     Condition No.  1.1111111   0.08026   1.0000000 (1)  1.1666667 (5)
+          Jacobian  0.2500000   0.00000   0.2500000 (5)  0.2500000 (1)
+   Scaled Jacobian  0.8047378   0.14104   0.7071067 (5)  1.0000000 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      24
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 24
+   Elements Per Second   = 240000
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tetra14.gen 
+
+Processing File: tetra14.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 24 elements of type TETRA14:
+
+
+Summary Tet Metrics, total = 24 Tets:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  0.4329133   0.06855   0.3315872 (4)  0.5017452 (6)
+             Shape  0.9047619   0.06879   0.8571428 (5)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   0.9999999 (5)  1.0000000 (6)
+    Shape and Size  0.9047619   0.06879   0.8571427 (5)  1.0000000 (23)
+
+DIAGNOSTIC METRICS
+    Element Volume  0.0416667   0.00000   0.0416667 (1)  0.0416667 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1626780   0.11750   1.0000000 (1)  1.2440170 (5)
+Aspect Ratio Gamma  1.1742059   0.12535   1.0006617 (1)  1.2609779 (5)
+     Condition No.  1.1111111   0.08026   1.0000000 (1)  1.1666667 (5)
+          Jacobian  0.2500000   0.00000   0.2500000 (5)  0.2500000 (1)
+   Scaled Jacobian  0.8047378   0.14104   0.7071067 (5)  1.0000000 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tet Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      24
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       12
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 24
+   Elements Per Second   = 2400
+   Total Volume          = 1.00
+
+   Metrics Tests         = PASS
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri.gen 
+
+Processing File: tri.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 16 elements of type TRI:
+
+
+Summary Tri Metrics, total = 16 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.8989322   0.04368   0.8445187 (1)  0.9637560 (2)
+     Relative Size  0.8575789   0.17319   0.5750141 (2)  0.9999998 (5)
+    Shape and Size  0.7689762   0.15115   0.5382667 (1)  0.9227401 (13)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0625000   0.00924   0.0498970 (1)  0.0824215 (2)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+             Angle  81.620392   8.04151   68.782071 (13)  90.000007 (7)
+     Minimum Angle  43.912609   4.26348   38.025320 (6)  51.974680 (2)
+     Condition No.  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+   Scaled Jacobian  0.7987617   0.06113   0.7113067 (6)  0.9096022 (2)
+             Shear  0.9065743   0.03964   0.8660254 (7)  0.9640461 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 14
+      Failed Relative Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Angle: 2  	(valid range:     60.000 to     90.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      16
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 16
+   Elements Per Second   = 1600
+   Total Area            = 1.00
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri3.gen 
+
+Processing File: tri3.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 16 elements of type TRI3:
+
+
+Summary Tri Metrics, total = 16 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.8989322   0.04368   0.8445187 (1)  0.9637560 (2)
+     Relative Size  0.8575789   0.17319   0.5750141 (2)  0.9999998 (5)
+    Shape and Size  0.7689762   0.15115   0.5382667 (1)  0.9227401 (13)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0625000   0.00924   0.0498970 (1)  0.0824215 (2)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+             Angle  81.620392   8.04151   68.782071 (13)  90.000007 (7)
+     Minimum Angle  43.912609   4.26348   38.025320 (6)  51.974680 (2)
+     Condition No.  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+   Scaled Jacobian  0.7987617   0.06113   0.7113067 (6)  0.9096022 (2)
+             Shear  0.9065743   0.03964   0.8660254 (7)  0.9640461 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 14
+      Failed Relative Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Angle: 2  	(valid range:     60.000 to     90.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      16
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 16
+   Elements Per Second   = 160000
+   Total Area            = 1.00
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri6.gen 
+
+Processing File: tri6.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 16 elements of type TRI6:
+
+
+Summary Tri Metrics, total = 16 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.8989322   0.04368   0.8445187 (1)  0.9637560 (2)
+     Relative Size  0.8575789   0.17319   0.5750141 (2)  0.9999998 (5)
+    Shape and Size  0.7689762   0.15115   0.5382667 (1)  0.9227401 (13)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0625000   0.00924   0.0498970 (1)  0.0824215 (2)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+             Angle  81.620392   8.04151   68.782071 (13)  90.000007 (7)
+     Minimum Angle  43.912609   4.26348   38.025320 (6)  51.974680 (2)
+     Condition No.  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+   Scaled Jacobian  0.7987617   0.06113   0.7113067 (6)  0.9096022 (2)
+             Shear  0.9065743   0.03964   0.8660254 (7)  0.9640461 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 14
+      Failed Relative Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Angle: 2  	(valid range:     60.000 to     90.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      16
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 16
+   Elements Per Second   = 1600
+   Total Area            = 1.00
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 08-28-02 04:50:11 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 08/28/02 at 05:02:30 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults tri7.gen 
+
+Processing File: tri7.gen...
+Reading block: 1,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 16 elements of type TRI7:
+
+
+Summary Tri Metrics, total = 16 Tris:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shape  0.8989322   0.04368   0.8445187 (1)  0.9637560 (2)
+     Relative Size  0.8575789   0.17319   0.5750141 (2)  0.9999998 (5)
+    Shape and Size  0.7689762   0.15115   0.5382667 (1)  0.9227401 (13)
+
+DIAGNOSTIC METRICS
+      Element Area  0.0625000   0.00924   0.0498970 (1)  0.0824215 (2)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+             Angle  81.620392   8.04151   68.782071 (13)  90.000007 (7)
+     Minimum Angle  43.912609   4.26348   38.025320 (6)  51.974680 (2)
+     Condition No.  1.1148843   0.05388   1.0376070 (2)  1.1841064 (1)
+   Scaled Jacobian  0.7987617   0.06113   0.7113067 (6)  0.9096022 (2)
+             Shear  0.9065743   0.03964   0.8660254 (7)  0.9640461 (2)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Tri Metrics: 14
+      Failed Relative Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Shape and Size: 6  	(valid range:      0.750 to      1.000)
+      Failed Angle: 2  	(valid range:     60.000 to     90.000)
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Probable Topology:  1 Open Surface(s)
+   Possible Topologies: N Open surfaces with N-1 hole(s)
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     0
+   Number Surface Tris:      16
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       8
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 16
+   Elements Per Second   = 160000
+   Total Area            = 1.00
+
+   Metrics Tests         = FAIL  (see Metrics Summary above)
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL

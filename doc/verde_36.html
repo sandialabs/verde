@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Mon Nov 26 17:10:13 2001 -->
+<head>
+<title>Verde Users Manual Version 2.5 -- The .verde Preferences File</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_37.html"><img alt="Appendix A: Valid Tokens for the .verde Preferences File" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_35.html"><img alt="Command Line Output" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>The .verde Preferences File</b></td></tr></table>
+<h1>The .verde Preferences File</h1>
+
+<p>The .verde preferences file can be used to customize the behavior of 
+Verde to a large extent.  Verde looks for a valid verification file 
+first in the current working directory (./.verde) and then in the home 
+directory (&#36;(HOME)/.verde).  If a valid file is found, it is processed 
+first, before any flags on the command line.  Therefore, if an option 
+is listed in both the .verde file and on the command line, the command 
+line flag will take precedence.  The .verde file can set the same flags 
+as are available on the command line.  It is also possible to control 
+the valid range of any Verde metric using the file.  Thus, if there are 
+certain element metric limits for a given application, these can be 
+stored in the .verde file and used in place of the default limits.
+<p><p>The file is arranged in a simple token-value format.  Listed first on 
+the line is a single word token describing the token to be set.  It is 
+followed on the same line by a valid value.  A space is used to 
+separate the token and its value.  Values can be:
+<ol><li>Real: Used to represent a real number.
+<li>Integer: Used to represent an integer.
+<li>Logical:  Used to indicate on/off.  Valid values of the logical 
+include: ON, on, OFF, off, TRUE, true, FALSE, and false.
+</ol>
+<p><p>If a line begins with the character `&#35;' it is interpreted as a comment 
+line.  Blank lines are ignored. A simple preferences file might look 
+like this:
+<p><p>&#37; cat ./.verde
+<p><p>&#35;  Sample .verde preferences file
+<p>PERFORM&#95;INTERFACE&#95;CALCULATIONS OFF
+<p>HEX&#95;METRIC&#95;MIN&#95;NORM&#95;JACOBIAN 0.15
+<p><p>This file turns off mesh interface calculations (identical to the 
+-nointerface flag on the command line), and sets the minimum normalized 
+jacobian for hex elements to 0.15 (any value less than this will 
+trigger a failed hex element). A full list of valid tokens for setting 
+preferences in Verde can be found in Appendix A.  This list can also 
+be obtained on-line by typing:
+<p><p>&#37; verde -list&#95;options
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_37.html"><img alt="Appendix A: Valid Tokens for the .verde Preferences File" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_35.html"><img alt="Command Line Output" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>The .verde Preferences File</b></td></tr></table></body></html>

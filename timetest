@@ -1,0 +1,199 @@
+#!/bin/ksh
+
+
+# the purpose of this test is to keep track of how
+# fast VERDE can do things:  
+# hex metrics,
+# tet metrics,
+# quad metrics,
+# tri metrics,
+# skinning,
+# interface,
+# topology.
+
+
+# get the directory this script lives in
+THIS_SCRIPT=`whence $0`
+
+#tmp file
+TMPTESTFILE=".#timetest.tmp"
+
+# result file
+RESULTFILE=verdetimes.out
+
+#the GNU time 1.7
+TIME_EXE=~/bin/time
+TIME_OPTS="-o ${TMPTESTFILE}"
+TIME_FORMAT='-f\tElapsed\t%E\n\tSystem\t%S\n\tUser\t%U\n\tMax_Mem\t%M\n\tAvg_Mem\t%K'
+TIME_CMD="${TIME_EXE} ${TIME_OPTS} ${TIME_FORMAT}"
+
+# verde directory
+VERDE_DIR=${THIS_SCRIPT%/*}
+
+# the time test directory
+TIME_TEST_DIR=${VERDE_DIR}/test/time
+# the verde executable
+VERDE=${VERDE_DIR}/verde
+
+
+# set up the test we will do
+set -A tests \
+"${VERDE} -batch -notopology -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/hex-big.gen" \
+"${VERDE} -batch -notopology -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tet-big.gen" \
+"${VERDE} -batch -notopology -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/quad-big.gen" \
+"${VERDE} -batch -notopology -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tri-big.gen" \
+\
+"${VERDE} -batch -nometrics -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/hex-big.gen" \
+"${VERDE} -batch -nometrics -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tet-big.gen" \
+"${VERDE} -batch -nometrics -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/quad-big.gen" \
+"${VERDE} -batch -nometrics -nointerface -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tri-big.gen" \
+\
+"${VERDE} -batch -nometrics -notopology -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/hex-big.gen" \
+"${VERDE} -batch -nometrics -notopology -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tet-big.gen" \
+"${VERDE} -batch -nometrics -notopology -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/quad-big.gen" \
+"${VERDE} -batch -nometrics -notopology -quads_share_3_nodes none \
+   ${TIME_TEST_DIR}/tri-big.gen" \
+\
+"${VERDE} -batch -nometrics -notopology -nointerface -quads_share_3_nodes all \
+   ${TIME_TEST_DIR}/severalQuadsShare3Nodes.gen" \
+"${VERDE} -batch -nometrics -notopology -nointerface -quads_share_3_nodes exterior \
+   ${TIME_TEST_DIR}/severalQuadsShare3Nodes.gen"
+
+
+set -A test_names \
+"hex_metrics" \
+"tet_metrics" \
+"quad_metrics" \
+"tri_metrics" \
+"hex_topology" \
+"tet_topology" \
+"quad_topology" \
+"tri_topology" \
+"hex_interface" \
+"tet_interface" \
+"quad_interface" \
+"tri_interface" \
+"hex_3_node_all" \
+"hex_3_node_ext"
+
+
+LOG_FILE=
+set -A TESTS_TODO
+
+# get the command line options
+while [ -n "$1" ]
+do
+  case $1 in
+# if we want to add results to the log
+  -log)
+     shift
+     LOG_FILE=$1
+     shift
+     ;;
+# if we want to specify which tests to run
+  -test)
+     shift
+     let x=0
+     #continue while there are command options
+     while [ -n "$1" ] 
+     do
+
+       let y=0 
+       let match=0
+       #see if we can match any of the test 
+       #names with this command option
+       for item in ${test_names[*]}
+       do
+         #if we get a match, remember it, 
+         #and skip to the next command option
+         if [ "$1" == "${test_names[$y]}" ]
+         then
+         TESTS_TODO[$x]=$y
+         let match=1
+         shift
+         break 1
+         fi
+         let y=y+1
+       done
+       let x=x+1      
+
+       # break out of this loop if we have 
+       # no match
+       if [ $match -eq 0 ]
+        then break
+       fi
+     done
+     ;;
+# if we want help
+  -help)
+     print ""
+     print "Usage: [-log filename] [-test test1 test2 ...]"
+     print "Valid tests are: ${test_names[*]}"
+     print ""
+     exit 1
+     ;;
+  *)
+# anything else is an error
+     print "Unknown argument \"$1\""
+     print ""
+     print "Usage: [-log filename] [-test test1 test2 ...]"
+     print "Valid tests are: ${test_names[*]}"
+     print ""
+     exit 1
+     ;;
+  esac
+done
+
+
+# if no tests were specified, lets do them all
+if [ -z "${TESTS_TODO[*]}" ]
+then
+  let x=0
+  for item in ${test_names[*]}
+  do
+    TESTS_TODO[$x]=$x
+    let x=x+1
+  done
+fi
+
+
+#write header in the result file
+echo -------------------------- > ${RESULTFILE}
+date +"%d %b %Y -- %r" >> ${RESULTFILE}
+echo -------------------------- >> ${RESULTFILE}
+echo >> ${RESULTFILE}
+
+# perform the tests and write the output into the result file
+let x=0
+for item in ${TESTS_TODO[*]}
+do
+  echo "  ${test_names[${TESTS_TODO[$x]}]}" >> ${RESULTFILE}
+  ${TIME_CMD} ${tests[${TESTS_TODO[$x]}]}
+  cat ${TMPTESTFILE} >> ${RESULTFILE}
+  echo
+  cat ${TMPTESTFILE}
+  echo
+  let x=x+1
+done
+
+# add to the log file if requested
+if [ ! -z ${LOG_FILE} ]
+then
+echo >> ${RESULTFILE}
+cat ${RESULTFILE} >> ${LOG_FILE}
+fi
+
+# delete our temporary file
+rm -f ${TMPTESTFILE}
+

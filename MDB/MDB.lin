@@ -1,0 +1,71 @@
+#
+# This file contains make macro definitions needed for a cubit developers
+# installation.  This file is included directly into the CUBIT makefile,
+# so definitions are in make macro format
+#
+# Any flags here can be overridden in the verde.local file
+#
+
+#
+# location of exodus libs and makedepend
+#
+CUBITROOT = $(CUBIT)
+
+#
+# SOURCE_DIR:
+# Developer's primary cubit source directory (i.e. the directory from which
+# cvs operations are done)
+#
+SOURCE_DIR = .
+
+
+#
+# EXODUS_LIB_DIR, EXODUS_INCLUDE:
+# Where to look for EXODUS includes and libs
+#
+EXODUS_INCLUDE =   -I$(CUBITROOT)/include
+EXODUS_LIB_DIR = $(CUBITROOT)/lib
+EXODUS_LIBS = -L$(EXODUS_LIB_DIR) -lexoIIv2c -lnetcdf
+VERDICT_LIB = -Lverdict -lverdict
+VERDICT_LIB_NAME = libverdict.a
+LIBS = -lm
+
+# Machine-dependent include paths
+CC_INCLUDE = -I/usr/include/g++-3 \
+		-I/usr/lib/gcc-lib/i386-linux/2.95.2/include
+
+# Optimize flags for this platform 
+DEBUG_FLAG = -O
+#For static build, use the next line
+#DEBUG_FLAG = -O -static
+
+# machine CXX flags if you want to name verde something else, 
+#change the -D'NAME="verde"' in the next line and set the EXE_NAME = new_name
+#MACH_CXXFLAGS = -D__EXTERN_C__ -DSOLARIS \
+#                -DSUN -DSVR4 -DSYSV -DANSI -DXTFUNCPROTO +w  -compat 
+MACH_CXXFLAGS = -Wall -W -DLINUX -D'NAME="verde"' -DYY_NO_UNPUT
+
+MACH_LINK_LIBS = 
+
+# Some controls on echoing of compile commands; for verbose output, comment
+# out the following two definitions
+PREFIX = @
+ECHO_COMMAND = @ echo "Compiling(${DEBUG_FLAG}): $<"
+
+
+# Some compiler definitions - check your environment to make sure the correct
+# compilers are being referenced
+#
+# CC:
+CC = gcc
+CXX = g++ 
+LINKER = ${CXX}
+MAKE = make
+ARCHIVER = ar ru
+
+# MAKEDEPEND:
+MAKEDEPEND = $(CUBITROOT)/mklin/makedepend
+
+# location of templates for template classes, helps make clean_all
+TEMPLATE_DIR = 
+

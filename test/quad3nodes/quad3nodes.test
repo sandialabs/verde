@@ -1,0 +1,5 @@
+#TEST_KEY QUAD3NODES ALL
+-nometrics 2hex-crack.gen
+-nometrics hex-shell-share3nodes.gen
+-nometrics hex-interior-crack.gen
+-nometrics -quads_share_3_nodes all interior-quads_small.gen

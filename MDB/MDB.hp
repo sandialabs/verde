@@ -1,0 +1,70 @@
+#
+# This file contains make macro definitions needed for a cubit developers
+# installation.  This file is included directly into the CUBIT makefile,
+# so definitions are in make macro format
+#
+# Any flags here can be overridden in the verde.local file
+#
+
+#
+# location of exodus libs and makedepend
+#
+CUBITROOT = $(CUBIT)
+
+#
+# SOURCE_DIR:
+# Developer's primary cubit source directory (i.e. the directory from which
+# cvs operations are done)
+#
+SOURCE_DIR = .
+
+
+#
+# EXODUS_LIB_DIR, EXODUS_INCLUDE:
+# Where to look for EXODUS includes and libs
+#
+EXODUS_INCLUDE =   -I$(CUBITROOT)/include
+EXODUS_LIB_DIR = $(CUBITROOT)/lib
+EXODUS_LIBS = -L$(EXODUS_LIB_DIR) -lexoIIv2c -lnetcdf
+LIBS = -lm
+
+
+# Machine-dependent include paths
+CC_INCLUDE = -I/opt/graphics/OpenGL/include
+#-I/usr -I/opt/aCC/include
+
+# Optimize flags for this platform 
+DEBUG_FLAG = -O
+
+# machine CXX flags if you want to name verde something else, 
+#change the -D'NAME="verde"' in the next line and set the EXE_NAME = new_name
+#MACH_CXXFLAGS = -D__EXTERN_C__ -DSOLARIS \
+#                -DSUN -DSVR4 -DSYSV -DANSI -DXTFUNCPROTO +w  -compat 
+MACH_CXXFLAGS = -DHP +inst_implicit_include -D'NAME="verde"' +DAportable -w -D__STRICT_ANSI__ -AA
+CXXFLAGS = -AA
+
+MACH_LINK_LIBS = -L/opt/graphics/OpenGL/lib
+MACH_LFLAGS = +DAportable -AA
+
+# Some controls on echoing of compile commands; for verbose output, comment
+# out the following two definitions
+PREFIX = @
+ECHO_COMMAND = @ echo "Compiling(${DEBUG_FLAG}): $<"
+
+
+# Some compiler definitions - check your environment to make sure the correct
+# compilers are being referenced
+#
+# CC:
+CC = cc
+CXX = /opt/aCC/bin/aCC
+LINKER = ${CXX} -Wl,+s
+MAKE = make
+ARCHIVER = ar ru
+
+# MAKEDEPEND:
+MAKEDEPEND = $(CUBITROOT)/bin/makedepend
+
+# location of templates for template classes, helps make clean_all
+TEMPLATE_DIR = 
+

@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Mon Nov 26 17:10:13 2001 -->
+<head>
+<title>Verde Users Manual Version 2.5 -- Appendix B:  Descriptions of Verde Metrics</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_39.html"><img alt="Appendix C:  Command Line and Journal File Keywords" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_37.html"><img alt="Appendix A: Valid Tokens for the .verde Preferences File" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Appendix B:  Descriptions of Verde Metrics</b></td></tr></table>
+<h1>Appendix B:  Descriptions of Verde Metrics</h1>
+
+<p>The following tables provide a description of the metrics that
+are applicable to each element type.  Table <a HREF="#1">*</a>
+lists the metrics that are applicable to hexahedral meshes.  
+
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+Function Name  </td><td colspan="1" align="CENTER">  Dimension </td><td colspan="1" align="CENTER"> Full Range </td><td colspan="1" align="CENTER">Acceptable Range </td><td colspan="1" align="CENTER">  Reference </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio   </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    1 to inf  </td><td colspan="1" align="CENTER">    1 to 4       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#taylor">[4]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Skew           </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">    0 to 0.5     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#taylor">[4]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Taper          </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to +inf </td><td colspan="1" align="CENTER">    0 to 0.4     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#taylor">[4]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Volume </td><td colspan="1" align="CENTER">    <i>L<sup>3</sup></i> </td><td colspan="1" align="CENTER"> -inf to +inf </td><td colspan="1" align="CENTER">     None        </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#taylor">[4]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Stretch        </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.25 to 1      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#fimesh">[5]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Diagonal Ratio </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.65 to 1      </td><td colspan="1" align="CENTER">            </td></tr>
+<tr><td colspan="1" align="LEFT">
+Dimension      </td><td colspan="1" align="CENTER">    <i>L<sup>1</sup></i> </td><td colspan="1" align="CENTER">    0 to inf  </td><td colspan="1" align="CENTER">     None        </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#taylor">[4]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Oddy           </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to inf  </td><td colspan="1" align="CENTER">    0 to 20      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#oddy">[6]</a><a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.  </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    1 to inf  </td><td colspan="1" align="CENTER">    1 to 8       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian       </td><td colspan="1" align="CENTER">    <i>L<sup>3</sup></i> </td><td colspan="1" align="CENTER"> -inf to inf  </td><td colspan="1" align="CENTER">     None        </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian</td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">   -1 to +1   </td><td colspan="1" align="CENTER">  0.5 to 1       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear          </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.3 to 1       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape          </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.3 to 1       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size  </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.5 to 1       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape &#38; Size  </td><td colspan="1" align="CENTER">    <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.2 to 1       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<caption>Description of Hexahedral Quality Measures</caption><tr><td colspan="1" align="LEFT">
+</td></tr></table>
+</div>
+<p><A NAME="1">&nbsp;</A>
+<p><p>The metrics for hexahedral elements as listed in table 
+<a HREF="#1">*</a> are defined as follows:
+<HR ><table><tr><td colspan="1" align="LEFT">
+
+Aspect Ratio:</td><td colspan="1" align="LEFT"> 
+  Maximum edge length ratios at hex center. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Skew:      </td><td colspan="1" align="LEFT"> 
+  Maximum <i>||cosA||</i> where A is the angle between edges at hex center. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Taper:       </td><td colspan="1" align="LEFT"> 
+  Maximum ratio of lengths derived from opposite edges. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Volume:  </td><td colspan="1" align="LEFT"> 
+  Jacobian at hex center. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Stretch:         </td><td colspan="1" align="LEFT">  
+  <i>sqrt(3)</i> * minimum edge length / maximum diagonal length. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Diagonal Ratio:  </td><td colspan="1" align="LEFT"> 
+  Minimum diagonal length / maximum diagonal length. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Dimension:       </td><td colspan="1" align="LEFT"> 
+  Pronto-specific characteristic length for stable time step calculation.      Char&#95;length = Volume / 2 grad Volume. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Oddy: </td><td colspan="1" align="LEFT"> 
+  General distortion measure based on left Cauchy-Green Tensor. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No. </td><td colspan="1" align="LEFT"> 
+  Maximum condition number of the Jacobian matrix at 8 corners. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian: </td><td colspan="1" align="LEFT"> 
+  Minimum pointwise volume of local map at 8 corners &#38; center of hex. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian:</td><td colspan="1" align="LEFT"> 
+  Minimum Jacobian divided by the lengths of the 3 edge vectors. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear:           </td><td colspan="1" align="LEFT"> 
+  3/Condition number of Jacobian Skew matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape:           </td><td colspan="1" align="LEFT"> 
+  3/Condition number of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size:   </td><td colspan="1" align="LEFT"> 
+  Min( J, 1/J ), where J is determinant of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape and Size:  </td><td colspan="1" align="LEFT"> 
+  Product of Shape and Relative Size </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+<HR ><p>Table <a HREF="#2">*</a>
+lists the metrics that are applicable to quadrilateral meshes.  
+
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+Function Name   </td><td colspan="1" align="CENTER"> Dimension </td><td colspan="1" align="CENTER"> Full Range </td><td colspan="1" align="CENTER">Acceptable Range </td><td colspan="1" align="CENTER">  Reference </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio    </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    1 to inf  </td><td colspan="1" align="CENTER">    1 to 4    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#robinson">[9]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Skew            </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">    0 to 0.5  </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#robinson">[9]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Taper           </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to inf  </td><td colspan="1" align="CENTER">    0 to 0.7  </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#robinson">[9]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Warpage         </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to inf  </td><td colspan="1" align="CENTER">    0 to 0.1  </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#robinson">[9]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Area    </td><td colspan="1" align="CENTER">   <i>L<sup>2</sup></i> </td><td colspan="1" align="CENTER"> -inf to +inf </td><td colspan="1" align="CENTER">     None     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#robinson">[9]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Stretch         </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER"> 0.25 to 1    </td><td colspan="1" align="CENTER">                 </td></tr>
+<tr><td colspan="1" align="LEFT">
+Minimum Angle   </td><td colspan="1" align="CENTER">  degrees</td><td colspan="1" align="CENTER">   0 to 90    </td><td colspan="1" align="CENTER">  45 to 90    </td><td colspan="1" align="CENTER">         </td></tr>
+<tr><td colspan="1" align="LEFT">
+Maximum Angle   </td><td colspan="1" align="CENTER">  degrees</td><td colspan="1" align="CENTER">  90 to 360   </td><td colspan="1" align="CENTER">  90 to 135   </td><td colspan="1" align="CENTER">         </td></tr>
+<tr><td colspan="1" align="LEFT">
+Oddy            </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to inf  </td><td colspan="1" align="CENTER">    0 to 16   </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#oddy">[6]</a><a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.   </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    1 to inf  </td><td colspan="1" align="CENTER">    1 to 4    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian        </td><td colspan="1" align="CENTER">   <i>L<sup>2</sup></i> </td><td colspan="1" align="CENTER"> -inf to inf  </td><td colspan="1" align="CENTER">     None     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">   -1 to +1   </td><td colspan="1" align="CENTER">  0.5 to 1    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear           </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.3 to 1    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape           </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.3 to 1    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size   </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.5 to 1    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape &#38; Size   </td><td colspan="1" align="CENTER">   <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">    0 to 1    </td><td colspan="1" align="CENTER">  0.2 to 1    </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<caption>Description of Quadrilateral Quality Measures</caption><tr><td colspan="1" align="LEFT">
+</td></tr></table>
+</div>
+<p><A NAME="2">&nbsp;</A>
+<p><p>The metrics for quadrilateral elements as listed in table 
+<a HREF="#2">*</a> are defined as follows:
+<HR ><table><tr><td colspan="1" align="LEFT">
+
+Aspect Ratio:     </td><td colspan="1" align="LEFT"> Maximum edge length ratios at quad center </td></tr>
+<tr><td colspan="1" align="LEFT">
+Skew: </td><td colspan="1" align="LEFT"> Maximum <i>||cosA||</i> where A is the angle between edges at quad center </td></tr>
+<tr><td colspan="1" align="LEFT">
+Taper:            </td><td colspan="1" align="LEFT"> Maximum ratio of lengths derived from opposite edges </td></tr>
+<tr><td colspan="1" align="LEFT">
+Warpage:          </td><td colspan="1" align="LEFT"> Deviation of element from planarity. </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Area:     </td><td colspan="1" align="LEFT"> Jacobian at quad center </td></tr>
+<tr><td colspan="1" align="LEFT">
+Stretch:          </td><td colspan="1" align="LEFT"> <i>sqrt(2)</i> * minimum edge length / maximum diagonal length</td></tr>
+<tr><td colspan="1" align="LEFT">
+Minimum Angle:    </td><td colspan="1" align="LEFT"> Smallest included quad angle (degrees).  </td></tr>
+<tr><td colspan="1" align="LEFT">
+Maximum Angle:    </td><td colspan="1" align="LEFT"> Largest included quad angle (degrees).  </td></tr>
+<tr><td colspan="1" align="LEFT">
+Oddy:             </td><td colspan="1" align="LEFT"> General distortion measure based on left Cauchy-Green Tensor </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.     </td><td colspan="1" align="LEFT"> Maximum condition number of the Jacobian matrix at 4 corners </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian:         </td><td colspan="1" align="LEFT"> Minimum pointwise volume of local map at 4 corners &#38; center of quad </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian:  </td><td colspan="1" align="LEFT"> Minimum Jacobian divided by the lengths of the 2 edge vectors </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear:             </td><td colspan="1" align="LEFT"> 2/Condition number of Jacobian Skew matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape:             </td><td colspan="1" align="LEFT"> 2/Condition number of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size:     </td><td colspan="1" align="LEFT"> Min( J, 1/J ), where J is determinant of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape and Size:    </td><td colspan="1" align="LEFT"> Product of Shape and Relative Size </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+<HR ><p><p>Table <a HREF="#3">*</a>
+lists the metrics that are applicable to tetrahedral meshes.  
+
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+Function Name   </td><td colspan="1" align="CENTER"> Dimension </td><td colspan="1" align="CENTER"> Full Range </td><td colspan="1" align="CENTER">Acceptable Range </td><td colspan="1" align="CENTER">  Reference </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio Bet  </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     1 to inf   </td><td colspan="1" align="CENTER">   1 to 3      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#parth">[10]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio Gam  </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     1 to inf   </td><td colspan="1" align="CENTER">   1 to 3      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#parth">[10]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Volume    </td><td colspan="1" align="CENTER"> <i>L<sup>3</sup></i> </td><td colspan="1" align="CENTER">  -inf to +inf  </td><td colspan="1" align="CENTER">    None       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#parth">[10]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.     </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     1 to inf   </td><td colspan="1" align="CENTER">   1 to 3      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian          </td><td colspan="1" align="CENTER"> <i>L<sup>3</sup></i> </td><td colspan="1" align="CENTER">  -inf to inf   </td><td colspan="1" align="CENTER">    None       </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian   </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">-1.414 to +1.414</td><td colspan="1" align="CENTER"> 0.5 to +1.414 </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear             </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER"> 0.3 to 1      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape             </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER"> 0.3 to 1      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size     </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER"> 0.5 to 1      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape &#38; Size     </td><td colspan="1" align="CENTER"> <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER"> 0.2 to 1      </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<caption>Description of Tetrahedral Quality Measures</caption><tr><td colspan="1" align="LEFT">
+</td></tr></table>
+</div>
+<p><A NAME="3">&nbsp;</A>
+<p><p>The metrics for tetrahedral elements as listed in table 
+<a HREF="#3">*</a> are defined as follows:
+<HR ><table><tr><td colspan="1" align="LEFT">
+
+Aspect Ratio Beta: </td><td colspan="1" align="LEFT"> CR / (3.0 * IR)  where CR = circumsphere radius, IR = inscribed sphere radius </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio Gamma:</td><td colspan="1" align="LEFT"> <i>Srms<sup>3</sup> / (8.479670*V)</i>  where <i>Srms = sqrt(Sum(Si<sup>2</sup>)/6)</i>, <i>Si</i> = edge length </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Volume:    </td><td colspan="1" align="LEFT"> (1/6) * Jacobian at corner node </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.      </td><td colspan="1" align="LEFT"> Condition number of the Jacobian matrix at any corner </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian:          </td><td colspan="1" align="LEFT"> Minimum pointwise volume at any corner </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian:   </td><td colspan="1" align="LEFT"> Minimum Jacobian divided by the lengths of 3 edge vectors </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear:             </td><td colspan="1" align="LEFT"> 3/Minimum condition number of weighted Skew matrices </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape:             </td><td colspan="1" align="LEFT"> 3/Condition number of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size:     </td><td colspan="1" align="LEFT"> Min( J, 1/J ), where J is determinant of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape and Size:    </td><td colspan="1" align="LEFT"> Product of Shape and Relative Size </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+<HR ><p>Table <a HREF="#4">*</a>
+lists the metrics that are applicable to triangular meshes.  
+
+<div align="center">
+<table><tr><td colspan="1" align="LEFT">
+
+Function Name   </td><td colspan="1" align="CENTER"> Dimension </td><td colspan="1" align="CENTER"> Full Range </td><td colspan="1" align="CENTER">Acceptable Range </td><td colspan="1" align="CENTER">  Reference </td></tr>
+<tr><td colspan="1" align="LEFT">
+Aspect Ratio Gam</td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     1 to inf   </td><td colspan="1" align="CENTER">     1 to 1.3   </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#parth">[10]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Area    </td><td colspan="1" align="CENTER">  <i>L<sup>2</sup></i> </td><td colspan="1" align="CENTER">     0 to inf   </td><td colspan="1" align="CENTER">      None      </td><td colspan="1" align="CENTER">        </td></tr>
+<tr><td colspan="1" align="LEFT">
+Maximum Angle   </td><td colspan="1" align="CENTER"> degrees</td><td colspan="1" align="CENTER">    60 to 180   </td><td colspan="1" align="CENTER">    60 to 90    </td><td colspan="1" align="CENTER">        </td></tr>
+<tr><td colspan="1" align="LEFT">
+Minimum Angle   </td><td colspan="1" align="CENTER"> degrees</td><td colspan="1" align="CENTER">     0 to 60    </td><td colspan="1" align="CENTER">    30 to 60    </td><td colspan="1" align="CENTER">        </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.   </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     1 to inf   </td><td colspan="1" align="CENTER">     1 to 1.3   </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">-1.155 to +1.155</td><td colspan="1" align="CENTER">   0.5 to 1.155 </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2000">[7]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear           </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER">  0.75 to 1     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape           </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER">  0.75 to 1     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size   </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER">  0.75 to 1     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape &#38; Size   </td><td colspan="1" align="CENTER">  <i>L<sup>0</sup></i> </td><td colspan="1" align="CENTER">     0 to 1     </td><td colspan="1" align="CENTER">  0.75 to 1     </td><td colspan="1" align="CENTER"> <a HREF="verde_40.html#knupp2002">[8]</a> </td></tr>
+<caption>Description of Triangular Quality Measures</caption><tr><td colspan="1" align="LEFT">
+</td></tr></table>
+</div>
+<p><A NAME="4">&nbsp;</A>
+<p><p>The metrics for triangular elements as listed in table 
+<a HREF="#4">*</a> are defined as follows:
+<HR ><table><tr><td colspan="1" align="LEFT">
+
+Aspect Ratio Gamma:  </td><td colspan="1" align="LEFT"> <i>srms<sup>2</sup>/(2.30940108*area)</i> where <i>srms = sqrt(SUMSi<sup>2</sup>/3)</i> and <i>Si</i> = edge length </td></tr>
+<tr><td colspan="1" align="LEFT">
+Element Area:        </td><td colspan="1" align="LEFT"> (1/2) * Jacobian at corner node </td></tr>
+<tr><td colspan="1" align="LEFT">
+Maximum Angle:       </td><td colspan="1" align="LEFT"> Maximum included angle in triangle </td></tr>
+<tr><td colspan="1" align="LEFT">
+Minimum Angle:       </td><td colspan="1" align="LEFT"> Minimum included angle in triangle </td></tr>
+<tr><td colspan="1" align="LEFT">
+Condition No.        </td><td colspan="1" align="LEFT"> Condition number of the Jacobian matrix at any corner </td></tr>
+<tr><td colspan="1" align="LEFT">
+Scaled Jacobian:     </td><td colspan="1" align="LEFT"> Minimum Jacobian divided by the lengths of 2 edge vectors </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shear:               </td><td colspan="1" align="LEFT"> 2/Condition number of weighted skew matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape:               </td><td colspan="1" align="LEFT"> 2/Condition number of weighted Jacobian matrix </td></tr>
+<tr><td colspan="1" align="LEFT">
+Relative Size:       </td><td colspan="1" align="LEFT"> Min( J, 1/J ), where J is determinant of weighted </td></tr>
+<tr><td colspan="1" align="LEFT">
+Jacobian matrix      </td><td colspan="1" align="LEFT"> </td></tr>
+<tr><td colspan="1" align="LEFT">
+Shape and Size:      </td><td colspan="1" align="LEFT"> Product of Shape and Relative Size </td></tr>
+<tr><td colspan="1" align="LEFT">
+</td></tr></table>
+
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_39.html"><img alt="Appendix C:  Command Line and Journal File Keywords" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde.html"><img alt="Top" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_37.html"><img alt="Appendix A: Valid Tokens for the .verde Preferences File" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Appendix B:  Descriptions of Verde Metrics</b></td></tr></table></body></html>

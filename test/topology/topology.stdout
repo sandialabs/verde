@@ -1,0 +1,408 @@
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -notopology hex_hex_hinge.g 
+
+Processing File: hex_hex_hinge.g...
+Reading block: 1, 2,
+Processing Skin...
+
+---------------
+Element Metrics
+---------------
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 27 elements of type HEX8:
+
+
+Summary Hex Metrics, total = 54 Hexes:
+
+   Function Name     Average    Std Dev    Minimum   (id)  Maximum  (id)
+ -----------------  ---------  ---------  --------------  -------------
+
+ALGEBRAIC METRICS
+             Shear  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+             Shape  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+     Relative Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Shape and Size  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+DIAGNOSTIC METRICS
+    Element Volume  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+TRADITIONAL METRICS
+      Aspect Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+              Skew  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+             Taper  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+           Stretch  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+    Diagonal Ratio  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+         Dimension  0.5773503   0.00000   0.5773503 (1)  0.5773503 (1)
+              Oddy  0.0000000   0.00000   0.0000000 (1)  0.0000000 (1)
+     Condition No.  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+          Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+   Scaled Jacobian  1.0000000   0.00000   1.0000000 (1)  1.0000000 (1)
+
+---------------
+Metrics Summary
+---------------
+   Number of Failed Hex Metrics: 0
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     108
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       69
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 54
+   Elements Per Second   = 540000
+   Total Volume          = 54.00
+
+   Metrics Tests         = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_hex_hinge.g 
+
+Processing File: hex_hex_hinge.g...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 27 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  3
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 54
+   Elements Per Second   = 540000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_shell_hinge.g 
+
+Processing File: hex_shell_hinge.g...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 9 elements of type SHELL4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  3
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 36
+   Elements Per Second   = 360000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_bar_hinge.g 
+
+Processing File: hex_bar_hinge.g...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 3 elements of type BAR2:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  3
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 30
+   Elements Per Second   = 300000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface shell_bar_hinge.g 
+
+Processing File: shell_bar_hinge.g...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 9 elements of type SHELL4:
+
+Processing block 2, 3 elements of type BAR2:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  3
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 12
+   Elements Per Second   = 1200
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_shell_bar_hinge.g 
+
+Processing File: hex_shell_bar_hinge.g...
+Reading block: 1, 2, 3,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 3 elements of type BAR2:
+
+Processing block 3, 9 elements of type SHELL4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  6
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 39
+   Elements Per Second   = 390000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_shell_bar_hinge_one_node.g 
+
+Processing File: hex_shell_bar_hinge_one_node.g...
+Reading block: 1, 2, 3,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 6 elements of type BAR2:
+
+Processing block 3, 9 elements of type SHELL4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  3
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 42
+   Elements Per Second   = 4200
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.6 ***
+
+		        Revised 04-23-03 03:56:53 PM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 04/25/03 at 08:37:41 AM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde_exe -batch -nodefaults -nometrics -nointerface hex_shell_bar_separate.g 
+
+Processing File: hex_shell_bar_separate.g...
+Reading block: 1, 2, 3,
+Processing Skin...
+Processing block 1, 27 elements of type HEX8:
+
+Processing block 2, 9 elements of type SHELL4:
+
+Processing block 3, 3 elements of type BAR2:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+   Number Quads sharing three nodes:  0
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Unknown (Bar/Beam/Truss elements present)
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 39
+   Elements Per Second   = 390000
+
+   Mesh Topology Tests   = PASS
+   VERDE                 = PASS

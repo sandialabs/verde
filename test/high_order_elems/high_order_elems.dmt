@@ -1,0 +1,87 @@
+Name:
+     high_order_elems 
+
+Purpose:
+      Tests Verde's ability to treat high order elements no differently than lower order elements.
+   
+Description:
+     This test tests basically makes sure that verde only computes the same metrics for high order elements 
+      as it does for corresponding lower order elements.  Verde should use the following node for it's analysis:
+         -first 2 nodes for analyizing beams  
+         -first 2 nodes for analyizing bars
+         -first 8 nodes for analyizing hexes 
+         -first 4 nodes for analyizing quads 
+         -first 4 nodes for analyizing shells 
+         -first 4 nodes for analyizing tets 
+         -first 3 nodes for analyizing tris 
+
+Inputs:
+   
+      NOTE:  All commands use the "-batch" flag to execute.  This is done inside verd_test.
+
+      NOTE:  No other flags are used in this test.
+
+      1.  command verde bar.gen
+      2.  command verde bar2.gen
+      3.  command verde bar3.gen
+      4.  command verde beam.gen
+      5.  command verde beam2.gen
+      6.  command verde beam3.gen
+      7.  command verde hex.gen
+      8.  command verde hex8.gen
+      9.  command verde hex9.gen
+      10. command verde hex20.gen
+      11. command verde hex27.gen
+      12. command verde quad.gen
+      13. command verde quad4.gen
+      14. command verde quad5.gen
+      15. command verde quad8.gen
+      16. command verde quad9.gen
+      17. command verde shell.gen
+      18. command verde shell4.gen
+      19. command verde shell8.gen
+      20. command verde tetra.gen
+      21. command verde tetra4.gen
+      22. command verde tetra10.gen
+      23. command verde tetra14.gen
+      24. command verde tri.gen
+      25. command verde tri3.gen
+      26. command verde tri6.gen
+      27. command verde tri7.gen
+
+
+Outputs:
+      
+      1.- 4. Metrics calculations.  Verifies that element type BAR, BAR2, BAR3, BEAM, BEAM2 and BEAM3
+          can be input and analyized, and are treated identically.
+
+      5.- 11. Metrics calculations.  Verifies that element type HEX, HEX8, HEX9, HEX20, and HEX27 
+          can be input and analyized, and are treated identically.
+
+      12.- 16. Metrics calculations.  Verifies that element type QUAD, QUAD4, QUAD5, and QUAD9 
+          can be input and analyized, and are treated identically.
+
+      17.- 19. Metrics calculations.  Verifies that element type SHELL, SHELL4, and SHELL8 
+          can be input and analyized, and are treated identically.
+
+      20.- 23. Metrics calculations.  Verifies that element type TETRA, TETRA4, TETRA10 and TETRA14 
+          can be input and analyized, and are treated identically.
+
+      24.- 27. Metrics calculations.  Verifies that element type TRI3, TRI6, and TRI7 
+          can be input and analyized, and are treated identically.
+ 
+
+Pass/Fail Criteria:
+      
+      1. - 4. Passes if  all have identical metrics calculations.  Otherwise fails.
+
+      5. - 11. Passes if  all have identical metrics calculations.  Otherwise fails.
+
+      12. - 16. Passes if  all have identical metrics calculations.  Otherwise fails.
+
+      17. - 19. Passes if  all have identical metrics calculations.  Otherwise fails.
+
+      20. - 23. Passes if  all have identical metrics calculations.  Otherwise fails.
+
+      24. - 27. Passes if  all have identical metrics calculations.  Otherwise fails.
+

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:47 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- Edit Menu</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_prefs.html"><img alt="View Menu" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_10.html"><img alt="Exit" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Edit Menu</b></td></tr></table>
+<h3>Edit Menu</h3>
+
+<p>The Edit menu allows users to control and save parameters that are 
+used by Verde during mesh verification sessions.
+<h4><A NAME="metric_ranges">Metric Ranges</a></h4>
+
+<p>Pass/fail criteria for the element metrics are based on the ranges that 
+are defined for each metric.  The minimum and maximum acceptable range 
+for each element and metric can be defined by invoking the Metric 
+Ranges dialog.  This dialog box is shown in figure <a HREF="#2">*</a>.  
+The Metric 
+Ranges dialog contains tabs for each element type that is supported by 
+Verde.  Each tab contains fields for the minimum and maximum acceptable 
+range for each metric.  Clicking either the OK or Apply buttons activates 
+the changed values.  The Restore button restores the values to the 
+default state.  Verde 2.6 does not yet support interactively writing or 
+reading values from the .verde file.  However, this file is read at 
+start up and the values are displayed in the Metrics Ranges dialog and 
+used for metrics calculations.
+<p><HR >  <div align="center">
+    <img width=400 hspace=3 src="images/metric_ranges.jpg">
+    <div align="center">Metric Ranges dialog box.</div>
+    <A NAME="2">&nbsp;</A>
+  </div>
+     
+
+
+<h4><A NAME="preferences">Preferences</a></h4>
+
+<p>The Preferences dialog box is shown in figure <a HREF="#4">*</a>.  
+This dialog box can 
+be used to specify the types of calculations that Verde will perform, 
+the data that should 
+be echoed to the Command Window, and the user's choice of metrics 
+ranges files.  The user can also set the size of points Verde draws, when
+nodesets and nodes are drawn.
+In Verde 2.6, the warning level was replaced with the option to specify
+how intensive the check for quadrilaterals sharing three nodes is.
+<p><HR >  <div align="center">
+    <img width=300 hspace=3 src="images/preferences.jpg">
+    <div align="center">Preferences dialog box.</div>
+    <A NAME="4">&nbsp;</A>
+  </div>
+     
+<h4><A NAME="mouse_buttons">Mouse Buttons</a></h4>
+
+<p>The Mouse Button dialog box, as show in figure <a HREF="#6">*</a> 
+allows the user to manipulate the mapping of the mouse buttons to model 
+translation, rotation, and zooming.  In addition the user can change 
+the Zoom Direction (if moving the mouse up (or foward) should cause zooming 
+to be positive or negative).
+<p><HR >  <div align="center">
+    <img width=300 hspace=3 src="images/mouse_buttons.jpg">
+    <div align="center">Mouse Button dialog box.</div>
+    <A NAME="6">&nbsp;</A>
+  </div>
+     
+
+<h4><A NAME="save_settings">Save Setting on Exit</a></h4>
+
+<p>When exiting, if the Save Settings on Exit option it toggled on, the following 
+settings are written to a file.  These setting are read in again the next time 
+Verde is invoked.
+<ul><li>location and size of Verde main window 
+<li>location, size, and docking status of the Model Window, 
+       Results Window, and Command Line Window
+<li>mapping of mouse buttons and zoom direction 
+<li>point size 
+<li>display toggle of normals, edges, and skin 
+<li>Save Setting on Exit toggle 
+<li>Perspective View toggle 
+<li>Autofit toggle  
+<li>Quick Transform toggle
+<li>Graphics mode (Hiddenline, SmoothShade or Wireframe) 
+</ul>
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_prefs.html"><img alt="View Menu" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_6.html"><img alt="Controlling the Verde GUI" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_10.html"><img alt="Exit" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Edit Menu</b></td></tr></table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<!-- XML file produced from file: verde.tex --
+ -- using Hyperlatex v 2.5 (c) Otfried Cheong--
+ -- on Emacs 20.7.1, Thu May 30 09:24:47 2002 -->
+<head>
+<title>Verde Users Manual Version 2.6 -- Types of Verification</title>
+
+</head><body bgcolor="#ffffe6">
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_4.html"><img alt="Invoking Verde" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_1.html"><img alt="Introduction" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_2.html"><img alt="Element Types" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Types of Verification</b></td></tr></table>
+<h2>Types of Verification</h2>
+
+<p>Verde 2.6 performs mesh verification in three areas:
+<ol><li>
+<i>Individual Element Metrics</i>. The individual characteristics 
+of each element are verified by calculating common metrics depending 
+on the element type. Verde calculates one or more metrics for each element 
+type supported.  For each metric, the minimum, maximum, average, and standard 
+deviation of each metric are tracked, as well as the elements at which 
+the minimum and maximum occur.  All elements whose metric values fall 
+outside the user-definable acceptable range are flagged as failed. 
+
+<li>
+<i>Topology Checks.</i> The topology of the mesh is carefully 
+analyzed, looking for any defects in the mesh connectivity or continuity 
+that would invalidate the mesh.  Verde reports the number of exterior 
+entities for the mesh, checks for manifold topology, and if the
+object is manifold, calculates the 
+Euler number and infers the probable overall topology.
+In addition, it checks for adjoining
+quadrilateral faces in the mesh that share only three nodes.
+
+<li>
+<i>Interface Checks.</i> The exterior surface of the mesh is 
+carefully analyzed.  Exterior elements are checked for 
+coincidence.  In this way, potential problems such as incorrect mesh 
+joins and multiply-meshed regions can be detected.  
+In batch mode, an optional output file can be created 
+(in Exodus II format) which contains 
+information from the analysis such as the exterior skin of the mesh, 
+inferred model edges, and failed elements.  This file can be read by 
+Verde in the interactive mode or other tools that read Exodus II data
+to establish orientations and locations 
+of bad elements and to explore and understand how to improve the current 
+mesh.
+
+<li>
+<i>Quads Sharing Three Nodes.</i> Hexahedral elements and Quadrilateral elements
+are checked to see if any faces of Hexahedral elements or Quadrilaterals share 
+three nodes with another face of a Hexahedral element or Quadrilateral.
+The check may optionally be performed on the exterior mesh, or on the entire mesh.
+
+</ol>
+<HR ><address>support@elemtech.com</address><br>
+<table width="100%" cellpadding=0 cellspacing=2><tr>
+  <td bgcolor="#99ccff"><a HREF="verde_4.html"><img alt="Invoking Verde" border=0 src="images/next.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_1.html"><img alt="Introduction" border=0 src="images/up.jpg"></a></td><td bgcolor="#99ccff"><a HREF="verde_2.html"><img alt="Element Types" border=0 src="images/previous.jpg"></a></td><td align="center" bgcolor="#99ccff" width="100%"><b>Types of Verification</b></td></tr></table></body></html>

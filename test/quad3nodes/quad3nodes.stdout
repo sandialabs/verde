@@ -1,0 +1,248 @@
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 11:55:59 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 12:10:16 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics 2hex-crack.gen 
+
+Processing File: 2hex-crack.gen...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 1 elements of type HEX8:
+
+Processing block 2, 1 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+WARNING: Nodes 1, 6 and 5 are shared by two quads.
+
+   Number Quads sharing three nodes:  2
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  2
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     12
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       22
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 2
+   Elements Per Second   = 20000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 11:55:59 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 12:10:16 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics hex-shell-share3nodes.gen 
+
+Processing File: hex-shell-share3nodes.gen...
+Reading block: 1, 2,
+Processing Skin...
+Processing block 1, 1 elements of type HEX8:
+
+Processing block 2, 1 elements of type SHELL4:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+WARNING: Nodes 6, 5 and 2 are shared by two quads.
+
+   Number Quads sharing three nodes:  2
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Topology: Non-Manifold
+   Number Non-Manifold Edges:  2
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     7
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       14
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.00
+   Elements Processed    = 2
+   Elements Per Second   = 20000
+
+   Mesh Topology Tests   = FAIL (see Mesh Topology Information above)
+   Mesh Interface Tests  = PASS
+   VERDE                 = FAIL
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 11:55:59 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 12:10:17 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics hex-interior-crack.gen 
+
+Processing File: hex-interior-crack.gen...
+Reading block: 3,
+Processing Skin...
+Processing block 3, 64 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+WARNING: Nodes 117, 119 and 120 are shared by two quads.
+WARNING: Nodes 117, 126 and 121 are shared by two quads.
+WARNING: Nodes 123, 124 and 119 are shared by two quads.
+WARNING: Nodes 121, 122 and 123 are shared by two quads.
+
+   Number Quads sharing three nodes:  8
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 2 Volume(s))
+   Possible Topologies: N Volumes with N-2 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     104
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       56
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.01
+   Elements Processed    = 64
+   Elements Per Second   = 6400
+
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
+
+
+
+		         *** VERDE Version 2.5 ***
+
+		        Revised 02-20-02 11:55:59 AM
+
+		VERDE: VERIFICATION OF DISCRETE ELEMENTS
+
+		A MESH VERIFICATION TOOL FOR EXODUS MESHES
+
+		      Executing on 02/20/02 at 12:10:17 PM
+
+		This version of Verde is only for use inside Sandia
+
+Executing: ../../verde -batch -nodefaults -nometrics -quads_share_3_nodes all interior-quads_small.gen 
+
+Processing File: interior-quads_small.gen...
+Reading block: 1,
+Processing Skin...
+Processing block 1, 451 elements of type HEX8:
+
+
+----------------------------
+Quads Sharing 3 Nodes
+----------------------------
+WARNING: Nodes 242, 278 and 276 are shared by two quads.
+WARNING: Nodes 276, 278 and 242 are shared by two quads.
+WARNING: Nodes 484, 485 and 385 are shared by two quads.
+WARNING: Nodes 385, 485 and 484 are shared by two quads.
+WARNING: Nodes 506, 540 and 544 are shared by two quads.
+WARNING: Nodes 544, 540 and 506 are shared by two quads.
+
+   Number Quads sharing three nodes:  12
+
+----------------------------
+Mesh Topology Information
+----------------------------
+   Mesh appears fully conformal
+
+   Probable Topology: 1 Volume(s))
+   Possible Topologies: N Volumes with N-1 holes
+
+-------------------------
+Mesh Interface Information
+-------------------------
+   Number Surface Quads:     248
+   Number Surface Tris:      0
+   Number Coincident Nodes:  0
+   Number Coincident Quads:   0
+   Number Coincident Tris:   0
+   Number Model Edges:       46
+
+
+
+-----------------
+Execution Summary
+-----------------
+   User time             = 0.48
+   Elements Processed    = 451
+   Elements Per Second   = 939
+
+   Mesh Topology Tests   = PASS
+   Mesh Interface Tests  = PASS
+   VERDE                 = PASS
